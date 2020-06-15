@@ -6,7 +6,7 @@
     background-size: cover;
     position: fixed;
     top: 0;
-    height: 600px;
+    height: 800px;
     padding: 130px 5%;
     align-items: flex-start;
     z-index: -1;
@@ -94,7 +94,127 @@
 .image{
     transition: transform .2s;
     cursor: pointer;
+    background-color: white;
+    margin-bottom: 20px;
 }
 .image:hover{
     transform: scale(1.1);
 }
+.grid{
+    background-image: url('./Images/Heading.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    box-shadow: 2px 5px 20px #6CD9BA;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    padding-bottom: 80px;
+}
+.features{
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    color: white;
+    font-size: 40px;
+    font-family: 'j';
+}
+.card{
+    border-radius: 20px;
+    margin: 20px 0px;
+    width: 400px;
+    margin: 40px;
+}
+.cardTitle{
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.cardSubTitle{
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.offers{
+    border-radius: 20px;
+    width: 100%;
+    padding: 20px;
+    margin-right: 20px;
+    background-image: linear-gradient(to bottom right, #F29F05, #F2B705);
+    box-shadow: 2px 5px 20px #F2B705;
+}
+.footer{
+    width: 100%;
+    height: 500px;
+    color: white;
+    background-color: #091626;
+    padding: 40px;
+    color: white;
+    font-size: 18px;
+}
+td{
+    font-weight: 200;
+    text-align: center;
+    margin: 20px;
+    font-size: 15px;
+}
+.signUp{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.glow1{
+    background-image: linear-gradient(to bottom right, #04BF7B, #05F283);
+    border: none;
+    box-shadow: none;
+    padding: 20px 30px;
+    font-size: 15px;
+    color: white;
+    border-radius: 10px;
+    font-weight: 800;
+    box-shadow: 5px 5px 20px #05F283;
+    outline: none;
+    cursor: pointer;
+}
+.topButton{
+    margin: 0px 20px;
+    border-bottom: 5px solid transparent;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px;
+}
+.topButton:hover{
+    border-color: white;
+}
+.mobile{
+    display: none;
+}
+@media only screen and (max-width:650px) {
+    .responsive{
+      display: none;
+    }
+    .mobile{
+      display: contents;
+    }
+    .para{
+        position: absolute;
+        top: 0;
+        padding: 20px 5px;
+        background-image: url('./Images/bg.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        height: auto;
+    }
+    .bg-text{
+        font-size: 13px;
+    }
+    .long-text{
+        font-size: 13px;
+    }
+  }

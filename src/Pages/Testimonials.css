@@ -1,0 +1,39 @@
+.foreground{
+    text-align: center;
+    z-index: 1;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 30px;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    box-shadow: 0px 0px 20px grey;
+    background-image: url(../Images/quotesBG.png);
+    background-size: contain;
+}
+.wrap{
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.avatar{
+    height: 50px;
+    width: 50px;
+    background-color: #8ee9e9;
+    border-radius: 50%;
+}
+@media only screen and (max-width:650px) {
+    .foreground{
+        width: 98%;
+        margin: 10px 0px;
+        max-width: 100%;
+        font-size: 20px;
+    }
+    .wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

@@ -1,5 +1,4 @@
 import React from "react";
-import { render } from "react-dom";
 import CarouselSlider from "react-carousel-slider";
 
 let data = [

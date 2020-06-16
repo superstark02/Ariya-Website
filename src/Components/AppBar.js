@@ -5,6 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
+import { Link } from 'react-router-dom';
 
 function ElevationScroll(props) {
     const { children, window } = props;
@@ -43,10 +44,11 @@ export default function MyAppBar(props) {
                     <Toolbar style={{ backgroundColor: 'rgba(4, 191, 191,0.5)' }} >
                         <Typography variant="h6" style={{ fontFamily: 'j', margin: '20px', fontSize: '35px', color: 'white' }} >{"<Coding Classes/>"}</Typography>
                         <div style={{ position: 'absolute', right: '0', marginLeft: 'auto', padding: '0px 40px', display: 'flex' }} >
-                            <div class='topButton' >Courses</div>
-                            <div class='topButton' >Events</div>
-                            <div class='topButton' >Contact Us</div>
-                            <div class='topButton' >About Us</div>
+                            <Link to='' className='Link' ><div class='topButton' >Sign Up</div></Link>
+                            <Link to='' className='Link' ><div class='topButton' >Courses</div></Link>
+                            <Link to='/coding_testimonials' className='Link'><div class='topButton' >Testimonials</div></Link>
+                            <Link to='/about_us' className='Link'><div class='topButton' >About Us</div></Link>
+                            <div class='topButton'  >Contact Us</div>
                         </div>
                     </Toolbar>
                 </AppBar>

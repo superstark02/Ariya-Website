@@ -3,8 +3,6 @@ import './App.css'
 import { useDencrypt } from "use-dencrypt-effect";
 import { Box, Button, ButtonBase } from '@material-ui/core';
 import python from './Images/python.png';
-import java from './Images/java.png';
-import vue from './Images/vue.png';
 import devops from './Images/devOps.png'
 import aws from './Images/aws.png'
 import stats from './Images/stats.png'
@@ -12,7 +10,6 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import { FaPython, FaVuejs, FaAngular } from 'react-icons/fa';
 import ButtonBases from './Components/Images';
 import ImageGridList from './Components/Features';
 import MyCode from './Components/code';

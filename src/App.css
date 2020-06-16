@@ -273,3 +273,13 @@ td{
         height: auto;
     }
   }
+
+  a a:active a:visited{
+      text-decoration: none;
+      text-emphasis: none;
+  }
+.Link{
+      text-decoration: none;
+      text-emphasis: none;
+  }
+  

@@ -1,0 +1,25 @@
+.heading{
+    font-size: 30px;
+    color: #282e34;
+    text-align: center;
+    margin-top: 3%;
+    width: 100%;
+}
+.aboutMain{
+    width: 100%;
+    text-align: center;
+}
+.aboutTile{
+    text-align: center;
+    border-radius: 20px;
+    height: 300px;
+    margin: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+@media only screen and (max-width:650px) {
+    .aboutTile{
+        width: 300px;
+        margin: 10px 0px;
+    }
+}

@@ -14,6 +14,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 import { FaBars } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 function ElevationScroll(props) {
     const { children, window } = props;
@@ -82,22 +83,26 @@ export default function MyAppBaMobile(props) {
                     LOGO IMAGE
                 </div>
                 <List>
-                    <ListItem button >
+                    <Link to='' className='Link' ><ListItem button >
                         <ListItemIcon></ListItemIcon>
                         <ListItemText primary='Courses' />
-                    </ListItem>
-                    <ListItem button >
+                    </ListItem></Link>
+
+                    <Link to='' className='Link' ><ListItem button >
                         <ListItemIcon></ListItemIcon>
                         <ListItemText primary='Register' />
-                    </ListItem>
-                    <ListItem button >
+                    </ListItem></Link>
+
+                    <Link to='/coding_testimonials' className='Link'><ListItem button >
                         <ListItemIcon></ListItemIcon>
                         <ListItemText primary='Students Say' />
-                    </ListItem>
-                    <ListItem button >
+                    </ListItem></Link>
+
+                    <Link to='/about_us' className='Link'><ListItem button >
                         <ListItemIcon></ListItemIcon>
                         <ListItemText primary='About Us' />
-                    </ListItem>
+                    </ListItem></Link>
+
                     <ListItem button >
                         <ListItemIcon></ListItemIcon>
                         <ListItemText primary='Contact Us' />

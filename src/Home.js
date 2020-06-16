@@ -5,11 +5,14 @@ import { Box, Button, ButtonBase } from '@material-ui/core';
 import python from './Images/python.png';
 import java from './Images/java.png';
 import vue from './Images/vue.png';
+import devops from './Images/devOps.png'
+import aws from './Images/aws.png'
+import stats from './Images/stats.png'
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import { FaPython, FaVuejs, FaAngular, FaPhone, FaMapMarkerAlt, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
+import { FaPython, FaVuejs, FaAngular } from 'react-icons/fa';
 import ButtonBases from './Components/Images';
 import ImageGridList from './Components/Features';
 import MyCode from './Components/code';
@@ -19,6 +22,7 @@ import MyAppBar from './Components/AppBar';
 import MyAppBaMobile from './Components/mAppBar';
 import CloudCircleOutlinedIcon from '@material-ui/icons/CloudCircleOutlined';
 import StorageOutlinedIcon from '@material-ui/icons/StorageOutlined';
+import MyFooter from './Components/Footer';
 
 const values = ["<Hello World/>", "Coding is Awesome", "Keep Calm And Code", "Machine Learning"];
 const first = <div>
@@ -33,16 +37,16 @@ const first = <div>
 
 const second = <div>Cloud computing is perhaps the most flamboyant technological innovation of the 21st century.
    This is because it has seen the fastest adoption into the mainstream than any other technology in the domain.<br></br>
-   <br></br>
-   In addition to this, emerging technologies such as Artificial Intelligence, distributed ledger technology, 
+  <br></br>
+   In addition to this, emerging technologies such as Artificial Intelligence, distributed ledger technology,
    and many other capabilities are becoming available as services through cloud computing.
 </div>
 
 const third = <div>Our society is a network society;
-   that is, a society constructed around personal and organizational networks powered by 
-   digital networks and communicated by the Internet.<br/><br/>
+that is, a society constructed around personal and organizational networks powered by
+   digital networks and communicated by the Internet.<br /><br />
    Modern technology has paved the way for multi-functional devices like the smartwatch and the smartphone.
-    Computers are increasingly faster, more portable, and higher-powered than ever before. 
+    Computers are increasingly faster, more portable, and higher-powered than ever before.
 </div>
 
 export default function Home() {
@@ -145,37 +149,9 @@ export default function Home() {
           <div class='signUp' >
             <SignUp />
           </div>
-
-          <div class='footer' >
-            <table style={{ width: '100%', height: '100%' }} >
-              <tr>
-                <td style={{ fontSize: '50px', fontFamily: 'j' }} >{"</>"}</td>
-                <th>Contact</th>
-                <th>Help</th>
-                <th>About</th>
-                <th>Social Media</th>
-              </tr>
-              <tr>
-                <td></td>
-                <td><FaPhone color="#FFFF" /> +91 9999 9999 99</td>
-                <td> FAQs</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td><FaMapMarkerAlt color="#FFFF" /> Map Location</td>
-                <td>How to enroll</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td><FaEnvelope color="#FFFF" /> someone@exapmle.com</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td><FaWhatsapp color="#FFFF" /> WhatsApp</td>
-              </tr>
-            </table>
-          </div>
+          <MyFooter />
         </div>
+
         <div className='mobile' >
           <MyAppBaMobile />
           <div style={{ position: 'absolute', top: '0', width: '100%' }} >
@@ -194,27 +170,27 @@ export default function Home() {
                 </div>
                 <div class='long' >
                   <List component="nav" aria-label="main mailbox folders">
-                    <ListItem style={{padding:'0'}} >
+                    <ListItem style={{ padding: '0' }} >
                       <ListItemIcon>
                         AI
                       </ListItemIcon>
                       <ListItemText primary="AI and Machine Learning" secondary={first} />
                     </ListItem>
-                    <ListItem style={{padding:'0'}} >
+                    <ListItem style={{ padding: '0' }} >
                       <ListItemIcon>
-                        <CloudCircleOutlinedIcon/>
+                        <CloudCircleOutlinedIcon />
                       </ListItemIcon>
                       <ListItemText primary="Cloud Computing" secondary={second} />
                     </ListItem>
-                    <ListItem style={{padding:'0'}} >
+                    <ListItem style={{ padding: '0' }} >
                       <ListItemIcon>
-                        <StorageOutlinedIcon/>
+                        <StorageOutlinedIcon />
                       </ListItemIcon>
                       <ListItemText primary="Information Technology" secondary={third} />
                     </ListItem>
                   </List>
                 </div>
-                <div style={{width:'100%',display:'flex',justifyContent:'space-around'}} >
+                <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around' }} >
                   <ButtonBase style={{ marginLeft: '40px', marginTop: '40px', marginBottom: '40px' }} >
                     <Button class='glow' >
                       ENROLL NOW
@@ -223,11 +199,56 @@ export default function Home() {
                 </div>
               </Box>
             </div>
-            <div style={{ padding: '40px', backgroundColor: 'white' }} >
-              <ButtonBases />
-            </div>
 
             <MyCode />
+
+            <ButtonBases />
+
+            <div style={{ padding: '10px' }} >
+              <div class='offers'>
+                <div class='features'>{"<Courses/>"}</div>
+                <div style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'space-around', alignContent: 'center' }} >
+                  <div className='courseTile' >
+                    <div>
+                      <img src={python} width='70px' />
+                    </div>
+                    <div>
+                      Python
+                    </div>
+                  </div>
+
+                  <div className='courseTile' >
+                    <div>
+                      <img src={devops} width='70px' />
+                    </div>
+                    <div>
+                      DevOps
+                    </div>
+                  </div>
+
+                  <div className='courseTile' >
+                    <div>
+                      <img src={aws} width='70px' />
+                    </div>
+                    <div>
+                      AWS
+                    </div>
+                  </div>
+
+                  <div className='courseTile' >
+                    <div>
+                      <img src={stats} width='70px' />
+                    </div>
+                    <div>
+                      Statistics
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <MyFooter />
           </div>
         </div>
       </React.Fragment>

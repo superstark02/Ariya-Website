@@ -95,3 +95,23 @@ nav {
     display: flex;
     justify-content: space-around;
 }
+.input{
+  outline: none;
+  border: none;
+  text-align: center;
+  margin: 10px;
+}
+@media only screen and (max-width:650px) {
+  .userName{
+    padding: 0px;
+    font-size: 11px;
+  }
+  .input{
+    margin: 0;
+  }
+  .mSignIn{
+    background-attachment: fixed;
+    background-image: url(../Images/laptopCode.jpg);
+    width: 100%;
+  }
+}

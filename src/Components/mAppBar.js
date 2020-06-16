@@ -114,7 +114,7 @@ export default function MyAppBaMobile(props) {
                 <AppBar style={{ backgroundColor: 'rgba(255,255,255,0.3)' }} >
                     <Toolbar style={{ backgroundColor: 'rgba(4, 191, 191,0.5)', display: 'flex', justifyContent: 'space-between' }} >
                         <Typography variant="h6" style={{ fontFamily: 'j', margin: '10px', fontSize: '18px', color: 'white' }} >{"<Coding Classes/>"}</Typography>
-                        <IconButton onClick={toggleDrawer('right', true)} color="inherit"><FaBars /></IconButton>
+                        <IconButton onClick={toggleDrawer('right', true)} color="inherit"><FaBars color='white' /></IconButton>
                         <Drawer anchor={'right'} open={state['right']} onClose={toggleDrawer('right', false)}>
                             {list('right')}
                         </Drawer>

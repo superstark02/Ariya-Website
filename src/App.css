@@ -226,4 +226,33 @@ td{
     .li{
         font-size: 12px;
     }
+    .footer{
+        padding: 10px;
+        font-size: 10px;
+    }
+    td{
+        font-size: 10px;
+        margin: 0;
+    }
+    .features{
+        font-size: 20px;
+    }
+    .glow1{
+        font-size: 13px;
+        padding: 10px 20px;
+    }
+    .features{
+        padding: 0px;
+        margin-bottom: 20px;
+    }
+    .courseTile{
+        width: 100px;
+        background-color: white;
+        border-radius: 10px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
   }

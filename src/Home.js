@@ -207,10 +207,10 @@ export default function Home() {
             <div style={{ padding: '10px' }} >
               <div class='offers'>
                 <div class='features'>{"<Courses/>"}</div>
-                <div style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'space-around', alignContent: 'center' }} >
+                <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around', alignContent: 'center',flexWrap:'wrap' }} >
                   <div className='courseTile' >
                     <div>
-                      <img src={python} width='70px' />
+                      <img alt='s' src={python} width='70px' />
                     </div>
                     <div>
                       Python
@@ -219,7 +219,7 @@ export default function Home() {
 
                   <div className='courseTile' >
                     <div>
-                      <img src={devops} width='70px' />
+                      <img alt='s' src={devops} width='70px' />
                     </div>
                     <div>
                       DevOps
@@ -228,7 +228,7 @@ export default function Home() {
 
                   <div className='courseTile' >
                     <div>
-                      <img src={aws} width='70px' />
+                      <img alt='s' src={aws} width='70px' />
                     </div>
                     <div>
                       AWS
@@ -237,7 +237,7 @@ export default function Home() {
 
                   <div className='courseTile' >
                     <div>
-                      <img src={stats} width='70px' />
+                      <img alt='s' src={stats} width='70px' />
                     </div>
                     <div>
                       Statistics

@@ -8,7 +8,7 @@ export default function SignUp() {
             <div className='responsive' style={{ width: '70%', padding: '10px', backgroundColor: 'white', boxShadow: '2px 5px 10px', marginTop: '-40px', marginBottom: '-40px' }} >
                 <div class="features" style={{ color: 'black' }} >
                     Sign Up
-            </div>
+                </div>
                 <div class="userName" >
                     <div>
                         {"#include<"}<input className='input' placeholder="username" />{">;"}
@@ -20,9 +20,6 @@ export default function SignUp() {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className='mobile' className='mSignIn' >
-                
             </div>
         </React.Fragment>
     )

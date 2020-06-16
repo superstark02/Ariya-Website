@@ -6,21 +6,21 @@ nav {
     width: 300px;
   }
   
-  ul,
-  li {
+  .ul,
+  .licode {
     list-style: none;
     padding: 0;
     margin: 0;
   }
   
-  ul {
+  .ul {
     position: relative;
     display: flex;
     width: 300px;
     flex-wrap: wrap;
   }
   
-  li {
+  .licode {
     border-radius: 10px;
     margin-bottom: 10px;
     margin-right: 10px;
@@ -70,6 +70,22 @@ nav {
     justify-content: center;
     align-items: center;
   }
+@media only screen and (max-width:650px) {
+  .container{
+    width: 100%;
+    max-width: 100%;
+    justify-content: space-around;
+    display: flex;
+    padding: 20px 0px;
+  }
+  .licode{
+    width: 100px;
+    height: 100px;
+  }
+  .ul{
+    width: 220px;
+  }
+}
 .userName{
   padding: 30px;
     color: #091626;

@@ -202,7 +202,6 @@ td{
       display: contents;
     }
     .para{
-        position: absolute;
         top: 0;
         padding: 20px 5px;
         background-image: url('./Images/bg.jpg');
@@ -216,5 +215,15 @@ td{
     }
     .long-text{
         font-size: 13px;
+    }
+    .heading{
+        font-size: 16px;
+        padding: 0px;
+    }
+    .long{
+        padding: 0px;
+    }
+    .li{
+        font-size: 12px;
     }
   }

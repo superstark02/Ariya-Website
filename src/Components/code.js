@@ -37,9 +37,9 @@ export default function MyCode (){
 
   return(
     <div class='container' >
-      <ul>
+      <ul className='ul' >
         {colors.map(background => (
-          <motion.li
+          <motion.li className='licode'
             key={background.color}
             layoutTransition={spring}
             style={ {backgroundColor:background.color} }

@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Drawer from '@material-ui/core/Drawer';
-import { IconButton } from '@material-ui/core';
+import { IconButton} from '@material-ui/core';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -89,6 +89,10 @@ export default function MyAppBaMobile(props) {
                     <ListItem button >
                         <ListItemIcon></ListItemIcon>
                         <ListItemText primary='Register' />
+                    </ListItem>
+                    <ListItem button >
+                        <ListItemIcon></ListItemIcon>
+                        <ListItemText primary='Students Say' />
                     </ListItem>
                     <ListItem button >
                         <ListItemIcon></ListItemIcon>

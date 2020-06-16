@@ -271,6 +271,7 @@ export default function Home() {
                   </div>
 
                 </div>
+                <div style={{color:'white'}} >Show All</div>
               </div>
             </div>
 

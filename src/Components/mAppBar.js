@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Drawer from '@material-ui/core/Drawer';
-import { IconButton} from '@material-ui/core';
+import { IconButton, Divider} from '@material-ui/core';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -15,6 +15,12 @@ import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 import { FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
+import ExitToAppOutlinedIcon from '@material-ui/icons/ExitToAppOutlined';
+import PeopleOutlineOutlinedIcon from '@material-ui/icons/PeopleOutlineOutlined';
+import SchoolOutlinedIcon from '@material-ui/icons/SchoolOutlined';
+import ListAltOutlinedIcon from '@material-ui/icons/ListAltOutlined';
+import LocalPhoneOutlinedIcon from '@material-ui/icons/LocalPhoneOutlined';
 
 function ElevationScroll(props) {
     const { children, window } = props;
@@ -83,28 +89,35 @@ export default function MyAppBaMobile(props) {
                     LOGO IMAGE
                 </div>
                 <List>
+                    <Link to='/' className='Link' ><ListItem button >
+                        <ListItemIcon><HomeOutlinedIcon/></ListItemIcon>
+                        <ListItemText primary='Home' />
+                    </ListItem></Link>
+
                     <Link to='' className='Link' ><ListItem button >
-                        <ListItemIcon></ListItemIcon>
+                        <ListItemIcon><ListAltOutlinedIcon/></ListItemIcon>
                         <ListItemText primary='Courses' />
                     </ListItem></Link>
 
                     <Link to='' className='Link' ><ListItem button >
-                        <ListItemIcon></ListItemIcon>
-                        <ListItemText primary='Register' />
+                        <ListItemIcon><ExitToAppOutlinedIcon/></ListItemIcon>
+                        <ListItemText primary='Sign Up' />
                     </ListItem></Link>
 
                     <Link to='/coding_testimonials' className='Link'><ListItem button >
-                        <ListItemIcon></ListItemIcon>
+                        <ListItemIcon><SchoolOutlinedIcon/></ListItemIcon>
                         <ListItemText primary='Students Say' />
                     </ListItem></Link>
-
+                </List>
+                <Divider/>
+                <List>
                     <Link to='/about_us' className='Link'><ListItem button >
-                        <ListItemIcon></ListItemIcon>
+                        <ListItemIcon><PeopleOutlineOutlinedIcon/></ListItemIcon>
                         <ListItemText primary='About Us' />
                     </ListItem></Link>
 
                     <ListItem button >
-                        <ListItemIcon></ListItemIcon>
+                        <ListItemIcon><LocalPhoneOutlinedIcon/></ListItemIcon>
                         <ListItemText primary='Contact Us' />
                     </ListItem>
                 </List>
@@ -118,7 +131,9 @@ export default function MyAppBaMobile(props) {
             <ElevationScroll {...props}>
                 <AppBar style={{ backgroundColor: 'rgba(255,255,255,0.3)' }} >
                     <Toolbar style={{ backgroundColor: 'rgba(4, 191, 191,0.5)', display: 'flex', justifyContent: 'space-between' }} >
-                        <Typography variant="h6" style={{ fontFamily: 'j', margin: '10px', fontSize: '18px', color: 'white' }} >{"<Coding Classes/>"}</Typography>
+                        <Typography style={{ fontFamily: 'j', margin: '10px', fontSize: '20px', color: 'white' }} >
+                            <Link to='/' className="Link" >{"<Coding Classes/>"}</Link>
+                        </Typography>
                         <IconButton onClick={toggleDrawer('right', true)} color="inherit"><FaBars color='white' /></IconButton>
                         <Drawer anchor={'right'} open={state['right']} onClose={toggleDrawer('right', false)}>
                             {list('right')}

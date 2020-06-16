@@ -1,5 +1,6 @@
 import React from "react";
 import CarouselSlider from "react-carousel-slider";
+import { Link } from "react-router-dom";
 
 let data = [
   {
@@ -76,7 +77,7 @@ export const Carousel = () => (
     accEle={options}
   />
   <div style={{marginLeft:'20px',padding:'20px 0px'}} >
-    See All
+    <Link className='Link' to='/coding_testimonials' >See All</Link>
   </div>
   </div>
 );

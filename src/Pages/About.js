@@ -12,7 +12,7 @@ export default class AboutUs extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <div className='responsive' >
+                <div className='responsive'>
                     <MyAppBar />
                     <div className='aboutMain' >
                         <div className='heading' style={{ backgroundColor: 'transparent' }} >
@@ -39,7 +39,7 @@ export default class AboutUs extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className='mobile' >
+                <div className='mobile'>
                     <MyAppBaMobile />
                     <div className='aboutMain' >
                         <div className='heading' style={{ backgroundColor: 'transparent' }} >

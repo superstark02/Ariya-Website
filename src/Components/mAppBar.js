@@ -79,7 +79,7 @@ export default function MyAppBaMobile(props) {
         >
             <div style={{ padding: '0px 15px' }} >
                 <div style={{width:'100%',height:'50px'}} >
-
+                    LOGO IMAGE
                 </div>
                 <List>
                     <ListItem button >

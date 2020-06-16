@@ -23,6 +23,7 @@ import MyAppBaMobile from './Components/mAppBar';
 import CloudCircleOutlinedIcon from '@material-ui/icons/CloudCircleOutlined';
 import StorageOutlinedIcon from '@material-ui/icons/StorageOutlined';
 import MyFooter from './Components/Footer';
+import { Carousel } from './Components/Carousel';
 
 const values = ["<Hello World/>", "Coding is Awesome", "Keep Calm And Code", "Machine Learning"];
 const first = <div>
@@ -82,37 +83,31 @@ export default function Home() {
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </div></Box>
           </div>
-          <div style={{ padding: '20px', backgroundColor: 'white', width: '100%', boxShadow: '2px 2px 20px' }} >
-            <div style={{ display: 'flex', justifyContent: 'space-evenly', padding: '0px 20px', width: '100%', backgroundColor: 'white' }} >
-              <div class='imgC' ><img alt="img" src={python} class='image' width='200px' height='200px' style={{ marginTop: '20px' }} /><div class='sub' >Python</div></div>
-              <div><img alt="img" src={java} class='image' width='200px' height='200px' style={{ marginTop: '20px' }} /><div class='sub' >Java</div></div>
-              <div><img alt="img" src={vue} class='image' width='200px' height='200px' style={{ marginTop: '20px' }} /><div class='sub' >Vue</div></div>
-            </div>
-          </div>
+
           <div style={{ width: '100%', backgroundColor: 'white', display: 'flex', justifyContent: 'space-around' }} >
             <Box style={{ width: '90%', marginTop: '40px', borderRadius: '40px' }}>
               <div class='heading' >
                 Learn Trending And Potential Languages....
             </div>
               <div class='long' >
-                <List component="nav" aria-label="main mailbox folders">
-                  <ListItem button>
+                <List component="nav" aria-label="main mailbox folders" style={{ width: '100%' }} >
+                  <ListItem style={{ padding: '0' }} >
                     <ListItemIcon>
-                      <FaPython />
-                    </ListItemIcon>
-                    <ListItemText primary="Coding" />
+                      AI
+                      </ListItemIcon>
+                    <ListItemText primary="AI and Machine Learning" secondary={first} />
                   </ListItem>
-                  <ListItem button>
+                  <ListItem style={{ padding: '0' }} >
                     <ListItemIcon>
-                      <FaVuejs />
+                      <CloudCircleOutlinedIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Is Awesome" />
+                    <ListItemText primary="Cloud Computing" secondary={second} />
                   </ListItem>
-                  <ListItem button>
+                  <ListItem style={{ padding: '0' }} >
                     <ListItemIcon>
-                      <FaAngular />
+                      <StorageOutlinedIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Learn Coding" />
+                    <ListItemText primary="Information Technology" secondary={third} />
                   </ListItem>
                 </List>
               </div>
@@ -123,9 +118,6 @@ export default function Home() {
               </ButtonBase>
             </Box>
           </div>
-          <div style={{ padding: '40px', backgroundColor: 'white' }} >
-            <ButtonBases />
-          </div>
 
           <div>
             <ImageGridList />
@@ -134,19 +126,56 @@ export default function Home() {
           <div style={{ backgroundColor: 'white', display: 'flex', paddingTop: '40px' }} >
             <MyCode />
             <div class='offers' >
-              <div class='features'>{"<Offers/>"}</div>
-              <div style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'space-around', alignContent: 'center' }} >
+              <div class='features'>{"<Courses/>"}</div>
+                <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around', alignContent: 'center', flexWrap: 'wrap' }} >
+                  <div className='courseTile' >
+                    <div>
+                      <img alt='s' src={python} width='70px' />
+                    </div>
+                    <div>
+                      Python
+                    </div>
+                  </div>
 
-              </div>
+                  <div className='courseTile' >
+                    <div>
+                      <img alt='s' src={devops} width='70px' />
+                    </div>
+                    <div>
+                      DevOps
+                    </div>
+                  </div>
+
+                  <div className='courseTile' >
+                    <div>
+                      <img alt='s' src={aws} width='70px' />
+                    </div>
+                    <div>
+                      AWS
+                    </div>
+                  </div>
+
+                  <div className='courseTile' >
+                    <div>
+                      <img alt='s' src={stats} width='70px' />
+                    </div>
+                    <div>
+                      Statistics
+                    </div>
+                  </div>
+                <div className='offers' style={{backgroundImage:'none',color:'white'}} >
+                  Show All
+                </div>
+                </div>
             </div>
           </div>
           <div style={{ backgroundColor: 'white', height: '100px' }}></div>
 
           <div style={{ width: '100%', height: '600px', backgroundColor: 'white', padding: '20px' }}>
-            <div class='features' style={{ color: 'grey' }} >Testimonials;</div>
+            <Carousel />
           </div>
 
-          <div class='signUp' >
+          <div class='signUp'>
             <SignUp />
           </div>
           <MyFooter />
@@ -207,7 +236,7 @@ export default function Home() {
             <div style={{ padding: '10px' }} >
               <div class='offers'>
                 <div class='features'>{"<Courses/>"}</div>
-                <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around', alignContent: 'center',flexWrap:'wrap' }} >
+                <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around', alignContent: 'center', flexWrap: 'wrap' }} >
                   <div className='courseTile' >
                     <div>
                       <img alt='s' src={python} width='70px' />
@@ -247,6 +276,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+            <Carousel />
 
             <MyFooter />
           </div>

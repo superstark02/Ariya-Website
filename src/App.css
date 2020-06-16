@@ -194,6 +194,19 @@ td{
 .mobile{
     display: none;
 }
+
+.courseTile{
+    width: 150px;
+    background-color: white;
+    border-radius: 20px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
 @media only screen and (max-width:650px) {
     .responsive{
       display: none;

@@ -21,3 +21,8 @@ code {
   font-family: 'j';
   src: local('j'), url(./Fonts/jetbrains-mono/JetBrainsMono-1.0.2/ttf/JetBrainsMono-Bold.ttf) format('truetype');
 }
+
+@font-face {
+  font-family: 'q';
+  src: local('q'), url(./Fonts/beautiful-people-font/BeautifulPeoplePersonalUse-dE0g.ttf) format('truetype');
+}

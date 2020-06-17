@@ -9,22 +9,67 @@ import { makeStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
 import Footer from '../Components/Footer'
+import MyAppBaMobile from '../Components/mAppBar'
+import Paper from '@material-ui/core/Paper';
+import Collapse from '@material-ui/core/Collapse';
+import statistics from '../Images/stats.png'
+import aws from '../Images/aws.png'
+import devOps from '../Images/devOps.png'
+import SignUp from '../Components/SignUp'
+import ExpansionPanel from '@material-ui/core/ExpansionPanel';
+import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
+import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import ButtonBases from '../Components/Images'
 
 const images = [
     {
-        url: '/static/images/grid-list/breakfast.jpg',
+        url: 'https://image.freepik.com/free-vector/programmers-concept-with-flat-design_23-2147849844.jpg',
         title: 'Level 1',
         width: '33%',
+        t: 'Level 1- Foundational',
+        details: <div>{'3 months- $xxx per month/ 8 classes per month.'}
+            <br />"Kids will be learning history of python language, core objects, built in functions, conditional statements and loops."
+        </div>
     },
     {
-        url: '/static/images/grid-list/burgers.jpg',
+        url: 'https://image.freepik.com/free-vector/colourful-illustration-programmer-working_23-2148281410.jpg',
         title: 'Level 2',
         width: '33%',
+        t: 'Level 2- Intermediate',
+        details: <div>{'9 months - $xxx per month/ 8 classes per month.'}
+            <br />"In this level, kids will be learning, functions, filing, python modules and packages."
+        </div>
     },
     {
-        url: '/static/images/grid-list/camera.jpg',
+        url: 'https://image.freepik.com/free-vector/programmers-concept-with-flat-design_23-2147841208.jpg',
         title: 'Level 3',
         width: '33%',
+        t: 'Level 3- Advanced ',
+        details: <div>{'18 months- $xxx per month/ 8 classes per month'}
+            <br />"In this level, exceptional handling and exceptional objects-oriented python"
+        </div>
+    },
+];
+
+const images1 = [
+    {
+        url: statistics,
+        title: 'Statistics',
+        width: '33%',
+        t: 'Statistics',
+    },
+    {
+        url: aws,
+        title: 'AWS',
+        width: '33%',
+        t: 'Amazon Web Services',
+    },
+    {
+        url: devOps,
+        title: 'DevOps',
+        width: '33%',
+        t: 'DevOps',
     },
 ];
 
@@ -100,11 +145,48 @@ const useStyles = makeStyles((theme) => ({
         left: 'calc(50% - 9px)',
         transition: theme.transitions.create('opacity'),
     },
+    container: {
+        display: 'flex',
+    },
+    paper: {
+        margin: theme.spacing(1),
+    },
+    polygon: {
+        fill: theme.palette.common.white,
+        stroke: theme.palette.divider,
+        strokeWidth: 1,
+    },
 }));
 
 export default function Courses() {
     const { width, height } = useWindowSize();
     const classes = useStyles();
+
+    const [checked, setChecked] = React.useState(false);
+    const [checked1, setChecked1] = React.useState(false);
+
+    const [title, setTitle] = React.useState();
+    const [title1, setTitle1] = React.useState();
+    const [para, setPara] = React.useState();
+    const [para1, setPara1] = React.useState();
+
+
+    const handleChange = (details, title) => {
+        if (!checked) {
+            setChecked((prev) => !prev);
+        }
+        setTitle(title)
+        setPara(details)
+    };
+
+    const handleChange1 = (details, title) => {
+        if (!checked1) {
+            setChecked1((prev) => !prev);
+        }
+        setTitle1(title)
+        setPara1(details)
+    };
+
     return (
         <React.Fragment>
             <div className='responsive' >
@@ -143,6 +225,7 @@ export default function Courses() {
                             style={{
                                 width: image.width,
                             }}
+                            onClick={() => { handleChange(image.details, image.t) }}
                         >
                             <span
                                 className={classes.imageSrc}
@@ -165,11 +248,29 @@ export default function Courses() {
                         </ButtonBase>
                     ))}
                 </div>
+
+                <div>
+                    <div>
+                        <div className={classes.container}>
+                            <Collapse in={checked}>
+                                <Paper elevation={4} className={classes.paper}>
+                                    <div style={{ width: width, height: '300px', padding: '40px' }} >
+                                        <h3>{title}</h3>
+                                        <p>
+                                            {para}
+                                        </p>
+                                    </div>
+                                </Paper>
+                            </Collapse>
+                        </div>
+                    </div>
+                </div>
+
                 <div className="coursesShow" >
                     <h1>For Professionals</h1>
                 </div>
                 <div className={classes.root}>
-                    {images.map((image) => (
+                    {images1.map((image) => (
                         <ButtonBase
                             focusRipple
                             key={image.title}
@@ -178,6 +279,7 @@ export default function Courses() {
                             style={{
                                 width: image.width,
                             }}
+                            onClick={() => { handleChange1(image.details, image.t) }}
                         >
                             <span
                                 className={classes.imageSrc}
@@ -200,8 +302,102 @@ export default function Courses() {
                         </ButtonBase>
                     ))}
                 </div>
+                <div>
+                    <div className={classes.container}>
+                        <Collapse in={checked1}>
+                            <Paper elevation={4} className={classes.paper}>
+                                <div style={{ width: width, height: '300px', padding: '40px' }} >
+                                    <h3>{title1}</h3>
+                                    <p>
+                                        {para1}
+                                    </p>
+                                </div>
+                            </Paper>
+                        </Collapse>
+                    </div>
+                </div>
+                <div style={{ width: '100%', display: 'flex', alignContent: 'center', justifyContent: 'space-around', margin: '60px 0px' }} >
+                    <SignUp />
+                </div>
             </div>
-            <Footer/>
+            <div className='mobile' >
+                <MyAppBaMobile />
+            </div>
+
+            <div className='mobile' >
+                <div className='wrap' style={{ width: width, height: 2 * height / 3 }} >
+                    <Confetti
+                        width={width}
+                        height={height}
+                        numberOfPieces={100}
+                        gravity={0.03}
+                        style={{ position: 'absolute', width: width, height: 2 * height / 3 }}
+                    />
+                    <div className='conForeground' style={{ height: 2 * height / 3 }} >
+                        <div>
+                            <div>
+                                Coding Courses
+                                <h5>Subtitle of the page.</h5>
+                            </div>
+                            <div className='courseText' >
+                                <img alt="s" src={image} width='200px' />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div style={{width:'100%',textAlign:'center'}} >
+                        <h1><img src={python} alt="s" width='50px' ></img> Python</h1>
+                    </div>
+                    {
+                        images.map(item => {
+                            return (
+                                <ExpansionPanel>
+                                    <ExpansionPanelSummary
+                                        expandIcon={<ExpandMoreIcon />}
+                                        aria-controls="panel1a-content"
+                                        id="panel1a-header"
+                                    >
+                                        <Typography>{item.t}</Typography>
+                                    </ExpansionPanelSummary>
+                                    <ExpansionPanelDetails>
+                                        {item.details}
+                                    </ExpansionPanelDetails>
+                                </ExpansionPanel>
+                            )
+                        })
+                    }
+                </div>
+
+                <div>
+                    <div style={{width:'100%',textAlign:'center'}} >
+                        <h1>For Professionals</h1>
+                    </div>
+                    {
+                        images1.map(item => {
+                            return (
+                                <ExpansionPanel>
+                                    <ExpansionPanelSummary
+                                        expandIcon={<ExpandMoreIcon />}
+                                        aria-controls="panel1a-content"
+                                        id="panel1a-header"
+                                    >
+                                        <Typography>{item.title}</Typography>
+                                    </ExpansionPanelSummary>
+                                    <ExpansionPanelDetails>
+                                        {item.details}
+                                    </ExpansionPanelDetails>
+                                </ExpansionPanel>
+                            )
+                        })
+                    }
+                </div>
+                <div style={{margin:'20px 0px'}} >
+                    <ButtonBases/>
+                </div>
+            </div>
+            <Footer />
         </React.Fragment>
     )
 }

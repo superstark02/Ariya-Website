@@ -21,6 +21,7 @@ import CloudCircleOutlinedIcon from '@material-ui/icons/CloudCircleOutlined';
 import StorageOutlinedIcon from '@material-ui/icons/StorageOutlined';
 import MyFooter from './Components/Footer';
 import { Carousel } from './Components/Carousel';
+import { Link } from 'react-router-dom';
 
 const values = ["<Hello World/>", "Coding is Awesome", "Keep Calm And Code", "Machine Learning"];
 const first = <div>
@@ -161,7 +162,7 @@ export default function Home() {
                     </div>
                   </div>
                 <div className='offers' style={{backgroundImage:'none',color:'white'}} >
-                  Show All
+                  <Link to='/coding_courses' className='Link' >Show All</Link>
                 </div>
                 </div>
             </div>
@@ -271,7 +272,7 @@ export default function Home() {
                   </div>
 
                 </div>
-                <div style={{color:'white'}} >Show All</div>
+                <div style={{color:'white'}} ><Link to='/coding_courses' className='Link' >Show All</Link></div>
               </div>
             </div>
 

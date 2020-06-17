@@ -94,7 +94,7 @@ export default function MyAppBaMobile(props) {
                         <ListItemText primary='Home' />
                     </ListItem></Link>
 
-                    <Link to='' className='Link' ><ListItem button >
+                    <Link to='/coding_courses' className='Link' ><ListItem button >
                         <ListItemIcon><ListAltOutlinedIcon/></ListItemIcon>
                         <ListItemText primary='Courses' />
                     </ListItem></Link>
@@ -116,10 +116,10 @@ export default function MyAppBaMobile(props) {
                         <ListItemText primary='About Us' />
                     </ListItem></Link>
 
-                    <ListItem button >
+                    <Link to='' className='Link'><ListItem button >
                         <ListItemIcon><LocalPhoneOutlinedIcon/></ListItemIcon>
                         <ListItemText primary='Contact Us' />
-                    </ListItem>
+                    </ListItem></Link>
                 </List>
             </div>
         </div>

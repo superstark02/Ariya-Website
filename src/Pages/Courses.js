@@ -29,7 +29,13 @@ const images = [
         width: '33%',
         t: 'Level 1- Foundational',
         details: <div>{'3 months- $xxx per month/ 8 classes per month.'}
-            <br />"Kids will be learning history of python language, core objects, built in functions, conditional statements and loops."
+            <br />Kids will be learning:
+                <ul>
+                    <li>History of python language,</li>
+                    <li>Core objects,</li>
+                    <li>Built in functions,</li>
+                    <li>Conditional statements and loops.</li>
+                </ul>    
         </div>
     },
     {
@@ -38,7 +44,12 @@ const images = [
         width: '33%',
         t: 'Level 2- Intermediate',
         details: <div>{'9 months - $xxx per month/ 8 classes per month.'}
-            <br />"In this level, kids will be learning, functions, filing, python modules and packages."
+            <br />In this level, kids will be learning:
+            <ul>
+                <li>Functions,</li>
+                <li>Filing,</li>
+                <li>Python modules and packages.</li>
+            </ul>   
         </div>
     },
     {
@@ -47,7 +58,11 @@ const images = [
         width: '33%',
         t: 'Level 3- Advanced ',
         details: <div>{'18 months- $xxx per month/ 8 classes per month'}
-            <br />"In this level, exceptional handling and exceptional objects-oriented python"
+            <br />In this level:
+            <ul>
+                <li>Exceptional handling</li>
+                <li>Exceptional objects-oriented python</li>
+            </ul>
         </div>
     },
 ];
@@ -203,7 +218,7 @@ export default function Courses() {
                     <div className='conForeground' style={{ height: height }} >
                         <div>
                             Coding Courses
-                    <h5>Subtitle of the page.</h5>
+                    <h5>Browse through our online courses.</h5>
                         </div>
                     </div>
                     <div className='conImage' style={{ height: height }} >
@@ -254,9 +269,9 @@ export default function Courses() {
                         <div className={classes.container}>
                             <Collapse in={checked}>
                                 <Paper elevation={4} className={classes.paper}>
-                                    <div style={{ width: width, height: '300px', padding: '40px' }} >
+                                    <div style={{ width: width, padding: '40px' }} >
                                         <h3>{title}</h3>
-                                        <p>
+                                        <p className='courseDes' >
                                             {para}
                                         </p>
                                     </div>
@@ -308,7 +323,7 @@ export default function Courses() {
                             <Paper elevation={4} className={classes.paper}>
                                 <div style={{ width: width, height: '300px', padding: '40px' }} >
                                     <h3>{title1}</h3>
-                                    <p>
+                                    <p className='courseDes' >
                                         {para1}
                                     </p>
                                 </div>
@@ -337,7 +352,7 @@ export default function Courses() {
                         <div>
                             <div>
                                 Coding Courses
-                                <h5>Subtitle of the page.</h5>
+                                <h5>Browse through our online courses.</h5>
                             </div>
                             <div className='courseText' >
                                 <img alt="s" src={image} width='200px' />
@@ -348,12 +363,12 @@ export default function Courses() {
                 
                 <div>
                     <div style={{width:'100%',textAlign:'center'}} >
-                        <h1><img src={python} alt="s" width='50px' ></img> Python</h1>
+                        <h3><img src={python} alt="s" width='30px' ></img> Python</h3>
                     </div>
                     {
                         images.map(item => {
                             return (
-                                <ExpansionPanel>
+                                <ExpansionPanel elevation={0} >
                                     <ExpansionPanelSummary
                                         expandIcon={<ExpandMoreIcon />}
                                         aria-controls="panel1a-content"
@@ -361,8 +376,11 @@ export default function Courses() {
                                     >
                                         <Typography>{item.t}</Typography>
                                     </ExpansionPanelSummary>
-                                    <ExpansionPanelDetails>
-                                        {item.details}
+                                    <ExpansionPanelDetails style={{display:'block'}} >
+                                        <div>{item.details}</div>
+                                        <div className='courseImage' style={{backgroundImage:"url("+item.url+")"}} >
+
+                                        </div>
                                     </ExpansionPanelDetails>
                                 </ExpansionPanel>
                             )
@@ -372,12 +390,12 @@ export default function Courses() {
 
                 <div>
                     <div style={{width:'100%',textAlign:'center'}} >
-                        <h1>For Professionals</h1>
+                        <h3>For Professionals</h3>
                     </div>
                     {
                         images1.map(item => {
                             return (
-                                <ExpansionPanel>
+                                <ExpansionPanel elevation={0}>
                                     <ExpansionPanelSummary
                                         expandIcon={<ExpandMoreIcon />}
                                         aria-controls="panel1a-content"
@@ -386,7 +404,10 @@ export default function Courses() {
                                         <Typography>{item.title}</Typography>
                                     </ExpansionPanelSummary>
                                     <ExpansionPanelDetails>
-                                        {item.details}
+                                        <div>{item.details}</div>
+                                        <div className='courseImage' style={{backgroundImage:"url("+item.url+")"}} >
+
+                                        </div>
                                     </ExpansionPanelDetails>
                                 </ExpansionPanel>
                             )

@@ -116,7 +116,7 @@ export default function MyAppBaMobile(props) {
                         <ListItemText primary='About Us' />
                     </ListItem></Link>
 
-                    <Link to='' className='Link'><ListItem button >
+                    <Link to='/coding_contact' className='Link'><ListItem button >
                         <ListItemIcon><LocalPhoneOutlinedIcon/></ListItemIcon>
                         <ListItemText primary='Contact Us' />
                     </ListItem></Link>

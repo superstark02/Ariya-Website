@@ -63,7 +63,7 @@ export default class Testimonials extends React.Component {
                 </div>
                 <div className='mobile' >
                     <MyAppBaMobile />
-                    <div className='wrap' >
+                    <div className='wrap' style={{paddingTop:'100px'}} >
                         <div className='foreground'>
                             <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around' }} ><div className='avatar' /></div>
                                     Name

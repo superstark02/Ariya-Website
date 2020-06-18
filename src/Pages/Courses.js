@@ -344,7 +344,7 @@ export default function Courses() {
                     <Confetti
                         width={width}
                         height={height}
-                        numberOfPieces={100}
+                        numberOfPieces={10}
                         gravity={0.03}
                         style={{ position: 'absolute', width: width, height: 2 * height / 3 }}
                     />

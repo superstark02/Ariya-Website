@@ -60,4 +60,7 @@
         background-size: cover;
         background-position: center;
     }
+    .courseText{
+        background-color: white;
+    }
 }

@@ -99,7 +99,7 @@ export default function MyAppBaMobile(props) {
                         <ListItemText primary='Courses' />
                     </ListItem></Link>
 
-                    <Link to='' className='Link' ><ListItem button >
+                    <Link to='/coding_signIn' className='Link' ><ListItem button >
                         <ListItemIcon><ExitToAppOutlinedIcon/></ListItemIcon>
                         <ListItemText primary='Sign Up' />
                     </ListItem></Link>

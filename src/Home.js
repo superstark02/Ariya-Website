@@ -169,7 +169,8 @@ export default function Home() {
           </div>
           <div style={{ backgroundColor: 'white', height: '100px' }}></div>
 
-          <div style={{ width: '100%', height: '600px', backgroundColor: 'white', padding: '20px' }}>
+          <div style={{ width: '100%', height: '600px', backgroundColor: 'white', padding: '20px',textAlign:'center' }}>
+            <h1 style={{fontFamily:'j'}} >Testimonials;</h1>
             <Carousel />
           </div>
 

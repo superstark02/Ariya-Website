@@ -272,6 +272,14 @@ td{
     .offers{
         height: auto;
     }
+    .features{
+        margin-top: 10px;
+    }
+    .grid{
+        width: 90%;
+        margin-bottom: 30px;
+        background-size: 400px;
+    }
   }
 
   a a:active a:visited{

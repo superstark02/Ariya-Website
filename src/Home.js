@@ -109,11 +109,6 @@ export default function Home() {
                   </ListItem>
                 </List>
               </div>
-              <ButtonBase style={{ marginLeft: '40px', marginTop: '40px', marginBottom: '40px' }} >
-                <Button class='glow' >
-                  ENROLL NOW
-                </Button>
-              </ButtonBase>
             </Box>
           </div>
 
@@ -218,14 +213,12 @@ export default function Home() {
                     </ListItem>
                   </List>
                 </div>
-                <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around' }} >
-                  <ButtonBase style={{ marginLeft: '40px', marginTop: '40px', marginBottom: '40px' }} >
-                    <Button class='glow' >
-                      ENROLL NOW
-                    </Button>
-                  </ButtonBase>
-                </div>
+                
               </Box>
+            </div>
+
+            <div>
+              <ImageGridList/>
             </div>
 
             <MyCode />
@@ -277,6 +270,7 @@ export default function Home() {
               </div>
             </div>
 
+            <div style={{textAlign:'center'}} ><h2 style={{fontFamily:'j'}} >Testimonials;</h2></div>
             <Carousel />
 
             <MyFooter />

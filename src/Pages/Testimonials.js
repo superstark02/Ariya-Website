@@ -61,7 +61,7 @@ export default class Testimonials extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className='mobile' >
+                <div className='mobile' style={{backgroundColor:'white'}} >
                     <MyAppBaMobile />
                     <div className='wrap' style={{paddingTop:'100px'}} >
                         <div className='foreground'>

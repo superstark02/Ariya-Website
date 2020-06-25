@@ -44,11 +44,12 @@ export default function MyAppBar(props) {
                     <Toolbar style={{ backgroundColor: 'rgba(4, 191, 191,0.5)' }} >
                         <Typography variant="h6" style={{ fontFamily: 'j', margin: '20px', fontSize: '35px', color: 'white' }} ><Link to='/' className='Link' >{"<Coding Classes/>"}</Link></Typography>
                         <div style={{ position: 'absolute', right: '0', marginLeft: 'auto', padding: '0px 40px', display: 'flex' }} >
-                            <Link to='/coding_signIn' className='Link' ><div class='topButton' >Sign Up</div></Link>
+                            <Link to='/' className='Link'><div class='topButton' >Home</div></Link>
+                            <Link to='/about_us' className='Link'><div class='topButton' >About Us</div></Link>
                             <Link to='/coding_courses' className='Link' ><div class='topButton' >Courses</div></Link>
                             <Link to='/coding_testimonials' className='Link'><div class='topButton' >Testimonials</div></Link>
-                            <Link to='/about_us' className='Link'><div class='topButton' >About Us</div></Link>
                             <Link to='/coding_contact' className='Link'><div class='topButton'  >Contact Us</div></Link>
+                            <Link to='/coding_signIn' className='Link' ><div class='topButton' >Sign Up</div></Link>
                         </div>
                     </Toolbar>
                 </AppBar>

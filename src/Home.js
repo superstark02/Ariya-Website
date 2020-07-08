@@ -47,8 +47,11 @@ export default function Home() {
         <div className='responsive' >
           <MyAppBar />
           <div class='wallpaper' ></div>
-          <div class='para'>
+          <div className='para'>
             <Box style={{ height: 'auto', width: '600px' }} ><div class='bg-text'>{result}</div></Box>
+            <Box><div className='long-text'>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+              </div></Box>
           </div>
 
           <div style={{ backgroundColor: 'white', display: 'flex', paddingTop: '40px' }} >
@@ -121,6 +124,9 @@ export default function Home() {
           <div style={{ position: 'absolute', top: '0', width: '100%' }} >
             <div className='para'>
               <Box style={{ height: 'auto', marginTop: '10%' }} ><div class='bg-text'>{result}</div></Box>
+              <Box><div className='long-text'>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+              </div></Box>
             </div>
 
             <div>

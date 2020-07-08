@@ -1,6 +1,6 @@
 .wallpaper{
     width: 100%;
-    background-image: url('./Images/terminal.jpg');
+    background-color: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -13,7 +13,7 @@
 }
 
 .bg-text {
-    color: white;
+    color: #14bc16;
     font-weight: bold;
     width: 100%;
     padding: 100px;
@@ -24,11 +24,10 @@
 .long-text {
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-    color: white;
+    color:#14bc16;
     font-weight: bold;
-    border: 3px solid #f1f1f1;
     width: 100%;
-    padding: 20px;
+    padding: 5px 100px;
     font-family: 'c';
     font-size: 25px;
     margin-top: 10px;
@@ -214,11 +213,11 @@ td{
     .para{
         top: 0;
         padding: 40px 5px;
-        background-image: url('./Images/terminal.jpg');
+        background-color: black;
         background-attachment: fixed;
         background-size: cover;
         background-position: center;
-        height: 50vh;
+        height: auto;
     }
     .bg-text{
         font-size: 18px;
@@ -226,6 +225,7 @@ td{
     }
     .long-text{
         font-size: 18px;
+        padding: 2px 20px;
     }
     .heading{
         font-size: 16px;

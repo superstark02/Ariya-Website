@@ -26,7 +26,7 @@ let data = [
 ];
 
 let sliderBoxStyle = {
-  height: "350px"
+  height: "60vh"
   //, width: "200px"
   // , background: "tranparent"
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css'
 import { useDencrypt } from "use-dencrypt-effect";
-import { Box, Button, ButtonBase } from '@material-ui/core';
+import { Box} from '@material-ui/core';
 import python from './Images/python.png';
 import devops from './Images/devOps.png'
 import aws from './Images/aws.png'

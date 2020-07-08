@@ -5,7 +5,22 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
+import Drawer from '@material-ui/core/Drawer';
+import { IconButton, Divider} from '@material-ui/core';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
+import clsx from 'clsx';
+import { makeStyles } from '@material-ui/core/styles';
+import { FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
+import ExitToAppOutlinedIcon from '@material-ui/icons/ExitToAppOutlined';
+import PeopleOutlineOutlinedIcon from '@material-ui/icons/PeopleOutlineOutlined';
+import SchoolOutlinedIcon from '@material-ui/icons/SchoolOutlined';
+import ListAltOutlinedIcon from '@material-ui/icons/ListAltOutlined';
+import LocalPhoneOutlinedIcon from '@material-ui/icons/LocalPhoneOutlined';
 
 function ElevationScroll(props) {
     const { children, window } = props;
@@ -34,23 +49,95 @@ ElevationScroll.propTypes = {
     window: PropTypes.func,
 };
 
+const useStyles = makeStyles({
+    list: {
+        width: 250,
+    },
+    fullList: {
+        width: 'auto',
+    },
+});
 
 export default function MyAppBar(props) {
+    const classes = useStyles();
+    const [state, setState] = React.useState({
+        top: false,
+        left: false,
+        bottom: false,
+        right: false,
+    });
+
+    const toggleDrawer = (anchor, open) => (event) => {
+        if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+            return;
+        }
+
+        setState({ ...state, [anchor]: open });
+    };
+
+    const list = (anchor) => (
+        <div
+            className={clsx(classes.list, {
+                [classes.fullList]: anchor === 'top' || anchor === 'bottom',
+            })}
+            role="presentation"
+            onClick={toggleDrawer(anchor, false)}
+            onKeyDown={toggleDrawer(anchor, false)}
+        >
+            <div style={{ padding: '0px 15px' }} >
+                <div style={{width:'100%',height:'50px'}} >
+                    LOGO IMAGE
+                </div>
+                <List>
+                    <Link to='/' className='Link' ><ListItem button >
+                        <ListItemIcon><HomeOutlinedIcon/></ListItemIcon>
+                        <ListItemText primary='Home' />
+                    </ListItem></Link>
+
+                    <Link to='/coding_courses' className='Link' ><ListItem button >
+                        <ListItemIcon><ListAltOutlinedIcon/></ListItemIcon>
+                        <ListItemText primary='Courses' />
+                    </ListItem></Link>
+
+                    <Link to='/coding_signIn' className='Link' ><ListItem button >
+                        <ListItemIcon><ExitToAppOutlinedIcon/></ListItemIcon>
+                        <ListItemText primary='Sign Up' />
+                    </ListItem></Link>
+
+                    <Link to='/coding_testimonials' className='Link'><ListItem button >
+                        <ListItemIcon><SchoolOutlinedIcon/></ListItemIcon>
+                        <ListItemText primary='Students Say' />
+                    </ListItem></Link>
+                </List>
+                <Divider/>
+                <List>
+                    <Link to='/about_us' className='Link'><ListItem button >
+                        <ListItemIcon><PeopleOutlineOutlinedIcon/></ListItemIcon>
+                        <ListItemText primary='About Us' />
+                    </ListItem></Link>
+
+                    <Link to='/coding_contact' className='Link'><ListItem button >
+                        <ListItemIcon><LocalPhoneOutlinedIcon/></ListItemIcon>
+                        <ListItemText primary='Contact Us' />
+                    </ListItem></Link>
+                </List>
+            </div>
+        </div>
+    );
+
     return (
         <React.Fragment>
             <CssBaseline />
             <ElevationScroll {...props}>
                 <AppBar style={{ backgroundColor: 'rgba(255,255,255,0.3)' }} >
-                    <Toolbar style={{ backgroundColor: 'rgba(4, 191, 191,0.5)' }} >
-                        <Typography variant="h6" style={{ fontFamily: 'j', margin: '20px', fontSize: '35px', color: 'white' }} ><Link to='/' className='Link' >{"<Coding Classes/>"}</Link></Typography>
-                        <div style={{ position: 'absolute', right: '0', marginLeft: 'auto', padding: '0px 40px', display: 'flex' }} >
-                            <Link to='/' className='Link'><div class='topButton' >Home</div></Link>
-                            <Link to='/about_us' className='Link'><div class='topButton' >About Us</div></Link>
-                            <Link to='/coding_courses' className='Link' ><div class='topButton' >Courses</div></Link>
-                            <Link to='/coding_testimonials' className='Link'><div class='topButton' >Testimonials</div></Link>
-                            <Link to='/coding_contact' className='Link'><div class='topButton'  >Contact Us</div></Link>
-                            <Link to='/coding_signIn' className='Link' ><div class='topButton' >Sign Up</div></Link>
-                        </div>
+                    <Toolbar style={{ backgroundColor: 'rgba(4, 191, 191,0.5)', display: 'flex', justifyContent: 'space-between',padding:"10px 50px" }} >
+                        <Typography style={{ fontFamily: 'j', margin: '10px', fontSize: '30px', color: 'white' }} >
+                            <Link to='/' className="Link" >{"<Coding Classes/>"}</Link>
+                        </Typography>
+                        <IconButton onClick={toggleDrawer('right', true)} color="inherit"><FaBars color='white' /></IconButton>
+                        <Drawer anchor={'right'} open={state['right']} onClose={toggleDrawer('right', false)}>
+                            {list('right')}
+                        </Drawer>
                     </Toolbar>
                 </AppBar>
             </ElevationScroll>

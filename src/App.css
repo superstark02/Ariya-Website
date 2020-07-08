@@ -1,6 +1,6 @@
 .wallpaper{
     width: 100%;
-    background-image: url('./Images/bg.jpg');
+    background-image: url('./Images/terminal.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -13,13 +13,10 @@
 }
 
 .bg-text {
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
     color: white;
     font-weight: bold;
-    border: 3px solid #f1f1f1;
     width: 100%;
-    padding: 20px;
+    padding: 100px;
     font-family: 'c';
     font-size: 25px;
   }
@@ -217,14 +214,15 @@ td{
     .para{
         top: 0;
         padding: 40px 5px;
-        background-image: url('./Images/bg.jpg');
+        background-image: url('./Images/terminal.jpg');
         background-attachment: fixed;
         background-size: cover;
         background-position: center;
-        height: auto;
+        height: 50vh;
     }
     .bg-text{
         font-size: 18px;
+        padding: 20px;
     }
     .long-text{
         font-size: 18px;

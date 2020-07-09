@@ -1,6 +1,5 @@
 import React from "react";
 import CarouselSlider from "react-carousel-slider";
-import { Link } from "react-router-dom";
 
 let data = [
   {
@@ -27,7 +26,7 @@ let data = [
 
 let sliderBoxStyle = {
   height: "60vh"
-  //, width: "200px"
+  , width: "100%"
   // , background: "tranparent"
 };
 
@@ -44,16 +43,16 @@ let textBoxStyle = {
 };
 
 let buttonSetting = {
-  // placeOn: "middle-inside"
-  // ,hoverEvent: true,
-  // , style: {
-  //   left: {
-  //     margin: "0px 0px 0px 10px"
-  //   },
-  //   right: {
-  //     margin: "0px 10px 0px 0px"
-  //   }
-  // }
+   placeOn: "middle-inside"
+  ,hoverEvent: true
+  , style: {
+     left: {
+      margin: "0px 10px 0px 10px"
+     },
+     right: {
+       margin: "10px 10px 10px 10px"
+     }
+   }
 };
 
 let manner = {
@@ -62,7 +61,7 @@ let manner = {
 };
 
 let options = {
-  button:false
+  button:true
 }
 
 export const Carousel = () => (
@@ -77,7 +76,7 @@ export const Carousel = () => (
     accEle={options}
   />
   <div style={{marginLeft:'20px',padding:'20px 0px'}} >
-    <Link className='Link' to='/coding_testimonials' >See All</Link>
+    <a className='Link' href='/coding_testimonials' >See All</a>
   </div>
   </div>
 );

@@ -6,6 +6,8 @@ import Testimonials from './Pages/Testimonials'
 import Contact from './Pages/Contact'
 import { SignIn } from './Pages/SignIn'
 import FullPage from './Pages/course-pagination'
+import Faqs from './Pages/faq'
+import PyhtonDescription from './Pages/python'
 
 export default function App(){
     return(
@@ -16,6 +18,8 @@ export default function App(){
                 <Route exact path='/coding_contact' component={Contact} />
                 <Route exact path='/coding_testimonials' component={Testimonials} />
                 <Route exact path='/coding_signIn' component={SignIn} />
+                <Route exact path='/coding_questions' component={Faqs} />
+                <Route exact path='/coding_python' component={PyhtonDescription} />
                 <Route exact path='/' component={Home} />
                 <Route exact path='*' component={Home} />
             </Switch>

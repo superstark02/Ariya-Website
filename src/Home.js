@@ -6,10 +6,7 @@ import python from './Images/python.png';
 import devops from './Images/devOps.png'
 import aws from './Images/aws.png'
 import stats from './Images/stats.png'
-import ButtonBases from './Components/Images';
 import ImageGridList from './Components/Features';
-import MyCode from './Components/code';
-import SignUp from './Components/SignUp';
 import SplashScreen from './Components/SplashScreen';
 import MyAppBar from './Components/AppBar';
 import MyAppBaMobile from './Components/mAppBar';
@@ -55,10 +52,10 @@ export default function Home() {
           </div>
 
           <div style={{ backgroundColor: 'white', display: 'flex', paddingTop: '40px' }} >
-            <MyCode />
             <div class='offers' >
               <div class='features'>{"<Courses/>"}</div>
                 <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around', alignContent: 'center', flexWrap: 'wrap' }} >
+                  <a href="/coding_python">
                   <div className='courseTile' >
                     <div>
                       <img alt='s' src={python} width='70px' />
@@ -67,6 +64,7 @@ export default function Home() {
                       Python
                     </div>
                   </div>
+                  </a>
 
                   <div className='courseTile' >
                     <div>
@@ -108,13 +106,12 @@ export default function Home() {
           
           <div style={{ backgroundColor: 'white', height: '100px' }}></div>
 
-          <div style={{ width: '100%', height: '600px', backgroundColor: 'white', padding: '20px',textAlign:'center' }}>
+          <div style={{ width: '100%', backgroundColor: 'white', paddingTop: '20px',textAlign:'center' }}>
             <h1 style={{fontFamily:'j'}} >Testimonials;</h1>
             <Carousel />
           </div>
 
-          <div class='signUp'>
-            <SignUp />
+          <div>
           </div>
           <MyFooter />
         </div>
@@ -133,14 +130,11 @@ export default function Home() {
               <ImageGridList/>
             </div>
 
-            <MyCode />
-
-            <ButtonBases />
-
             <div style={{ padding: '10px' }} >
               <div class='offers'>
                 <div class='features'>{"<Courses/>"}</div>
                 <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around', alignContent: 'center', flexWrap: 'wrap' }} >
+                  <a href="/coding_python">
                   <div className='courseTile' >
                     <div>
                       <img alt='s' src={python} width='70px' />
@@ -149,6 +143,7 @@ export default function Home() {
                       Python
                     </div>
                   </div>
+                  </a>
 
                   <div className='courseTile' >
                     <div>
@@ -182,7 +177,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div style={{textAlign:'center'}} ><h2 style={{fontFamily:'j'}} >Testimonials;</h2></div>
+            <div style={{textAlign:'center',marginTop:"20px"}} ><h2 style={{fontFamily:'j'}} >Testimonials;</h2></div>
             <Carousel />
 
             <MyFooter />

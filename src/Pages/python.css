@@ -1,0 +1,38 @@
+.python-header{
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../Images/python.jpg);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -65px;
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    text-shadow: 3px 3px 10px black;
+}
+.python-container{
+    padding: 30px;
+    width: 80%;
+    font-family: j;
+    height: 50vh;
+    margin-top: 65px;
+}
+.faq-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-weight: 600;
+}
+
+@media only screen and (max-width:650px) {
+    .python-container{
+        width: 90%;
+        padding: 10px;
+    }
+}

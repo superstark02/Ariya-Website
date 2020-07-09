@@ -1,0 +1,34 @@
+.faq-landing{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Images/faq.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-top: -65px;
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.faq-wrap{
+    width: 100%;
+    display: flex;
+}
+.faq-cat{
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+}
+
+@media only screen and (max-width:650px){
+    .faq-landing{
+        margin-top: 0px;
+        background-position: bottom;
+        background-size: contain;
+        padding: 10px;
+        display: block;
+        height: 450px;
+        background-color: #feae03;
+    }
+}

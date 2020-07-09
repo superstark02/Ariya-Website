@@ -16,11 +16,11 @@ import { makeStyles } from '@material-ui/core/styles';
 import { FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
-import ExitToAppOutlinedIcon from '@material-ui/icons/ExitToAppOutlined';
 import PeopleOutlineOutlinedIcon from '@material-ui/icons/PeopleOutlineOutlined';
 import SchoolOutlinedIcon from '@material-ui/icons/SchoolOutlined';
 import ListAltOutlinedIcon from '@material-ui/icons/ListAltOutlined';
 import LocalPhoneOutlinedIcon from '@material-ui/icons/LocalPhoneOutlined';
+import QuestionAnswerOutlinedIcon from '@material-ui/icons/QuestionAnswerOutlined';
 
 function ElevationScroll(props) {
     const { children, window } = props;
@@ -89,37 +89,37 @@ export default function MyAppBar(props) {
                     LOGO IMAGE
                 </div>
                 <List>
-                    <Link to='/' className='Link' ><ListItem button >
+                    <a href='/' className='Link' ><ListItem button >
                         <ListItemIcon><HomeOutlinedIcon/></ListItemIcon>
                         <ListItemText primary='Home' />
-                    </ListItem></Link>
+                    </ListItem></a>
 
-                    <Link to='/coding_courses' className='Link' ><ListItem button >
+                    <a href='/coding_courses' className='Link' ><ListItem button >
                         <ListItemIcon><ListAltOutlinedIcon/></ListItemIcon>
                         <ListItemText primary='Courses' />
-                    </ListItem></Link>
+                    </ListItem></a>
 
-                    <Link to='/coding_signIn' className='Link' ><ListItem button >
-                        <ListItemIcon><ExitToAppOutlinedIcon/></ListItemIcon>
-                        <ListItemText primary='Sign Up' />
-                    </ListItem></Link>
+                    <a href='/coding_questions' className='Link' ><ListItem button >
+                        <ListItemIcon><QuestionAnswerOutlinedIcon/></ListItemIcon>
+                        <ListItemText primary='FAQs' />
+                    </ListItem></a>
 
-                    <Link to='/coding_testimonials' className='Link'><ListItem button >
+                    <a href='/coding_testimonials' className='Link'><ListItem button >
                         <ListItemIcon><SchoolOutlinedIcon/></ListItemIcon>
                         <ListItemText primary='Students Say' />
-                    </ListItem></Link>
+                    </ListItem></a>
                 </List>
                 <Divider/>
                 <List>
-                    <Link to='/about_us' className='Link'><ListItem button >
+                    <a href='/about_us' className='Link'><ListItem button >
                         <ListItemIcon><PeopleOutlineOutlinedIcon/></ListItemIcon>
                         <ListItemText primary='About Us' />
-                    </ListItem></Link>
+                    </ListItem></a>
 
-                    <Link to='/coding_contact' className='Link'><ListItem button >
+                    <a href='/coding_contact' className='Link'><ListItem button >
                         <ListItemIcon><LocalPhoneOutlinedIcon/></ListItemIcon>
                         <ListItemText primary='Contact Us' />
-                    </ListItem></Link>
+                    </ListItem></a>
                 </List>
             </div>
         </div>

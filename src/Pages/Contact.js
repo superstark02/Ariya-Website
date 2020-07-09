@@ -57,7 +57,6 @@ export default function Contact() {
                                         color: 'white', fontWeight: '700', padding: '10px 20px',
                                         backgroundImage: 'linear-gradient(to bottom right,#f50057,#f73378)',
                                         borderRadius: '10px',
-                                        boxShadow: '0px 0px 10px #f50057',
                                         fontSize: '15px'
                                     }}
                                     variant='contained'>
@@ -90,7 +89,6 @@ export default function Contact() {
                                         color: 'white', fontWeight: '700', padding: '10px 20px',
                                         backgroundImage: 'linear-gradient(to bottom right,#f50057,#f73378)',
                                         borderRadius: '10px',
-                                        boxShadow: '0px 0px 10px #f50057',
                                         fontSize: '15px'
                                     }}
                                     variant='contained'>

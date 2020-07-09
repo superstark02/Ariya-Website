@@ -6,6 +6,7 @@ import CourseLanding from "../Components/course-landing";
 import Python from "../Components/courses-python";
 import Other from "../Components/courses-other";
 import MyAppBar from '../Components/AppBar'
+import MyAppBaMobile from "../Components/mAppBar";
 
 export default class FullPage extends React.Component {
     constructor(props) {
@@ -35,21 +36,41 @@ export default class FullPage extends React.Component {
 
         return (
             <React.Fragment>
-                <ReactPageScroller
-                    pageOnChange={this.handlePageChange}
-                    customPageNumber={this.state.currentPage}
-                >
-                    <div className="component ">
-                        <MyAppBar />
-                        <CourseLanding />
-                    </div>
-                    <div className="component">
-                        <Python />
-                    </div>
-                    <div className="component">
-                        <Other />
-                    </div>
-                </ReactPageScroller>
+                <div className="responsive" >
+                    <ReactPageScroller
+                        pageOnChange={this.handlePageChange}
+                        customPageNumber={this.state.currentPage}
+                    >
+                        <div className="component ">
+                            <MyAppBar />
+                            <CourseLanding />
+                        </div>
+                        <div className="component">
+                            <Python />
+                        </div>
+                        <div className="component">
+                            <Other />
+                        </div>
+                    </ReactPageScroller>
+                </div>
+
+                <div className="mobile" >
+                    <MyAppBaMobile />
+                    <ReactPageScroller
+                        pageOnChange={this.handlePageChange}
+                        customPageNumber={this.state.currentPage}
+                    >
+                        <div className="component ">
+                            <CourseLanding />
+                        </div>
+                        <div className="component">
+                            <Python />
+                        </div>
+                        <div className="component">
+                            <Other />
+                        </div>
+                    </ReactPageScroller>
+                </div>
             </React.Fragment>
         );
     }

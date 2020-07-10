@@ -2,7 +2,6 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    background-image: url(../Images/python.jpg);
     height: 50vh;
     display: flex;
     justify-content: center;
@@ -17,7 +16,7 @@
     padding: 30px;
     width: 80%;
     font-family: j;
-    height: 50vh;
+    min-height: 50vh;
     margin-top: 65px;
 }
 .faq-wrap{
@@ -29,10 +28,47 @@
 h1{
     font-weight: 600;
 }
+li{
+    margin: 10px 0px;
+}
+.stats-bg{
+    background-image: url(../Images/stats-bg.png);
+}
+.python-bg{
+    background-image: url(../Images/python.jpg);
+}
+.enroll-button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 20vw;
+    color: white;
+    background-image: linear-gradient(to right, #00ACDC , #0BDFD5);
+    box-shadow: 0px 0px 10px #0BDFD5;
+    cursor: pointer;
+    outline: none;
+}
 
 @media only screen and (max-width:650px) {
     .python-container{
         width: 90%;
         padding: 10px;
+        min-height: 30vh;
+        margin-top: 10px;
+    }
+    li{
+        font-size: 10px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    ul{
+        padding: 0px;
+        margin-left: 10px;
+    }
+    .enroll-button{
+        width: 50vw;
+        font-size: 15px;
     }
 }

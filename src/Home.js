@@ -84,6 +84,7 @@ export default function Home() {
                     </div>
                   </div>
 
+                  <a href="/coding_statistics">
                   <div className='courseTile' >
                     <div>
                       <img alt='s' src={stats} width='70px' />
@@ -92,6 +93,8 @@ export default function Home() {
                       Statistics
                     </div>
                   </div>
+                  </a>
+
                 <div className='offers' style={{backgroundImage:'none',color:'white'}} >
                   <Link to='/coding_courses' className='Link' >Show All</Link>
                 </div>
@@ -124,10 +127,6 @@ export default function Home() {
               <Box><div className='long-text'>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
               </div></Box>
-            </div>
-
-            <div>
-              <ImageGridList/>
             </div>
 
             <div style={{ padding: '10px' }} >
@@ -163,6 +162,7 @@ export default function Home() {
                     </div>
                   </div>
 
+                  <a href="/coding_statistics">
                   <div className='courseTile' >
                     <div>
                       <img alt='s' src={stats} width='70px' />
@@ -171,10 +171,15 @@ export default function Home() {
                       Statistics
                     </div>
                   </div>
+                  </a>
 
                 </div>
                 <div style={{color:'white'}} ><Link to='/coding_courses' className='Link' >Show All</Link></div>
               </div>
+            </div>
+
+            <div>
+              <ImageGridList/>
             </div>
 
             <div style={{textAlign:'center',marginTop:"20px"}} ><h2 style={{fontFamily:'j'}} >Testimonials;</h2></div>

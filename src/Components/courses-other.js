@@ -9,11 +9,13 @@ export default class Other extends React.Component {
                     Professional <br></br> Courses
                 </div>
                 <div className="course-box aws" >
+                    <a href="/coding_statistics" style={{ width: "100%" }} >
                     <div className='course-heading' >
                         <div>
                             <div className='course-title' >STATISTICS</div>
                         </div>
                     </div>
+                    </a>
                 </div>
                 <div className="course-box aws">
                     <div className='course-heading' >

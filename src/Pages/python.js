@@ -11,7 +11,7 @@ export default class PyhtonDescription extends React.Component{
                 <div className='responsive' >
                     <MyAppBar/>
 
-                    <div className='python-header' >
+                    <div className='python-header python-bg' >
                         Python
                     </div>
 
@@ -46,7 +46,7 @@ export default class PyhtonDescription extends React.Component{
                 <div className='mobile' >
                     <MyAppBaMobile/>
 
-                    <div className='python-header' >
+                    <div className='python-header python-bg' >
                         Python
                     </div>
 

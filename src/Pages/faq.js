@@ -77,12 +77,12 @@ export default function Faqs() {
             <div className='responsive'>
                 <MyAppBar />
                 <div className='faq-landing' >
-                    <div style={{ fontSize: "100px", fontWeight: "700", width: '50%', whiteSpace: "pre-wrap" }} >
+                    <div style={{ fontSize: "50px", fontWeight: "700", width: '50%', whiteSpace: "pre-wrap" }} >
                         Have a Question?
-                        </div>
+                    </div>
                     <div style={{ fontSize: "20px", width: '50%' }} >
                         Here is everything you need to know about us.
-                        </div>
+                    </div>
                 </div>
                 <div className='faq-wrap'>
                     <div className='faq-cat' >
@@ -99,7 +99,7 @@ export default function Faqs() {
                                     className={classes.tabs}
                                 >
 
-                                    <Tab label="Courses" {...a11yProps(0)} style={{ textTransform: "none", textAlign: "left", fontSize: '15px' }} ></Tab>
+                                    <Tab label="Courses" {...a11yProps(0)} style={{ textTransform: "none", textAlign: "left", fontSize: '15px' }} />
                                     <Tab label="Teachers" {...a11yProps(1)} style={{ textTransform: "none", textAlign: "left", fontSize: '15px' }} />
                                     <Tab label="Timings" {...a11yProps(2)} style={{ textTransform: "none", textAlign: "left", fontSize: '15px' }} />
                                     <Tab label="Payments And Refunds" {...a11yProps(3)} style={{ textTransform: "none", textAlign: "left", fontSize: '15px' }} />

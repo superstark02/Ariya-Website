@@ -14,7 +14,7 @@ import MyFooter from './Components/Footer';
 import { Carousel } from './Components/Carousel';
 import { Link } from 'react-router-dom';
 
-const values = ["<Hello World/>", "Coding is Awesome", "Keep Calm And Code", "Machine Learning"];
+const values = ["Welcome to the Real World!", "Keep Calm And Code...", "Coding is Awesome!"];
 
 
 export default function Home() {
@@ -29,7 +29,7 @@ export default function Home() {
       dencrypt(values[i]);
 
       i = i === values.length - 1 ? 0 : i + 1;
-    }, 3000);
+    }, 3700);
 
     return () => clearInterval(action);
   }, []);
@@ -45,10 +45,7 @@ export default function Home() {
           <MyAppBar />
           <div class='wallpaper' ></div>
           <div className='para'>
-            <Box style={{ height: 'auto', width: '600px' }} ><div class='bg-text'>{result}</div></Box>
-            <Box><div className='long-text'>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-              </div></Box>
+            <Box style={{ height: 'auto', width: '800px' }} ><div class='bg-text'>{result}</div></Box>
           </div>
 
           <div style={{ backgroundColor: 'white', display: 'flex', paddingTop: '40px' }} >
@@ -58,7 +55,7 @@ export default function Home() {
                   <a href="/coding_python">
                   <div className='courseTile' >
                     <div>
-                      <img alt='s' src={python} width='70px' />
+                      <img alt='s' src={python} width='70px' height='70px' />
                     </div>
                     <div>
                       Python
@@ -68,7 +65,7 @@ export default function Home() {
 
                   <div className='courseTile' >
                     <div>
-                      <img alt='s' src={devops} width='70px' />
+                      <img alt='s' src={devops} width='90px' height='90px' />
                     </div>
                     <div>
                       DevOps
@@ -77,7 +74,7 @@ export default function Home() {
 
                   <div className='courseTile' >
                     <div>
-                      <img alt='s' src={aws} width='70px' />
+                      <img alt='s' src={aws} width='90px' height='90px' />
                     </div>
                     <div>
                       AWS
@@ -87,7 +84,7 @@ export default function Home() {
                   <a href="/coding_statistics">
                   <div className='courseTile' >
                     <div>
-                      <img alt='s' src={stats} width='70px' />
+                      <img alt='s' src={stats} width='70px' height='70px' />
                     </div>
                     <div>
                       Statistics

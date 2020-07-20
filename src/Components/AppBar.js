@@ -17,7 +17,6 @@ import { FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
 import PeopleOutlineOutlinedIcon from '@material-ui/icons/PeopleOutlineOutlined';
-import SchoolOutlinedIcon from '@material-ui/icons/SchoolOutlined';
 import ListAltOutlinedIcon from '@material-ui/icons/ListAltOutlined';
 import LocalPhoneOutlinedIcon from '@material-ui/icons/LocalPhoneOutlined';
 import QuestionAnswerOutlinedIcon from '@material-ui/icons/QuestionAnswerOutlined';
@@ -104,10 +103,6 @@ export default function MyAppBar(props) {
                         <ListItemText primary='FAQs' />
                     </ListItem></a>
 
-                    <a href='/coding_testimonials' className='Link'><ListItem button >
-                        <ListItemIcon><SchoolOutlinedIcon/></ListItemIcon>
-                        <ListItemText primary='Students Say' />
-                    </ListItem></a>
                 </List>
                 <Divider/>
                 <List>

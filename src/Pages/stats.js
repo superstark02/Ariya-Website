@@ -11,12 +11,12 @@ export default class Stats extends React.Component{
                 <div className='responsive' >
                     <MyAppBar/>
 
-                    <div className='python-header stats-bg' >
+                    <div className='python-header stats-bg' style={{height:"60vh"}}>
                         Statistics
                     </div>
 
                     <div className="faq-wrap" id='level-1' >
-                        <div className='python-container' >
+                        <div className='python-container' style={{marginTop:"30px"}} >
                             <h1 style={{fontFamily:"j"}} >
                                 Probabilities
                             </h1>

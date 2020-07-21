@@ -10,9 +10,21 @@ const tileData = [
         cols: 2,
     },
     {
-        img: 'https://files.codingninjas.in/0000000000001184.png',
+        img: 'https://files.codingninjas.in/0000000000001187.png',
         title: 'Mentor Support',
         author: 'Coding is important. But what framework you should choose or wwhich language is the best for you? These are some of the questions answered by our experienced mentors. They will guide your ship in the ocean of the IT sector.',
+        cols: 2,
+    },
+    {
+        img: 'https://files.codingninjas.in/0000000000001184.png',
+        title: 'Course Curriculum',
+        author: 'Industry leading curriculum designed by expert developers turned educators who have invested time to create quality content infused with unique teaching methodology.',
+        cols: 2,
+    },
+    {
+        img: 'https://files.codingninjas.in/0000000000001182.png',
+        title: 'Get a Certificate',
+        author: 'Get a Certificate on course completion and Showcase your skills!',
         cols: 2,
     },
 ]

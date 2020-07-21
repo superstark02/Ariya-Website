@@ -6,9 +6,9 @@ export default class MyFooter extends React.Component {
         return (
             <div>
                 <div class='footer' style={{marginTop:"20px"}} >
-                    <table style={{ width: '100%', height: '100%' }} >
+                    <table style={{ width: '100%', height: '60%' }} >
                         <tr>
-                            <td style={{ fontSize: '50px', fontFamily: 'j' }} className='responsive' >{"</>"}</td>
+                            <td style={{ fontSize: '30px', fontFamily: 'j' }} className='responsive' >{"</>"}</td>
                             <th>Contact</th>
                             <th>Help</th>
                             <th>About</th>

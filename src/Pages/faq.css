@@ -1,11 +1,12 @@
 .faq-landing{
-    height: 100vh;
+    height: 85vh;
     width: 100%;
     background-image: url(../Images/faq.jpg);
-    background-size: contain;
+    border-radius: 30%;
+    background-size: 50%;
     background-repeat: no-repeat;
     background-position: right;
-    margin-top: -65px;
+    margin-top: 21px;
     padding: 0px 50px;
     display: flex;
     flex-direction: column;
@@ -19,6 +20,8 @@
     height: 100vh;
     width: 100%;
     padding: 20px;
+    padding-top: 50px;
+    margin-bottom: 40px;
 }
 
 @media only screen and (max-width:650px){

@@ -25,7 +25,7 @@ let data = [
 ];
 
 let sliderBoxStyle = {
-  height: "60vh"
+  height: "30vh"
   , width: "100%"
   // , background: "tranparent"
 };
@@ -76,7 +76,6 @@ export const Carousel = () => (
     accEle={options}
   />
   <div style={{marginLeft:'20px',padding:'20px 0px'}} >
-    <a className='Link' href='/coding_testimonials' >See All</a>
   </div>
   </div>
 );

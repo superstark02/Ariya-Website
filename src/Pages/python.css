@@ -13,11 +13,10 @@
     text-shadow: 3px 3px 10px black;
 }
 .python-container{
-    padding: 30px;
+    padding: 10px;
     width: 80%;
     font-family: j;
-    min-height: 50vh;
-    margin-top: 65px;
+    margin-top: 0px;
 }
 .faq-wrap{
     width: 100%;

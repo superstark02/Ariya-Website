@@ -11,6 +11,50 @@ import { Link } from 'react-router-dom';
 
 const values = ["Welcome to the Real World!", "Keep Calm And Code...", "Coding is Awesome!"];
 
+const courses = [
+  {
+    name: 'MATHEMATICS',
+    color: "#dd5b49",
+    des: "The CodingZen Greenhorn program instills the concept that technology is a creator's tool to the young curious minds. By using fun and educational technology kits, including Scratch, Hopscotch, LittleBits and Dash. CodingZen Greenhorn moves students beyond mobile and computer gaming, and gets them hands-on experience in programming and hardwares"
+  },
+  {
+    name: "Statistics",
+    color: "#46B39D",
+    des: "The CodingZen Explorer program inspires technology savvy primary school students to go beyond mobile and computer gaming, and move to create their own games and apps. With the emphasis of creativity, CodingZen Explorer empowers students through problem solving using technology. Students learn computer science concepts, user centric design, and mobile app development."
+  },
+  {
+    name: "Python",
+    color: "#F0CA4D",
+    des: "The CodingZen Creator program lays a solid foundation of computer science concepts and theories through developing technically challenging apps. With an emphasis on hands-on development and bringing ideas to reality, the program guides students to deepen their understanding on key current topics in technology, including privacy, security and social networking."
+  },
+  {
+    name: "AI + ML",
+    color: "#3498DB",
+    des: "The CodingZen Creator program lays a solid foundation of computer science concepts and theories through developing technically challenging apps. With an emphasis on hands-on development and bringing ideas to reality, the program guides students to deepen their understanding on key current topics in technology, including privacy, security and social networking."
+  }
+
+]
+
+const think = [
+  {
+    name: "DIGITAL LITERACY",
+    class: "one",
+    color: "#dd5b49",
+    des: "From self-driving cars to robot-assisted surgery to social media, computer science is revolutionizing every aspect of our lives. Coding is a fundamental skill that children need to learn so they can lead this movement."
+  },
+  {
+    name: "BEST LEARNED EARLY",
+    class: "two",
+    color: "#46B39D",
+    des: "Learning to code is similar to learning a second language. The earlier that children are exposed to fundamental topics like sequencing, loops, and conditionals, the more deeply they absorb these concepts."
+  },
+  {
+    name: "LOGICAL THINKING",
+    class: "three",
+    color: "#F0CA4D",
+    des: "Coding is all about implementing logic to solve interesting problem.Learning to program supports learning in other areas, like math, reading, and science as it enhances logical thinking in kids."
+  }
+]
 
 export default function Home() {
   const [screen, setScreen] = React.useState(true);
@@ -44,12 +88,32 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="wrap" >
-            <h1 style={{ fontWeight: "700", fontSize: "55px", marginBottom: "5px" }} >
-              WHY KIDS SHOULD LEARN CODING?
+          <div style={{ textAlign: 'center' }} >
+            <h1 style={{ fontWeight: "700", fontSize: "55px", marginBottom: "5px", textTransform: "uppercase" }} >
+              Where is the future?
             </h1>
             <div className="wrap" >
               Its not about learning to CODE - its about learning to THINK!
+            </div>
+            <div className="wrap" >
+              {
+                think.map(item => {
+                  return (
+                    <div className="class-card" >
+                      <div className={"home-avatar " + item.class} >
+
+                      </div>
+                      <div style={{ textAlign: "center", textTransform: "uppercase", fontWeight: "300", fontSize: "20px" }} >
+                        {item.name}
+                      </div>
+                      <div style={{ width: "250px", backgroundColor: item.color, height: "2px", margin: '10px 0px' }} />
+                      <div>
+                        {item.des}
+                      </div>
+                    </div>
+                  )
+                })
+              }
             </div>
           </div>
 
@@ -67,58 +131,35 @@ export default function Home() {
                 APPLY NOW!
               </button>
             </div>
-
           </div>
 
+          <div className="wrap" >
+            <div>
+              <div style={{ fontSize: "50px", fontWeight: "700", margin: "40px 0px" }} >
+                OUR PATHWAY TO MACHINE LEARNING
+              </div>
+              <div className="wrap" style={{ alignItems: "inherit" }} >
+                {
+                  courses.map(item => {
+                    return (
+                      <div className="class-card" >
+                        <div style={{ textAlign: "center", textTransform: "uppercase", fontWeight: "300", fontSize: "20px" }} >
+                          {item.name}
+                        </div>
+                        <div style={{ width: "250px", backgroundColor: item.color, height: "2px", margin: '10px 0px' }} />
+                        <div>
+                          {item.des}
+                        </div>
+                      </div>
+                    )
+                  })
+                }
+              </div>
+            </div>
+          </div>
+
+
           <div style={{ backgroundColor: "black", textAlign: "center", color: "white" }} >
-            <div className="about-container" >
-              <h1 style={{ fontWeight: "700" }} >
-                ABOUT
-              </h1>
-            </div>
-            <div className="wrap" >
-              <div style={{ fontSize: "70px", fontWeight: "100", textAlign: "right" }} >
-                TURNING <br />
-                IDEAS INTO <br />
-                REALITY
-              </div>
-              <div style={{ width: "300px", margin: "0px 30px", textAlign: "left" }} >
-                There’s been a lot of buzz about kids learning to code lately. This year, almost 200 million students around the world were exposed to coding <br /><br /><br />
-
-                Like Mathematics, programming can only be mastered by lots of practice. Our courses are designed to make sure kids spend more time practicing than just learning theory.<br /><br /><br />
-
-                We include all sorts of activities like solving puzzles & playing games, this keeps the whole learning environment interactive and fun
-              </div>
-              <div>
-                <div style={{ display: "flex", alignItems: "center" }} >
-                  <div className="circle" style={{ borderColor: "#E74C3C" }} >
-                    100
-                    </div>
-                  <div className="circle-text" >
-                    READY-TO-USE CURRICULUM
-                    </div>
-                </div>
-
-                <div style={{ display: "flex" }}>
-                  <div className="circle" style={{ borderColor: "#46B39D" }}  >
-                    100
-                    </div>
-                </div>
-
-                <div style={{ display: "flex" }} >
-                  <div className="circle" style={{ borderColor: "#F0CA4D" }} >
-                    100
-                    </div>
-                </div>
-
-                <div style={{ display: "flex" }} >
-                  <div className="circle" >
-                    100
-                    </div>
-                </div>
-              </div>
-            </div>
-
             <div className="sub-footer wrap" >
               "Before coming to this workshop, programming seemed very difficult and complicated to me. After this <br /> workshop, I think programming is quite simple and easy to learn!"<br />
               <br /><br />
@@ -150,6 +191,26 @@ export default function Home() {
               <div className="wrap" >
                 Its not about learning to CODE - its about learning to THINK!
               </div>
+              <div className="wrap" >
+                {
+                  think.map(item => {
+                    return (
+                      <div className="class-card" style={{margin:"10px 0px"}} >
+                        <div className={"home-avatar " + item.class} >
+
+                        </div>
+                        <div style={{ textAlign: "center", textTransform: "uppercase", fontWeight: "300", fontSize: "20px" }} >
+                          {item.name}
+                        </div>
+                        <div style={{ width: "250px", backgroundColor: item.color, height: "2px", margin: '10px 0px' }} />
+                        <div>
+                          {item.des}
+                        </div>
+                      </div>
+                    )
+                  })
+                }
+              </div>
             </div>
 
             <div className="wrap" style={{ backgroundColor: "#6CD9BA" }} >
@@ -166,58 +227,34 @@ export default function Home() {
                   APPLY NOW!
               </button>
               </div>
+            </div>
 
+            <div className="wrap" >
+              <div>
+                <div style={{ fontSize: "30px", fontWeight: "700", margin: "40px 0px" }} >
+                  OUR PATHWAY TO MACHINE LEARNING
+              </div>
+                <div className="wrap" style={{ alignItems: "inherit" }} >
+                  {
+                    courses.map(item => {
+                      return (
+                        <div className="class-card" style={{margin:"20px"}} >
+                          <div style={{ textAlign: "center", textTransform: "uppercase", fontWeight: "300", fontSize: "20px" }} >
+                            {item.name}
+                          </div>
+                          <div style={{ width: "250px", backgroundColor: item.color, height: "2px", margin: '10px 0px' }} />
+                          <div>
+                            {item.des}
+                          </div>
+                        </div>
+                      )
+                    })
+                  }
+                </div>
+              </div>
             </div>
 
             <div style={{ backgroundColor: "black", textAlign: "center", color: "white" }} >
-              <div className="about-container" >
-                <h1 style={{ fontWeight: "700" }} >
-                  ABOUT
-              </h1>
-              </div>
-              <div className="wrap" >
-                <div style={{ fontSize: "70px", fontWeight: "100", textAlign: "right" }} >
-                  TURNING <br />
-                IDEAS INTO <br />
-                REALITY
-              </div>
-                <div style={{ width: "300px", margin: "0px 30px", textAlign: "left" }} >
-                  There’s been a lot of buzz about kids learning to code lately. This year, almost 200 million students around the world were exposed to coding <br /><br /><br />
-
-                Like Mathematics, programming can only be mastered by lots of practice. Our courses are designed to make sure kids spend more time practicing than just learning theory.<br /><br /><br />
-
-                We include all sorts of activities like solving puzzles & playing games, this keeps the whole learning environment interactive and fun
-              </div>
-                <div>
-                  <div style={{ display: "flex", alignItems: "center" }} >
-                    <div className="circle" style={{ borderColor: "#E74C3C" }} >
-                      100
-                    </div>
-                    <div className="circle-text" >
-                      READY-TO-USE CURRICULUM
-                    </div>
-                  </div>
-
-                  <div style={{ display: "flex" }}>
-                    <div className="circle" style={{ borderColor: "#46B39D" }}  >
-                      100
-                    </div>
-                  </div>
-
-                  <div style={{ display: "flex" }} >
-                    <div className="circle" style={{ borderColor: "#F0CA4D" }} >
-                      100
-                    </div>
-                  </div>
-
-                  <div style={{ display: "flex" }} >
-                    <div className="circle" >
-                      100
-                    </div>
-                  </div>
-                </div>
-              </div>
-
               <div className="sub-footer wrap" >
                 "Before coming to this workshop, programming seemed very difficult and complicated to me. After this <br /> workshop, I think programming is quite simple and easy to learn!"<br />
                 <br /><br />

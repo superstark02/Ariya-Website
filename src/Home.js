@@ -1,12 +1,7 @@
 import React from 'react';
 import './App.css'
 import { useDencrypt } from "use-dencrypt-effect";
-import { Box} from '@material-ui/core';
-import python from './Images/python.png';
-import devops from './Images/devOps.png'
-import aws from './Images/aws.png'
-import stats from './Images/stats.png'
-import ImageGridList from './Components/Features';
+import { Box } from '@material-ui/core';
 import SplashScreen from './Components/SplashScreen';
 import MyAppBar from './Components/AppBar';
 import MyAppBaMobile from './Components/mAppBar';
@@ -43,71 +38,96 @@ export default function Home() {
       <React.Fragment>
         <div className='responsive' >
           <MyAppBar />
-          <div class='wallpaper' ></div>
-          <div className='para'>
-            <Box style={{ height: 'auto', width: '800px' }} ><div class='bg-text'>{result}</div></Box>
-          </div>
-
-          <div style={{ backgroundColor: 'white', display: 'flex', paddingTop: '40px' }} >
-            <div class='offers' >
-              <div class='features'>{"<Courses/>"}</div>
-                <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around', alignContent: 'center', flexWrap: 'wrap' }} >
-                  <a href="/coding_python">
-                  <div className='courseTile' >
-                    <div>
-                      <img alt='s' src={python} width='70px' height='70px' />
-                    </div>
-                    <div>
-                      Python
-                    </div>
-                  </div>
-                  </a>
-
-                  <div className='courseTile' >
-                    <div>
-                      <img alt='s' src={devops} width='90px' height='90px' />
-                    </div>
-                    <div>
-                      DevOps
-                    </div>
-                  </div>
-
-                  <div className='courseTile' >
-                    <div>
-                      <img alt='s' src={aws} width='90px' height='90px' />
-                    </div>
-                    <div>
-                      AWS
-                    </div>
-                  </div>
-
-                  <a href="/coding_statistics">
-                  <div className='courseTile' >
-                    <div>
-                      <img alt='s' src={stats} width='70px' height='70px' />
-                    </div>
-                    <div>
-                      Statistics
-                    </div>
-                  </div>
-                  </a>
-
-                <div className='offers' style={{backgroundImage:'none',color:'white'}} >
-                  <Link to='/coding_courses' className='Link' >Show All</Link>
-                </div>
-                </div>
+          <div class='wallpaper'>
+            <div className='para'>
+              <Box style={{ height: 'auto', width: '800px' }} ><div class='bg-text'>{result}</div></Box>
             </div>
           </div>
 
-          <div>
-            <ImageGridList />
+          <div className="wrap" >
+            <h1 style={{ fontWeight: "700", fontSize: "55px", marginBottom: "5px" }} >
+              WHY KIDS SHOULD LEARN CODING?
+            </h1>
+            <div className="wrap" >
+              Its not about learning to CODE - its about learning to THINK!
+            </div>
           </div>
 
-          
-          <div style={{ backgroundColor: 'white', height: '100px' }}></div>
+          <div className="wrap" style={{ backgroundColor: "#6CD9BA" }} >
+            <div className="home-green" >
+              <h5>
+                Sign Up For Coding Zen Classes in your area!
+              </h5>
+              <h5>
+                New Batches start every Saturday in Delhi NCR
+              </h5>
+            </div>
+            <div className="wrap" >
+              <button className="try-now-button" >
+                APPLY NOW!
+              </button>
+            </div>
 
-          <div style={{ width: '100%', backgroundColor: 'white', paddingTop: '20px',textAlign:'center' }}>
-            <h1 style={{fontFamily:'j'}} >Testimonials;</h1>
+          </div>
+
+          <div style={{ backgroundColor: "black", textAlign: "center", color: "white" }} >
+            <div className="about-container" >
+              <h1 style={{ fontWeight: "700" }} >
+                ABOUT
+              </h1>
+            </div>
+            <div className="wrap" >
+              <div style={{ fontSize: "70px", fontWeight: "100", textAlign: "right" }} >
+                TURNING <br />
+                IDEAS INTO <br />
+                REALITY
+              </div>
+              <div style={{ width: "300px", margin: "0px 30px", textAlign: "left" }} >
+                There’s been a lot of buzz about kids learning to code lately. This year, almost 200 million students around the world were exposed to coding <br /><br /><br />
+
+                Like Mathematics, programming can only be mastered by lots of practice. Our courses are designed to make sure kids spend more time practicing than just learning theory.<br /><br /><br />
+
+                We include all sorts of activities like solving puzzles & playing games, this keeps the whole learning environment interactive and fun
+              </div>
+              <div>
+                <div style={{ display: "flex", alignItems: "center" }} >
+                  <div className="circle" style={{ borderColor: "#E74C3C" }} >
+                    100
+                    </div>
+                  <div className="circle-text" >
+                    READY-TO-USE CURRICULUM
+                    </div>
+                </div>
+
+                <div style={{ display: "flex" }}>
+                  <div className="circle" style={{ borderColor: "#46B39D" }}  >
+                    100
+                    </div>
+                </div>
+
+                <div style={{ display: "flex" }} >
+                  <div className="circle" style={{ borderColor: "#F0CA4D" }} >
+                    100
+                    </div>
+                </div>
+
+                <div style={{ display: "flex" }} >
+                  <div className="circle" >
+                    100
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="sub-footer wrap" >
+              "Before coming to this workshop, programming seemed very difficult and complicated to me. After this <br /> workshop, I think programming is quite simple and easy to learn!"<br />
+              <br /><br />
+              Vanshika, St. Paul's Secondary School
+            </div>
+          </div>
+
+          <div style={{ width: '100%', backgroundColor: 'white', paddingTop: '20px', textAlign: 'center' }}>
+            <h1 style={{ fontFamily: 'j' }} >Testimonials;</h1>
             <Carousel />
           </div>
 
@@ -121,65 +141,91 @@ export default function Home() {
           <div style={{ position: 'absolute', top: '0', width: '100%' }} >
             <div className='para'>
               <Box style={{ height: 'auto', marginTop: '10%' }} ><div class='bg-text'>{result}</div></Box>
-              <Box><div className='long-text'>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-              </div></Box>
             </div>
 
-            <div style={{ padding: '10px' }} >
-              <div class='offers'>
-                <div class='features'>{"<Courses/>"}</div>
-                <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around', alignContent: 'center', flexWrap: 'wrap' }} >
-                  <a href="/coding_python">
-                  <div className='courseTile' >
-                    <div>
-                      <img alt='s' src={python} width='70px' />
-                    </div>
-                    <div>
-                      Python
-                    </div>
-                  </div>
-                  </a>
-
-                  <div className='courseTile' >
-                    <div>
-                      <img alt='s' src={devops} width='70px' />
-                    </div>
-                    <div>
-                      DevOps
-                    </div>
-                  </div>
-
-                  <div className='courseTile' >
-                    <div>
-                      <img alt='s' src={aws} width='70px' />
-                    </div>
-                    <div>
-                      AWS
-                    </div>
-                  </div>
-
-                  <a href="/coding_statistics">
-                  <div className='courseTile' >
-                    <div>
-                      <img alt='s' src={stats} width='70px' />
-                    </div>
-                    <div>
-                      Statistics
-                    </div>
-                  </div>
-                  </a>
-
-                </div>
-                <div style={{color:'white'}} ><Link to='/coding_courses' className='Link' >Show All</Link></div>
+            <div className="wrap" >
+              <h1 style={{ fontWeight: "700", fontSize: "30px", marginBottom: "5px" }} >
+                WHY KIDS SHOULD LEARN CODING?
+              </h1>
+              <div className="wrap" >
+                Its not about learning to CODE - its about learning to THINK!
               </div>
             </div>
 
-            <div>
-              <ImageGridList/>
+            <div className="wrap" style={{ backgroundColor: "#6CD9BA" }} >
+              <div className="home-green" >
+                <h5>
+                  Sign Up For Coding Zen Classes in your area!
+              </h5>
+                <h5>
+                  New Batches start every Saturday in Delhi NCR
+              </h5>
+              </div>
+              <div className="wrap" >
+                <button className="try-now-button" >
+                  APPLY NOW!
+              </button>
+              </div>
+
             </div>
 
-            <div style={{textAlign:'center',marginTop:"20px"}} ><h2 style={{fontFamily:'j'}} >Testimonials;</h2></div>
+            <div style={{ backgroundColor: "black", textAlign: "center", color: "white" }} >
+              <div className="about-container" >
+                <h1 style={{ fontWeight: "700" }} >
+                  ABOUT
+              </h1>
+              </div>
+              <div className="wrap" >
+                <div style={{ fontSize: "70px", fontWeight: "100", textAlign: "right" }} >
+                  TURNING <br />
+                IDEAS INTO <br />
+                REALITY
+              </div>
+                <div style={{ width: "300px", margin: "0px 30px", textAlign: "left" }} >
+                  There’s been a lot of buzz about kids learning to code lately. This year, almost 200 million students around the world were exposed to coding <br /><br /><br />
+
+                Like Mathematics, programming can only be mastered by lots of practice. Our courses are designed to make sure kids spend more time practicing than just learning theory.<br /><br /><br />
+
+                We include all sorts of activities like solving puzzles & playing games, this keeps the whole learning environment interactive and fun
+              </div>
+                <div>
+                  <div style={{ display: "flex", alignItems: "center" }} >
+                    <div className="circle" style={{ borderColor: "#E74C3C" }} >
+                      100
+                    </div>
+                    <div className="circle-text" >
+                      READY-TO-USE CURRICULUM
+                    </div>
+                  </div>
+
+                  <div style={{ display: "flex" }}>
+                    <div className="circle" style={{ borderColor: "#46B39D" }}  >
+                      100
+                    </div>
+                  </div>
+
+                  <div style={{ display: "flex" }} >
+                    <div className="circle" style={{ borderColor: "#F0CA4D" }} >
+                      100
+                    </div>
+                  </div>
+
+                  <div style={{ display: "flex" }} >
+                    <div className="circle" >
+                      100
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="sub-footer wrap" >
+                "Before coming to this workshop, programming seemed very difficult and complicated to me. After this <br /> workshop, I think programming is quite simple and easy to learn!"<br />
+                <br /><br />
+              Vanshika, St. Paul's Secondary School
+            </div>
+            </div>
+
+            <div style={{ textAlign: 'center', marginTop: "20px" }} ><h2 style={{ fontFamily: 'j' }} >Testimonials;</h2></div>
             <Carousel />
 
             <MyFooter />

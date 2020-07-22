@@ -1,15 +1,11 @@
 .wallpaper{
     width: 100%;
     background-color: black;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    height: 800px;
+    height: 100vh;
     padding: 130px 5%;
     align-items: flex-start;
     z-index: -1;
+    margin-top: -100px;
 }
 
 .bg-text {
@@ -213,6 +209,54 @@ td{
     align-items: center;
 }
 
+.home-green{
+    color: white;
+    text-align: center;
+}
+
+.try-now-button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    background-image: linear-gradient(to right, #00ACDC , #0BDFD5);
+    box-shadow: 0px 0px 10px #0BDFD5;
+    cursor: pointer;
+    outline: none;
+}
+
+.about-container{
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+
+.circle{
+    border-radius: 50%;
+    border: solid 10px #3498DB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    font-weight: 700;
+    font-size: 17px;
+    margin: 10px;
+}
+.circle-text{
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.sub-footer{
+    color: white;
+    background-color: #DE5B49;
+    height: 300px;
+    width: 100%;
+    font-size: 25px;
+    padding: 0px 10vw;
+}
+
 @media only screen and (max-width:650px) {
     .responsive{
       display: none;
@@ -221,13 +265,8 @@ td{
       display: contents;
     }
     .para{
-        top: 0;
-        padding: 40px 5px;
+        height: 50vh;
         background-color: black;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
-        height: auto;
     }
     .bg-text{
         font-size: 18px;
@@ -288,6 +327,9 @@ td{
         width: 90%;
         margin-bottom: 30px;
         background-size: 400px;
+    }
+    .sub-footer{
+        font-size: 20px;
     }
   }
 

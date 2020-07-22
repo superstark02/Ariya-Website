@@ -17,10 +17,11 @@ import { FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
 import PeopleOutlineOutlinedIcon from '@material-ui/icons/PeopleOutlineOutlined';
-import SchoolOutlinedIcon from '@material-ui/icons/SchoolOutlined';
 import ListAltOutlinedIcon from '@material-ui/icons/ListAltOutlined';
 import LocalPhoneOutlinedIcon from '@material-ui/icons/LocalPhoneOutlined';
 import QuestionAnswerOutlinedIcon from '@material-ui/icons/QuestionAnswerOutlined';
+import ClassOutlinedIcon from '@material-ui/icons/ClassOutlined';
+import AssignmentOutlinedIcon from '@material-ui/icons/AssignmentOutlined';
 
 function ElevationScroll(props) {
     const { children, window } = props;
@@ -99,18 +100,24 @@ export default function MyAppBaMobile(props) {
                         <ListItemText primary='Courses' />
                     </ListItem></a>
 
+                    <a href='/trial_classes' className='Link' ><ListItem button >
+                        <ListItemIcon><ClassOutlinedIcon /></ListItemIcon>
+                        <ListItemText primary='Trial Class' />
+                    </ListItem></a>
+
                     <a href='/coding_questions' className='Link' ><ListItem button >
                         <ListItemIcon><QuestionAnswerOutlinedIcon/></ListItemIcon>
                         <ListItemText primary='FAQs' />
                     </ListItem></a>
 
-                    <a href='/coding_testimonials' className='Link'><ListItem button >
-                        <ListItemIcon><SchoolOutlinedIcon/></ListItemIcon>
-                        <ListItemText primary='Students Say' />
-                    </ListItem></a>
                 </List>
                 <Divider/>
                 <List>
+                <a href='/policy_and_privacy' className='Link'><ListItem button >
+                        <ListItemIcon><AssignmentOutlinedIcon /></ListItemIcon>
+                        <ListItemText primary='Policy And Privacy' />
+                    </ListItem></a>
+
                     <a href='/about_us' className='Link'><ListItem button >
                         <ListItemIcon><PeopleOutlineOutlinedIcon/></ListItemIcon>
                         <ListItemText primary='About Us' />

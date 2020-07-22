@@ -1,0 +1,24 @@
+.trial-input{
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0px;
+}
+.trial-submit-button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    background-image: linear-gradient(to right, #00ACDC , #0BDFD5);
+    box-shadow: 0px 0px 10px #0BDFD5;
+    cursor: pointer;
+    outline: none;
+}
+.trial-form-container{
+    width: 100%;
+    display: flex;
+    margin-top: 4vh;
+}
+.trial-form{
+    width: 50%;
+    padding: 0px 20px;
+}

@@ -5,26 +5,20 @@ import AboutUs from './Pages/About'
 import Testimonials from './Pages/Testimonials'
 import Contact from './Pages/Contact'
 import { SignIn } from './Pages/SignIn'
+import FullPage from './Pages/course-pagination'
 import Faqs from './Pages/faq'
 import PyhtonDescription from './Pages/python'
 import Stats from './Pages/stats'
 import PolicyAndPrivacy from './Pages/PolicyAndPrivacy'
 import CoursesForProfessionals from './Pages/CoursesForProfessionals'
 import TrialClasses from './Pages/TrialClasses'
-import Courses from './Pages/Courses'
-import KidsPython from './Pages/python-kids'
-import ProfessionalsPython from './Pages/python-professionals'
-import StatisticsCourse from './Pages/statistics-course'
 
 export default function App(){
     return(
         <Router>
             <Switch>
                 <Route exact path='/about_us' component={AboutUs} />
-                <Route exact path='/coding_courses' component={Courses} />
-                <Route exact path='/python_kids' component={KidsPython} />
-                <Route exact path='/python_professionals' component={ProfessionalsPython} />
-                <Route exact path='/statistics_course' component={StatisticsCourse} />
+                <Route exact path='/coding_courses' component={FullPage} />
                 <Route exact path='/coding_contact' component={Contact} />
                 <Route exact path='/coding_testimonials' component={Testimonials} />
                 <Route exact path='/coding_signIn' component={SignIn} />

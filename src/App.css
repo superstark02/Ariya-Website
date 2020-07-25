@@ -1,30 +1,24 @@
 .wallpaper{
     width: 100%;
-    background-color: #091626;
-    background-image: url(./Images/comp-prog-home.jpg);
-    background-position: right;
-    background-size: 52%;
+    background-color: black;
     background-repeat: no-repeat;
-    height: 90vh;
+    background-attachment: fixed;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    height: 800px;
     padding: 130px 5%;
     align-items: flex-start;
     z-index: -1;
-    margin-top: 20px;
-}
-
-.images{
-    height: 16px;
-    width: 16px;
 }
 
 .bg-text {
     color: #14bc16;
     font-weight: bold;
     width: 100%;
-    padding-top: 20px;
-    padding-left: 10px;
+    padding: 100px;
     font-family: 'c';
-    font-size: 30px;
+    font-size: 35px;
   }
 
 .long-text {
@@ -159,9 +153,7 @@
     color: white;
     background-color: #091626;
     padding: 40px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    color: white;
     font-size: 18px;
 }
 td{
@@ -214,69 +206,6 @@ td{
     margin: 20px;
 }
 
-.wrap{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding-top: 0px;
-}
-
-.home-green{
-    color: white;
-    text-align: center;
-}
-
-.try-now-button{
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: white;
-    background-image: linear-gradient(to right, #00ACDC , #0BDFD5);
-    box-shadow: 0px 0px 10px #0BDFD5;
-    cursor: pointer;
-    outline: none;
-}
-
-.sub-footer{
-    color: white;
-    background-color: #DE5B49;
-    height: 300px;
-    width: 100%;
-    font-size: 25px;
-    padding: 0px 10vw;
-}
-
-.class-card{
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0px 25px;
-    height: 400px;
-}
-
-.home-avatar{
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    border: solid 10px lightgrey;
-    margin-bottom: 20px;
-}
-
-.one:hover{
-    border-color: #dd5b49;
-}
-.two:hover{
-    border-color: #46B39D;
-}
-.three:hover{
-    border-color: #F0CA4D;
-}
-.four:hover{
-    border-color: #3498DB;
-}
-
 @media only screen and (max-width:650px) {
     .responsive{
       display: none;
@@ -285,8 +214,13 @@ td{
       display: contents;
     }
     .para{
-        height: 50vh;
+        top: 0;
+        padding: 40px 5px;
         background-color: black;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        height: auto;
     }
     .bg-text{
         font-size: 18px;
@@ -309,7 +243,6 @@ td{
     .footer{
         padding: 10px;
         font-size: 10px;
-        flex-direction: column;
     }
     td{
         font-size: 10px;
@@ -348,12 +281,6 @@ td{
         width: 90%;
         margin-bottom: 30px;
         background-size: 400px;
-    }
-    .sub-footer{
-        font-size: 20px;
-    }
-    .class-card{
-        height: auto;
     }
   }
 

@@ -2,6 +2,7 @@ import React from 'react'
 import MyAppBar from '../Components/AppBar'
 import './faq.css'
 
+import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import MyFooter from '../Components/Footer';
 import MyAppBaMobile from '../Components/mAppBar';
@@ -23,15 +24,24 @@ var curriculam = [
 
 ]
 
+const useStyles = makeStyles({
+    list: {
+        width: 250,
+    },
+    fullList: {
+        width: 'auto',
+    },
+});
+
 export default function Faqs() {
+
+    const classes = useStyles();
 
     return (
         <div style={{ backgroundColor: "white" }} >
-            <div>
-                <div className="responsive" >
-                    <MyAppBar />
-                </div>
-                <div style={{ marginTop: "4vh", padding: "5% 10%" }}  >
+            <div className='responsive'>
+                <MyAppBar />
+                <div style={{ marginTop: "4vh", padding: "0 10%" }}  >
                     <h1>Frequently Asked Questions</h1>
 
                     <h2 >Curriculam</h2>
@@ -89,6 +99,93 @@ export default function Faqs() {
             </div>
             <div className='mobile' >
                 <MyAppBaMobile />
+                <div className="faq-landing" >
+                    <h1 style={{ fontWeight: "700" }} >Have a Question?</h1>
+                    Here is everything you need to know about us.
+                </div>
+
+                <div style={{ margin: "50px 0px" }} >
+                    <ExpansionPanel elevation={0} >
+                        <ExpansionPanelSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel1a-content"
+                            id="panel1a-header"
+                        >
+                            <Typography className={classes.heading}>Category - 1</Typography>
+                        </ExpansionPanelSummary>
+                        <ExpansionPanelDetails>
+                            <Typography>
+                                <b>Question?</b> <br />
+                                Ans. Answer.
+                            </Typography>
+                        </ExpansionPanelDetails>
+                    </ExpansionPanel>
+
+                    <ExpansionPanel elevation={0} >
+                        <ExpansionPanelSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel1a-content"
+                            id="panel1a-header"
+                        >
+                            <Typography className={classes.heading}>Category - 2</Typography>
+                        </ExpansionPanelSummary>
+                        <ExpansionPanelDetails>
+                            <Typography>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                                sit amet blandit leo lobortis eget.
+                            </Typography>
+                        </ExpansionPanelDetails>
+                    </ExpansionPanel>
+
+                    <ExpansionPanel elevation={0} >
+                        <ExpansionPanelSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel1a-content"
+                            id="panel1a-header"
+                        >
+                            <Typography className={classes.heading}>Category - 3</Typography>
+                        </ExpansionPanelSummary>
+                        <ExpansionPanelDetails>
+                            <Typography>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                                sit amet blandit leo lobortis eget.
+                            </Typography>
+                        </ExpansionPanelDetails>
+                    </ExpansionPanel>
+
+                    <ExpansionPanel elevation={0} >
+                        <ExpansionPanelSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel1a-content"
+                            id="panel1a-header"
+                        >
+                            <Typography className={classes.heading}>Category - 4</Typography>
+                        </ExpansionPanelSummary>
+                        <ExpansionPanelDetails>
+                            <Typography>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                                sit amet blandit leo lobortis eget.
+                            </Typography>
+                        </ExpansionPanelDetails>
+                    </ExpansionPanel>
+
+                    <ExpansionPanel elevation={0} >
+                        <ExpansionPanelSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel1a-content"
+                            id="panel1a-header"
+                        >
+                            <Typography className={classes.heading}>Category - 5</Typography>
+                        </ExpansionPanelSummary>
+                        <ExpansionPanelDetails>
+                            <Typography>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                                sit amet blandit leo lobortis eget.
+                            </Typography>
+                        </ExpansionPanelDetails>
+                    </ExpansionPanel>
+
+                </div>
 
             </div>
             <MyFooter />

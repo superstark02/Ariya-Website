@@ -1,8 +1,8 @@
 .heading{
     font-size: 30px;
-    color: #282e34;
+    color: darkblue;
     text-align: center;
-    margin-top: 3%;
+    margin-top: 5%;
     width: 100%;
 }
 .aboutMain{
@@ -17,6 +17,16 @@
     font-size: 18px;
     font-weight: 600;
 }
+
+.aboutContent{
+    padding: 10px 100px;
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 500;
+    color: darkslategrey;
+    font-family: Helvetica, sans-serif;
+}
+
 @media only screen and (max-width:650px) {
     .aboutTile{
         width: 300px;

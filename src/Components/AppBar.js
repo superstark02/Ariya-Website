@@ -95,6 +95,11 @@ export default function MyAppBar(props) {
                         <ListItemText primary='Home' />
                     </ListItem></a>
 
+                    <a href='/about_us' className='Link'><ListItem button >
+                        <ListItemIcon><PeopleOutlineOutlinedIcon /></ListItemIcon>
+                        <ListItemText primary='About Us' />
+                    </ListItem></a>
+
                     <a href='/coding_courses' className='Link' ><ListItem button >
                         <ListItemIcon><ListAltOutlinedIcon /></ListItemIcon>
                         <ListItemText primary='Courses' />
@@ -105,22 +110,23 @@ export default function MyAppBar(props) {
                         <ListItemText primary='Trial Class' />
                     </ListItem></a>
 
+                    
+
+                </List>
+                <Divider />
+                <List>
+                   
+                   
                     <a href='/coding_questions' className='Link' ><ListItem button >
                         <ListItemIcon><QuestionAnswerOutlinedIcon /></ListItemIcon>
                         <ListItemText primary='FAQs' />
                     </ListItem></a>
 
-                </List>
-                <Divider />
-                <List>
                     <a href='/policy_and_privacy' className='Link'><ListItem button >
                         <ListItemIcon><AssignmentOutlinedIcon /></ListItemIcon>
-                        <ListItemText primary='Policy And Privacy' />
+                        <ListItemText primary='Privacy And Policy' />
                     </ListItem></a>
-                    <a href='/about_us' className='Link'><ListItem button >
-                        <ListItemIcon><PeopleOutlineOutlinedIcon /></ListItemIcon>
-                        <ListItemText primary='About Us' />
-                    </ListItem></a>
+                   
 
                     <a href='/coding_contact' className='Link'><ListItem button >
                         <ListItemIcon><LocalPhoneOutlinedIcon /></ListItemIcon>

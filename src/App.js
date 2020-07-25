@@ -12,6 +12,9 @@ import PolicyAndPrivacy from './Pages/PolicyAndPrivacy'
 import CoursesForProfessionals from './Pages/CoursesForProfessionals'
 import TrialClasses from './Pages/TrialClasses'
 import Courses from './Pages/Courses'
+import KidsPython from './Pages/python-kids'
+import ProfessionalsPython from './Pages/python-professionals'
+import StatisticsCourse from './Pages/statistics-course'
 
 export default function App(){
     return(
@@ -19,6 +22,9 @@ export default function App(){
             <Switch>
                 <Route exact path='/about_us' component={AboutUs} />
                 <Route exact path='/coding_courses' component={Courses} />
+                <Route exact path='/python_kids' component={KidsPython} />
+                <Route exact path='/python_professionals' component={ProfessionalsPython} />
+                <Route exact path='/statistics_course' component={StatisticsCourse} />
                 <Route exact path='/coding_contact' component={Contact} />
                 <Route exact path='/coding_testimonials' component={Testimonials} />
                 <Route exact path='/coding_signIn' component={SignIn} />

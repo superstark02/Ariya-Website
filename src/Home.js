@@ -8,6 +8,9 @@ import MyAppBaMobile from './Components/mAppBar';
 import MyFooter from './Components/Footer';
 import { Carousel } from './Components/Carousel';
 import { Link } from 'react-router-dom';
+import { Parallax, Background } from 'react-parallax';
+import './Images/future.jpg';
+import './Images/ai.jpg';
 
 const values = ["Welcome to the Real World!", "Keep Calm And Code...", "Coding is Awesome!"];
 
@@ -37,22 +40,25 @@ const courses = [
 
 const think = [
   {
-    name: "DIGITAL LITERACY",
+    name: "KNOW YOUR WORLD",
     class: "one",
     color: "#dd5b49",
-    des: "From self-driving cars to robot-assisted surgery to social media, computer science is revolutionizing every aspect of our lives. Coding is a fundamental skill that children need to learn so they can lead this movement."
+    des: "It’s a jungle out there.  We are surrounded by electronic devices that are shaping our lives. The internet was a privilege not a long time ago and it is now a utility that we can access simply with our voice or a wave of the palm. We will help you recognize its power and its risks.",
+    imag: "./Images/ai.jpg"
   },
   {
-    name: "BEST LEARNED EARLY",
+    name: "THE EARLY BIRD GETS THE WORM",
     class: "two",
     color: "#46B39D",
-    des: "Learning to code is similar to learning a second language. The earlier that children are exposed to fundamental topics like sequencing, loops, and conditionals, the more deeply they absorb these concepts."
+    des: "Most professions already require some kind of coding knowledge. Hone this skill before you have to. We will help with the crawl, the walk, the run and the flight.",
+    imag: "./Images/ai.jpg"
   },
   {
-    name: "LOGICAL THINKING",
+    name: "BUILD YOUR WORLD",
     class: "three",
     color: "#F0CA4D",
-    des: "Coding is all about implementing logic to solve interesting problem.Learning to program supports learning in other areas, like math, reading, and science as it enhances logical thinking in kids."
+    des: "Get the skillsets to build that technologies to create the future you want. Harness the power of your imagination to be the change you want. We will help you bring out the creator and the entrepreneur in you.",
+    imag: "./Images/ai.jpg"
   }
 ]
 
@@ -89,19 +95,19 @@ export default function Home() {
           </div>
 
           <div style={{ textAlign: 'center' }} >
-            <h1 style={{ fontWeight: "700", fontSize: "55px", marginBottom: "5px", textTransform: "uppercase" }} >
+            <h1 style={{ fontFamily: "Lato, Helvetica, sans-serif", fontWeight: "700", fontSize: "55px", marginBottom: "5px", textTransform: "uppercase", marginTop: "100px" }} >
               Where is the future?
             </h1>
-            <div className="wrap" >
-              Its not about learning to CODE - its about learning to THINK!
+            <div className="wrap" style={{ fontFamily: "Lato, Helvetica, sans-serif", paddingTop: "0px", fontSize: "16px", paddingBottom: "30px" }}>
+              Right here. And you are welcome to join.
             </div>
             <div className="wrap" >
               {
                 think.map(item => {
                   return (
                     <div className="class-card" >
-                      <div className={"home-avatar " + item.class} >
-
+                      <div className={"home-avatar " + item.class} style={{ backgroundImage: "url("+ item.imag + ")", backgroundSize: "5%" }} >
+                       
                       </div>
                       <div style={{ textAlign: "center", textTransform: "uppercase", fontWeight: "300", fontSize: "20px" }} >
                         {item.name}
@@ -117,21 +123,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="wrap" style={{ backgroundColor: "#6CD9BA" }} >
-            <div className="home-green" >
-              <h5>
-                Sign Up For Coding Zen Classes in your area!
-              </h5>
-              <h5>
-                New Batches start every Saturday in Delhi NCR
-              </h5>
-            </div>
-            <div className="wrap" >
-              <button className="try-now-button" >
-                APPLY NOW!
-              </button>
-            </div>
-          </div>
+         
 
           <div className="wrap" >
             <div>
@@ -165,11 +157,6 @@ export default function Home() {
               <br /><br />
               Vanshika, St. Paul's Secondary School
             </div>
-          </div>
-
-          <div style={{ width: '100%', backgroundColor: 'white', paddingTop: '20px', textAlign: 'center' }}>
-            <h1 style={{ fontFamily: 'j' }} >Testimonials;</h1>
-            <Carousel />
           </div>
 
           <div>

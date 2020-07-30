@@ -27,23 +27,30 @@ export default class AboutUs extends React.Component {
                         We believe the world is moving towards a skillset model, and less reliance is being placed on formal certifications and education. Proof of this is in the fact that jobs in AI and ML today are based on what you know in that field, because formal degrees and certifications that specialize in AI and ML are not fully developed yet. This a field with scope for mathematicians, statisticians, engineers and scientists from all branches. We can be the springboard you need to jumpstart a career in this field.
                     </div>
                     
-                    <div className="aboutContent">
-                        Our Vision 
-                    </div>
+                    
+                    <div className="smallh"><strong>Our Vision</strong></div>    
+                    
                     <div className="aboutContent">
                         To empower our students to build the world as they see it, rather than just live in it. To influence the development of AI, with the emotional intelligence and humane input needed to make it an enabler to improve humanity and not over-run it.
                     </div>
 
-                    <div className="aboutContent">
-                        Our Mission
-                    </div>
-                    <div className="aboutContent">
-                        <ul>
-                            <li>Provide the early skills needed to grow in the field of information technology, AI and Machine Learning.</li>
-                            <li>Encourage the birth of new ideas and foster the growth of entrepreneurship.</li>
-                        </ul>
+                    
+                    <div className="smallh" style={{ marginBottom: '-15px' }}><strong>Our Mission</strong></div>
+                    
+                    <div className="aboutContent" style={{ margin: '0px' }}>
+                        <div style={{ margin: '0px' }}>
+                            <ul>
+                                <div style={{ margin: '0px' }}>
+                                    <li>Provide the early skills needed to grow in the field of information technology, AI and Machine Learning.</li>
+                                    <li>Encourage the birth of new ideas and foster the growth of entrepreneurship.</li>
+                                </div>
+                            </ul>
+                        </div>
                     </div>
 
+                    <div className="aboutContent" style={{ marginTop: '30px' }}>
+                        
+                    </div>
 
                 </div>
 

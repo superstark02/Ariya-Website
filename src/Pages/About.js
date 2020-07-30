@@ -3,7 +3,6 @@ import './About.css'
 import Footer from '../Components/Footer'
 import MyAppBar from '../Components/AppBar'
 import MyAppBaMobile from '../Components/mAppBar'
-import Container from '@material-ui/core/Container';
 
 export default class AboutUs extends React.Component {
     render() {

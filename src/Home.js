@@ -7,8 +7,6 @@ import MyAppBar from './Components/AppBar';
 import MyAppBaMobile from './Components/mAppBar';
 import MyFooter from './Components/Footer';
 import { Carousel } from './Components/Carousel';
-import { Link } from 'react-router-dom';
-import { Parallax, Background } from 'react-parallax';
 import image1 from './Images/future.jpg';
 import image2 from './Images/ai.jpg';
 

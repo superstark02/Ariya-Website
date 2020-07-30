@@ -145,7 +145,7 @@ export default function MyAppBar(props) {
                     <Toolbar style={{ backgroundColor: 'rgba(4, 191, 191,0.5)', display: 'flex', justifyContent: 'space-between', padding: "10px 50px" }} >
                         <Typography style={{ fontFamily: 'j', margin: '10px', fontSize: '30px', color: 'white' }} >
                             <div style={{ width: "100%", display: "flex", justifyContent: "space-between" }} >
-                                <Link to='/' className="Link" >{"<Coding Classes/>"}</Link>
+                                <Link to='/' className="Link" >{"Ariya"}</Link>
                             </div>
                         </Typography>
                         <IconButton edge="start" color="inherit" aria-label="menu" onClick={toggleDrawer('right', true)} >

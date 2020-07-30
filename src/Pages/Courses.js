@@ -59,7 +59,7 @@ export default class Courses extends React.Component {
                                             
                                             <div className="paras">
                                                 <div style={{ objectFit: "cover"}}>
-                                                    <img src={item.image}></img>
+                                                    <img alt="s" src={item.image}></img>
                                                 </div>
                                                 <div style={{ height: "150px" }}>
                                                     <p>
@@ -104,7 +104,7 @@ export default class Courses extends React.Component {
                                             
                                             <div className="paras">
                                                 <div style={{ objectFit: "cover"}}>
-                                                    <img src={item.image}></img>
+                                                    <img alt="s" src={item.image}></img>
                                                 </div>
                                                 <div style={{ height: "150px" }}>
                                                     <p>

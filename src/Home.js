@@ -9,8 +9,8 @@ import MyFooter from './Components/Footer';
 import { Carousel } from './Components/Carousel';
 import { Link } from 'react-router-dom';
 import { Parallax, Background } from 'react-parallax';
-import './Images/future.jpg';
-import './Images/ai.jpg';
+import image1 from './Images/future.jpg';
+import image2 from './Images/ai.jpg';
 
 const values = ["Welcome to the Real World!", "Keep Calm And Code...", "Coding is Awesome!"];
 
@@ -44,21 +44,21 @@ const think = [
     class: "one",
     color: "#dd5b49",
     des: "It’s a jungle out there.  We are surrounded by electronic devices that are shaping our lives. The internet was a privilege not a long time ago and it is now a utility that we can access simply with our voice or a wave of the palm. We will help you recognize its power and its risks.",
-    imag: "./Images/ai.jpg"
+    imag: image1
   },
   {
     name: "THE EARLY BIRD GETS THE WORM",
     class: "two",
     color: "#46B39D",
     des: "Most professions already require some kind of coding knowledge. Hone this skill before you have to. We will help with the crawl, the walk, the run and the flight.",
-    imag: "./Images/ai.jpg"
+    imag: image2
   },
   {
     name: "BUILD YOUR WORLD",
     class: "three",
     color: "#F0CA4D",
     des: "Get the skillsets to build that technologies to create the future you want. Harness the power of your imagination to be the change you want. We will help you bring out the creator and the entrepreneur in you.",
-    imag: "./Images/ai.jpg"
+    imag: image2
   }
 ]
 
@@ -98,16 +98,17 @@ export default function Home() {
             <h1 style={{ fontFamily: "Lato, Helvetica, sans-serif", fontWeight: "700", fontSize: "55px", marginBottom: "5px", textTransform: "uppercase", marginTop: "100px" }} >
               Where is the future?
             </h1>
-            <div className="wrap" style={{ fontFamily: "Lato, Helvetica, sans-serif", paddingTop: "0px", fontSize: "16px", paddingBottom: "30px" }}>
-              Right here. And you are welcome to join.
+            <div className="wrap" style={{ fontFamily: "Lato, Helvetica, sans-serif", paddingTop: "0px", fontSize: "16px", paddingBottom: "30px", paddingLeft: "180px", paddingRight: "180px" }}>
+              <br/>Right here. And you are welcome to join.
+              <br/>Soon, robotics will be replacing humans for jobs in most of the areas. Prepare your kids for the next generation of technology – “Machine Learning/Artificial Intelligence”.  Learn Python and Statistics which are fundamentals to Machine Learning from our top teachers at the convenience of your home.
             </div>
             <div className="wrap" >
               {
                 think.map(item => {
                   return (
                     <div className="class-card" >
-                      <div className={"home-avatar " + item.class} style={{ backgroundImage: "url("+ item.imag + ")", backgroundSize: "5%" }} >
-                       
+                      <div className={"home-avatar " + item.class} style={{ backgroundImage: "url("+ item.imag + ")", backgroundSize: "cover" }} >
+                        
                       </div>
                       <div style={{ textAlign: "center", textTransform: "uppercase", fontWeight: "300", fontSize: "20px" }} >
                         {item.name}
@@ -183,7 +184,7 @@ export default function Home() {
                   think.map(item => {
                     return (
                       <div className="class-card" style={{margin:"10px 0px"}} >
-                        <div className={"home-avatar " + item.class} >
+                        <div className={"home-avatar " + item.class} style={{ backgroundImage: "url("+ item.imag + ")", backgroundSize: "cover"}} >
 
                         </div>
                         <div style={{ textAlign: "center", textTransform: "uppercase", fontWeight: "300", fontSize: "20px" }} >
@@ -200,22 +201,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="wrap" style={{ backgroundColor: "#6CD9BA" }} >
-              <div className="home-green" >
-                <h5>
-                  Sign Up For Coding Zen Classes in your area!
-              </h5>
-                <h5>
-                  New Batches start every Saturday in Delhi NCR
-              </h5>
-              </div>
-              <div className="wrap" >
-                <button className="try-now-button" >
-                  APPLY NOW!
-              </button>
-              </div>
-            </div>
-
+            
             <div className="wrap" >
               <div>
                 <div style={{ fontSize: "30px", fontWeight: "700", margin: "40px 0px" }} >

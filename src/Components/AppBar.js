@@ -16,12 +16,16 @@ import { makeStyles } from '@material-ui/core/styles';
 import { FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
-import PeopleOutlineOutlinedIcon from '@material-ui/icons/PeopleOutlineOutlined';
 import ListAltOutlinedIcon from '@material-ui/icons/ListAltOutlined';
 import LocalPhoneOutlinedIcon from '@material-ui/icons/LocalPhoneOutlined';
 import QuestionAnswerOutlinedIcon from '@material-ui/icons/QuestionAnswerOutlined';
 import AssignmentOutlinedIcon from '@material-ui/icons/AssignmentOutlined';
 import ClassOutlinedIcon from '@material-ui/icons/ClassOutlined';
+import Accordion from '@material-ui/core/Accordion';
+import AccordionSummary from '@material-ui/core/AccordionSummary';
+import AccordionDetails from '@material-ui/core/AccordionDetails';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import logo from '../Images/logo.png'
 
 function ElevationScroll(props) {
     const { children, window } = props;
@@ -82,12 +86,19 @@ export default function MyAppBar(props) {
                 [classes.fullList]: anchor === 'top' || anchor === 'bottom',
             })}
             role="presentation"
-            onClick={toggleDrawer(anchor, false)}
             onKeyDown={toggleDrawer(anchor, false)}
+            style={{ width: "300px" }}
         >
             <div style={{ padding: '0px 15px' }} >
-                <div style={{ width: '100%', height: '50px' }} >
-                    LOGO IMAGE
+                <div style={{ width: '100%' }} className="wrap" >
+                    <div>
+                        <div>
+                            <img src={logo} style={{width:"50px",height:"50px"}} alt="s" />
+                        </div>
+                        <div style={{fontFamily: 'j'}} >
+                            Ariya
+                        </div>
+                    </div>
                 </div>
                 <List>
                     <a href='/' className='Link' ><ListItem button >
@@ -95,28 +106,47 @@ export default function MyAppBar(props) {
                         <ListItemText primary='Home' />
                     </ListItem></a>
 
-                    <a href='/about_us' className='Link'><ListItem button >
-                        <ListItemIcon><PeopleOutlineOutlinedIcon /></ListItemIcon>
-                        <ListItemText primary='About Us' />
-                    </ListItem></a>
-
-                    <a href='/coding_courses' className='Link' ><ListItem button >
-                        <ListItemIcon><ListAltOutlinedIcon /></ListItemIcon>
-                        <ListItemText primary='Courses' />
-                    </ListItem></a>
+                    <ListItem style={{ padding: "0px" }} >
+                        <Accordion elevation={0} >
+                            <AccordionSummary
+                                expandIcon={<ExpandMoreIcon />}
+                                aria-controls="panel1a-content"
+                                id="panel1a-header"
+                            >
+                                <ListItemIcon><ListAltOutlinedIcon /></ListItemIcon>
+                                <ListItemText primary='Courses' />
+                            </AccordionSummary>
+                            <AccordionDetails >
+                                <List >
+                                    <a href="/python_kids" className='Link' ><ListItem button >
+                                        <ListItemIcon></ListItemIcon>
+                                        <ListItemText primary='Kid’s Python Program' />
+                                    </ListItem></a>
+                                    <a href="/python_professionals" className='Link' ><ListItem button >
+                                        <ListItemIcon></ListItemIcon>
+                                        <ListItemText primary='Python for Professionals' />
+                                    </ListItem></a>
+                                    <a href="/statistics_course" className='Link' ><ListItem button >
+                                        <ListItemIcon></ListItemIcon>
+                                        <ListItemText primary='Statistics' />
+                                    </ListItem></a>
+                                </List>
+                            </AccordionDetails>
+                        </Accordion>
+                    </ListItem>
 
                     <a href='/trial_classes' className='Link' ><ListItem button >
                         <ListItemIcon><ClassOutlinedIcon /></ListItemIcon>
                         <ListItemText primary='Trial Class' />
                     </ListItem></a>
 
-                    
+
 
                 </List>
                 <Divider />
                 <List>
-                   
-                   
+
+
                     <a href='/coding_questions' className='Link' ><ListItem button >
                         <ListItemIcon><QuestionAnswerOutlinedIcon /></ListItemIcon>
                         <ListItemText primary='FAQs' />
@@ -126,7 +156,7 @@ export default function MyAppBar(props) {
                         <ListItemIcon><AssignmentOutlinedIcon /></ListItemIcon>
                         <ListItemText primary='Privacy And Policy' />
                     </ListItem></a>
-                   
+
 
                     <a href='/coding_contact' className='Link'><ListItem button >
                         <ListItemIcon><LocalPhoneOutlinedIcon /></ListItemIcon>
@@ -142,14 +172,21 @@ export default function MyAppBar(props) {
             <CssBaseline />
             <ElevationScroll {...props}>
                 <AppBar style={{ backgroundColor: 'rgba(255,255,255,0.3)' }} >
-                    <Toolbar style={{ backgroundColor: 'rgba(4, 191, 191,0.5)', display: 'flex', justifyContent: 'space-between', padding: "10px 50px" }} >
-                        <Typography style={{ fontFamily: 'j', margin: '10px', fontSize: '30px', color: 'white' }} >
-                            <div style={{ width: "100%", display: "flex", justifyContent: "space-between" }} >
-                                <Link to='/' className="Link" >{"Ariya"}</Link>
-                            </div>
-                        </Typography>
+                    <Toolbar style={{ backgroundColor: 'rgba(255,255,255,0.5)', display: 'flex', justifyContent: 'space-between', padding: "10px 50px" }} >
+                        <div style={{ width: "100%", display: "flex", justifyContent: "space-between", fontSize: '30px', fontFamily: 'j' }} >
+                            <Link to='/' className="Link" >
+                                <div style={{ margin: "0px", display: "flex", alignItems:"center" }} >
+                                    <div>
+                                        <img src={logo} style={{width:"60px", height:"60px",margin:"0px 30px"}} />
+                                    </div>
+                                    <div>
+                                        Ariya
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
                         <IconButton edge="start" color="inherit" aria-label="menu" onClick={toggleDrawer('right', true)} >
-                            <FaBars color="white" />
+                            <FaBars color="inherit" />
                         </IconButton>
                         <Drawer anchor={"right"} open={state['right']} onClose={toggleDrawer('right', false)}>
                             {list("right")}

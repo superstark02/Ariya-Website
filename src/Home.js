@@ -47,7 +47,7 @@ const think = [
   {
     name: "THE EARLY BIRD GETS THE WORM",
     class: "two",
-    color: "#46B39D",
+    color: "#3498DB",
     des: "Most professions already require some kind of coding knowledge. Hone this skill before you have to. We will help with the crawl, the walk, the run and the flight.",
     imag: image2
   },
@@ -97,21 +97,19 @@ export default function Home() {
               Where is the future?
             </h1>
             <div className="wrap" style={{ fontFamily: "Lato, Helvetica, sans-serif", paddingTop: "0px", fontSize: "16px", paddingBottom: "30px", paddingLeft: "180px", paddingRight: "180px" }}>
-              <br/>Right here. And you are welcome to join.
-              <br/>Soon, robotics will be replacing humans for jobs in most of the areas. Prepare your kids for the next generation of technology – “Machine Learning/Artificial Intelligence”.  Learn Python and Statistics which are fundamentals to Machine Learning from our top teachers at the convenience of your home.
+              <br />Right here. And you are welcome to join.
+              <br />Soon, robotics will be replacing humans for jobs in most of the areas. Prepare your kids for the next generation of technology – “Machine Learning/Artificial Intelligence”.  Learn Python and Statistics which are fundamentals to Machine Learning from our top teachers at the convenience of your home.
             </div>
             <div className="wrap" >
               {
                 think.map(item => {
                   return (
-                    <div className="class-card" >
-                      <div className={"home-avatar " + item.class} style={{ backgroundImage: "url("+ item.imag + ")", backgroundSize: "cover" }} >
-                        
-                      </div>
+                    <div className="class-card" style={{ boxShadow: "2px 2px 10px " + item.color, borderRadius: "10px", height: "550px", margin: "0px 20px" }} >
+                      <img src={item.imag} alt="s" height="200px" />
                       <div style={{ textAlign: "center", textTransform: "uppercase", fontWeight: "300", fontSize: "20px" }} >
                         {item.name}
                       </div>
-                      <div style={{ width: "250px", backgroundColor: item.color, height: "2px", margin: '10px 0px' }} />
+                      <div style={{ width: "100%", backgroundColor: item.color, height: "2px", margin: '10px 0px' }} />
                       <div>
                         {item.des}
                       </div>
@@ -122,7 +120,16 @@ export default function Home() {
             </div>
           </div>
 
-         
+          <div className="home-green wrap" >
+            <p style={{ width: "70%", fontWeight: "700" }} >
+              “We have seen AI providing conversation and comfort to the lonely; we have also seen AI engaging in racial discrimination. Yet the biggest harm that AI is likely to do to individuals in the short term is job displacement, as the amount of work we can automate with AI is vastly larger than before. As leaders, it is incumbent on all of us to make sure we are building a world in which every individual has an opportunity to thrive.”
+            <br />
+              <br />
+              <i style={{ fontSize: "18px", fontWeight: "200" }} >
+                Andrew Ng, Co-founder and lead of Google Brain.
+            </i>
+            </p>
+          </div>
 
           <div className="wrap" >
             <div>
@@ -133,7 +140,7 @@ export default function Home() {
                 {
                   courses.map(item => {
                     return (
-                      <div className="class-card" >
+                      <div className="class-card"  >
                         <div style={{ textAlign: "center", textTransform: "uppercase", fontWeight: "300", fontSize: "20px" }} >
                           {item.name}
                         </div>
@@ -165,7 +172,7 @@ export default function Home() {
 
         <div className='mobile' >
           <MyAppBaMobile />
-          <div style={{ position: 'absolute', top: '0', width: '100%' }} >
+          <div style={{ position: 'absolute', top: '0', width: '100%'}} >
             <div className='para'>
               <Box style={{ height: 'auto', marginTop: '10%' }} ><div class='bg-text'>{result}</div></Box>
             </div>
@@ -181,8 +188,8 @@ export default function Home() {
                 {
                   think.map(item => {
                     return (
-                      <div className="class-card" style={{margin:"10px 0px"}} >
-                        <div className={"home-avatar " + item.class} style={{ backgroundImage: "url("+ item.imag + ")", backgroundSize: "cover"}} >
+                      <div className="class-card" style={{ margin: "10px 0px", padding: "10px", boxShadow:"0px 0px 5px "+item.color }} >
+                        <div className={"home-avatar " + item.class} style={{ backgroundImage: "url(" + item.imag + ")", backgroundSize: "cover" }} >
 
                         </div>
                         <div style={{ textAlign: "center", textTransform: "uppercase", fontWeight: "300", fontSize: "20px" }} >
@@ -199,7 +206,17 @@ export default function Home() {
               </div>
             </div>
 
-            
+            <div className="home-green wrap" >
+              <p style={{ width: "90%" }} >
+                “We have seen AI providing conversation and comfort to the lonely; we have also seen AI engaging in racial discrimination. Yet the biggest harm that AI is likely to do to individuals in the short term is job displacement, as the amount of work we can automate with AI is vastly larger than before. As leaders, it is incumbent on all of us to make sure we are building a world in which every individual has an opportunity to thrive.”
+                <br />
+                <br />
+                <i style={{ fontSize: "10px", fontWeight: "200" }} >
+                  Andrew Ng, Co-founder and lead of Google Brain.
+            </i>
+              </p>
+            </div>
+
             <div className="wrap" >
               <div>
                 <div style={{ fontSize: "30px", fontWeight: "700", margin: "40px 0px" }} >
@@ -209,11 +226,11 @@ export default function Home() {
                   {
                     courses.map(item => {
                       return (
-                        <div className="class-card" style={{margin:"20px"}} >
+                        <div className="class-card" style={{ border: "solid 1px " + item.color }} >
                           <div style={{ textAlign: "center", textTransform: "uppercase", fontWeight: "300", fontSize: "20px" }} >
                             {item.name}
                           </div>
-                          <div style={{ width: "250px", backgroundColor: item.color, height: "2px", margin: '10px 0px' }} />
+                          <div style={{ width: "250px", backgroundColor: item.color, height: "1px", margin: '10px 0px' }} />
                           <div>
                             {item.des}
                           </div>

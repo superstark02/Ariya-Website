@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Drawer from '@material-ui/core/Drawer';
@@ -25,6 +24,7 @@ import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import PeopleOutlineOutlinedIcon from '@material-ui/icons/PeopleOutlineOutlined';
 import logo from '../Images/logo.png'
 
 function ElevationScroll(props) {
@@ -140,16 +140,19 @@ export default function MyAppBar(props) {
                         <ListItemText primary='Trial Class' />
                     </ListItem></a>
 
-
+                    <a href='/coding_questions' className='Link' ><ListItem button >
+                        <ListItemIcon><QuestionAnswerOutlinedIcon /></ListItemIcon>
+                        <ListItemText primary='FAQs' />
+                    </ListItem></a>
 
                 </List>
                 <Divider />
                 <List>
 
 
-                    <a href='/coding_questions' className='Link' ><ListItem button >
-                        <ListItemIcon><QuestionAnswerOutlinedIcon /></ListItemIcon>
-                        <ListItemText primary='FAQs' />
+                    <a href='/about_us' className='Link' ><ListItem button >
+                        <ListItemIcon><PeopleOutlineOutlinedIcon /></ListItemIcon>
+                        <ListItemText primary='About Us' />
                     </ListItem></a>
 
                     <a href='/policy_and_privacy' className='Link'><ListItem button >

@@ -12,7 +12,7 @@ export default class AboutUs extends React.Component {
                     <MyAppBar />
                     <div className='aboutMain' >
                         <div className='heading' style={{ backgroundColor: 'transparent' }} >
-                            About Us
+                            About Us : Our Philosophy
                         </div>
                     </div>
                 

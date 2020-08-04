@@ -57,9 +57,11 @@ ElevationScroll.propTypes = {
 const useStyles = makeStyles({
     list: {
         width: 250,
+        color: 'grey'
     },
     fullList: {
         width: 'auto',
+        color: 'grey'
     },
 });
 
@@ -114,7 +116,7 @@ export default function MyAppBar(props) {
                                 id="panel1a-header"
                             >
                                 <ListItemIcon><ListAltOutlinedIcon /></ListItemIcon>
-                                <ListItemText primary='Courses' />
+                                <ListItemText style={{color:"grey"}} primary='Courses' />
                             </AccordionSummary>
                             <AccordionDetails >
                                 <List >
@@ -143,7 +145,7 @@ export default function MyAppBar(props) {
                                 id="panel1a-header"
                             >
                                 <ListItemIcon><ListAltOutlinedIcon /></ListItemIcon>
-                                <ListItemText primary='About Us' />
+                                <ListItemText style={{color:"grey"}} primary='About Us' />
                             </AccordionSummary>
                             <AccordionDetails >
                                 <List >

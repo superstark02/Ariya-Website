@@ -135,6 +135,28 @@ export default function MyAppBar(props) {
                         </Accordion>
                     </ListItem>
 
+                    <ListItem style={{ padding: "0px" }} >
+                        <Accordion elevation={0} >
+                            <AccordionSummary
+                                expandIcon={<ExpandMoreIcon />}
+                                aria-controls="panel1a-content"
+                                id="panel1a-header"
+                            >
+                                <ListItemIcon><ListAltOutlinedIcon /></ListItemIcon>
+                                <ListItemText primary='About Us' />
+                            </AccordionSummary>
+                            <AccordionDetails >
+                                <List >
+                                    <a href='/about_us' className='Link' ><ListItem button >
+                                        <ListItemIcon><PeopleOutlineOutlinedIcon /></ListItemIcon>
+                                        <ListItemText primary='Our Philosophy' />
+                                    </ListItem></a>                
+                                </List>
+                            </AccordionDetails>
+                        </Accordion>
+                    </ListItem>
+
+
                     <a href='/trial_classes' className='Link' ><ListItem button >
                         <ListItemIcon><ClassOutlinedIcon /></ListItemIcon>
                         <ListItemText primary='Trial Class' />
@@ -148,12 +170,6 @@ export default function MyAppBar(props) {
                 </List>
                 <Divider />
                 <List>
-
-
-                    <a href='/about_us' className='Link' ><ListItem button >
-                        <ListItemIcon><PeopleOutlineOutlinedIcon /></ListItemIcon>
-                        <ListItemText primary='About Us' />
-                    </ListItem></a>
 
                     <a href='/policy_and_privacy' className='Link'><ListItem button >
                         <ListItemIcon><AssignmentOutlinedIcon /></ListItemIcon>

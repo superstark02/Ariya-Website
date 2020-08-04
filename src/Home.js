@@ -104,7 +104,7 @@ export default function Home() {
               {
                 think.map(item => {
                   return (
-                    <div className="class-card" style={{ boxShadow: "2px 2px 10px " + item.color, borderRadius: "10px", height: "550px", margin: "0px 20px" }} >
+                    <div className="class-card" style={{ boxShadow: "2px 2px 10px " + item.color, borderRadius: "10px", height: "580px", margin: "0px 20px" }} >
                       <img src={item.imag} alt="s" height="200px" />
                       <div style={{ textAlign: "center", textTransform: "uppercase", fontWeight: "300", fontSize: "20px" }} >
                         {item.name}

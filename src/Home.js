@@ -104,7 +104,7 @@ export default function Home() {
               {
                 think.map(item => {
                   return (
-                    <div className="class-card" style={{ boxShadow: "2px 2px 10px " + item.color, borderRadius: "10px", height: "580px", margin: "0px 20px" }} >
+                    <div className="class-card" style={{ borderRadius: "10px", height: "580px", margin: "0px 20px" }} >
                       <img src={item.imag} alt="s" height="200px" />
                       <div style={{ textAlign: "center", textTransform: "uppercase", fontWeight: "300", fontSize: "20px" }} >
                         {item.name}
@@ -153,15 +153,6 @@ export default function Home() {
                   })
                 }
               </div>
-            </div>
-          </div>
-
-
-          <div style={{ backgroundColor: "black", textAlign: "center", color: "white" }} >
-            <div className="sub-footer wrap" >
-              "Before coming to this workshop, programming seemed very difficult and complicated to me. After this <br /> workshop, I think programming is quite simple and easy to learn!"<br />
-              <br /><br />
-              Vanshika, St. Paul's Secondary School
             </div>
           </div>
 

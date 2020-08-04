@@ -3,6 +3,7 @@ import './Courses.css'
 import MyAppBar from '../Components/AppBar'
 import MyAppBaMobile from '../Components/mAppBar'
 import MyFooter from '../Components/Footer'
+import '../CSS/Courses/statistics.css'
 
 export default class StatisticsCourse extends React.Component {
 
@@ -16,25 +17,33 @@ export default class StatisticsCourse extends React.Component {
                     <div className="mobile" >
                         <MyAppBaMobile />
                     </div>
-                    
-                    <div className='python-header stats-bg' style={{height:"60vh"}}>
+
+                    <div className='python-header stats-bg' style={{ height: "60vh" }}>
                         Statistics
                     </div>
 
-                    <div>
-                    Statistical knowledge helps usage of the proper methods to collect the data, employ the correct analyses, and make effective decisions. Statistics allow you to evaluate claims based on quantitative evidence and help you differentiate between reasonable and dubious conclusions. Machine learning is designed to make the most accurate predictions possible, without relying on rules-based programming. Statistics is one of the key elements in understanding and developing machine learning and artificial intelligence. Our curriculum provides the basic knowledge necessary to start out in the field of Machine Learning. 
-                    </div>
-
-                    <div>
-                    We aim to ensure that our students have fully understood and absorbed the knowledge from our curriculum and therefore the duration of the course is indicative only.
-                    </div>
-
                     <div className="faq-wrap" id='level-1' >
-                        <div className='python-container' style={{marginTop:"30px"}} >
-                            <h1 style={{fontFamily:"j"}} >
-                                Probabilities
-                            </h1>
-                            <ul style={{fontSize:"20px"}} >
+                        <div className='python-container' style={{ marginTop: "30px" }} >
+                            <div>
+                                Statistical knowledge helps usage of the proper methods to collect the data, employ the correct
+                                analyses, and make effective decisions. Statistics allow you to evaluate claims based on quantitative
+                                evidence and help you differentiate between reasonable and dubious conclusions.
+                                Machine learning is designed to make the most accurate predictions possible, without
+                                relying on rules-based programming. Statistics is one of the key elements in
+                                understanding and developing machine learning and artificial intelligence.
+                                Our curriculum provides the basic knowledge necessary to start out in the field of Machine Learning.
+                            </div>
+
+                            <div>
+                                We aim to ensure that our students have fully understood and absorbed the knowledge from our curriculum and therefore the duration of the course is indicative only.
+                            </div>
+
+                            <div className="wrap Probabilities" >
+                                <h1 style={{ fontFamily: "j" }} >
+                                    Probabilities
+                                </h1>
+                            </div>
+                            <ul>
                                 <li>Describe and distinguish between continuous and discrete random variables.</li>
                                 <li>Define and distinguish between the probability density function, cumulative distribution function and inverse cumulative distribution function</li>
                                 <li>Calculate the probability of an event.</li>
@@ -47,10 +56,13 @@ export default class StatisticsCourse extends React.Component {
 
                     <div className="faq-wrap" id='level-2' >
                         <div className='python-container' >
-                            <h1 style={{fontFamily:"j"}} >
-                                Bayesian Analysis
-                            </h1>
-                            <ul style={{fontSize:"20px"}} >
+                            <div className="wrap Bayesian" >
+                                <h1 style={{ fontFamily: "j" }} >
+                                    Bayesian Analysis
+                                </h1>
+                            </div>
+
+                            <ul>
                                 <li>Describe Bayes Theorem.</li>
                                 <li>Bayes theorem Vs Frequentist approach.</li>
                                 <li>Application of Bayes Theorem.</li>
@@ -60,10 +72,12 @@ export default class StatisticsCourse extends React.Component {
 
                     <div className="faq-wrap" id='level-3' >
                         <div className='python-container' >
-                            <h1 style={{fontFamily:"j"}} >
-                                Basic Statistics
-                            </h1>
-                            <ul style={{fontSize:"20px"}} >
+                            <div className="wrap Basic" >
+                                <h1 style={{ fontFamily: "j" }} >
+                                    Basic Statistics
+                                </h1>
+                            </div>
+                            <ul>
                                 <li>Calculate, interpret and apply the mean, standard deviation and variance of a random variable.</li>
                                 <li>Interpret and calculated the expected value of a discrete random variable.</li>
                                 <li>Calculate and Interpret the covariance and correlation between two random variables.</li>
@@ -77,10 +91,12 @@ export default class StatisticsCourse extends React.Component {
 
                     <div className="faq-wrap" id='level-3' >
                         <div className='python-container' >
-                            <h1 style={{fontFamily:"j"}} >
-                                Distributions
-                            </h1>
-                            <ul style={{fontSize:"20px"}} >
+                            <div className="wrap Distributions" >
+                                <h1 style={{ fontFamily: "j" }} >
+                                    Distributions
+                                </h1>
+                            </div>
+                            <ul>
                                 <li>Properties of different kinds of key distributions – uniform, Bernoulli, Binomial, Poisson, Normal, lognormal, Chi-squared, T and F distributions.</li>
                                 <li>Understand implications of Central Limit Theorem.</li>
                                 <li>I.I.D random variables and their implications and assumptions.</li>
@@ -91,10 +107,12 @@ export default class StatisticsCourse extends React.Component {
 
                     <div className="faq-wrap" id='level-3' >
                         <div className='python-container' >
-                            <h1 style={{fontFamily:"j"}} >
-                                Hypothesis Testing and Confidence Intervals
-                            </h1>
-                            <ul style={{fontSize:"20px"}} >
+                            <div className="wrap Testing" >
+                                <h1 style={{ fontFamily: "j" }} >
+                                    Hypothesis Testing and Confidence Intervals
+                                </h1>
+                            </div>
+                            <ul>
                                 <li>Sample mean and sample variance.</li>
                                 <li>Construct and interpret confidence interval.</li>
                                 <li>One tailed and Two Tailed Distributions.</li>
@@ -105,10 +123,12 @@ export default class StatisticsCourse extends React.Component {
 
                     <div className="faq-wrap" id='level-3' >
                         <div className='python-container' >
-                            <h1 style={{fontFamily:"j"}} >
-                                Regression
-                            </h1>
-                            <ul style={{fontSize:"20px"}} >
+                            <div className="wrap Regression" >
+                                <h1 style={{ fontFamily: "j" }} >
+                                    Regression
+                                </h1>
+                            </div>
+                            <ul>
                                 <li>Linear regression with one regressor.</li>
                                 <li>Interpret population regression function, regression coefficient, error term.</li>
                                 <li>OLS regression, assumptions and benefits.</li>
@@ -117,7 +137,7 @@ export default class StatisticsCourse extends React.Component {
                         </div>
                     </div>
 
-                   
+
 
                     <MyFooter />
                 </div>

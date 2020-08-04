@@ -1,0 +1,32 @@
+.Regression, .Testing, .Distributions, .Basic, .Bayesian, .Probabilities{
+    width: 100%;
+    height: 30vh;
+    margin-top: 100px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+.Probabilities{
+    background-image: url(../../Images/Courses/statistics/probability.jpg);
+}
+
+.Bayesian{
+    background-image: url(../../Images/Courses/statistics/Bayesian.jpg);
+}
+
+.Basic{
+    background-image: url(../../Images/Courses/statistics/Basic.jpg);
+}
+
+.Distributions{
+    background-image: url(../../Images/Courses/statistics/Distributions.jpg);
+}
+
+.Testing{
+    background-image: url(../../Images/Courses/statistics/Testing.jpg);
+}
+
+.Regression{
+    background-image: url(../../Images/Courses/statistics/Regression.jpg);
+}

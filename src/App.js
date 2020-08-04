@@ -6,7 +6,6 @@ import Testimonials from './Pages/Testimonials'
 import Contact from './Pages/Contact'
 import { SignIn } from './Pages/SignIn'
 import Faqs from './Pages/faq'
-import PyhtonDescription from './Pages/python'
 import Stats from './Pages/stats'
 import PolicyAndPrivacy from './Pages/PolicyAndPrivacy'
 import CoursesForProfessionals from './Pages/CoursesForProfessionals'
@@ -29,7 +28,6 @@ export default function App(){
                 <Route exact path='/coding_testimonials' component={Testimonials} />
                 <Route exact path='/coding_signIn' component={SignIn} />
                 <Route exact path='/coding_questions' component={Faqs} />
-                <Route exact path='/coding_python' component={PyhtonDescription} />
                 <Route exact path='/coding_statistics' component={Stats} />
                 <Route exact path='/policy_and_privacy' component={PolicyAndPrivacy} />
                 <Route exact path='/courses_for_professionals' component={CoursesForProfessionals} />

@@ -56,8 +56,12 @@ li{
         min-height: 30vh;
         margin-top: 10px;
     }
+    .python-header{
+        font-size: 25px;
+        max-width: 100%;
+    }
     li{
-        font-size: 10px;
+        font-size: 13px;
     }
     h1{
         font-size: 20px;

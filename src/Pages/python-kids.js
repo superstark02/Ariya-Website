@@ -3,6 +3,7 @@ import './Courses.css'
 import MyAppBar from '../Components/AppBar'
 import MyAppBaMobile from '../Components/mAppBar'
 import MyFooter from '../Components/Footer'
+import '../CSS/Courses/python-for-kids.css'
 
 
 export default class KidsPython extends React.Component {
@@ -18,17 +19,18 @@ export default class KidsPython extends React.Component {
                         <MyAppBaMobile />
                     </div>
                     
-                    <div>
+                    <div className="python-header python-kids-bg stats-bg" >
                         <h1>Kid’s Python Program</h1>
-                    </div> 
-
-                    <div>
-                        We have split our curriculum for Python for kids into multiple levels, each encompassing key themes and technical concepts.  Each level starts with the basics of the theme and then builds on it as the sessions progress. We aim to ensure that our students have fully understood and absorbed the knowledge for each level and therefore the duration of each level is indicative only. 
-                        Students can start as early as 9 years of age. We group our class by age and school grade levels, and usually have groups of 4 to 5 students in each class. This allows us to offer the proper attention to each student and provide periodic feedback for their continued success and growth.
-                    </div>
+                    </div>                   
 
                     <div className="aboutContent">
-                    Alpha (Level 1)
+                        <div>
+                            We have split our curriculum for Python for kids into multiple levels, each encompassing key themes and technical concepts.  Each level starts with the basics of the theme and then builds on it as the sessions progress. We aim to ensure that our students have fully understood and absorbed the knowledge for each level and therefore the duration of each level is indicative only. 
+                            Students can start as early as 9 years of age. We group our class by age and school grade levels, and usually have groups of 4 to 5 students in each class. This allows us to offer the proper attention to each student and provide periodic feedback for their continued success and growth.
+                        </div>
+                        <br/>
+                        <br/>
+                        Alpha (Level 1)
                     </div>
                     <div className="aboutContent">
                         <ul>

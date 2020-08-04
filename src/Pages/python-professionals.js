@@ -16,18 +16,21 @@ export default class ProfessionalsPython extends React.Component {
                     <div className="mobile" >
                         <MyAppBaMobile />
                     </div>
-                    
-                    <div>
-                        <h1>Python for Professionals</h1>
-                    </div> 
 
-                    <div>
-                    We have trained professionals for all levels of experience and streams – from high school and college students, to professionals working in the IT industry for 20+ years. Our course and exercises are designed to gain a deep understanding about Python’s programming concepts and develop robust coding skills with practical examples. Most of the students that take this course sign up for the AI and Machine Learning course to elevate their Pythion skills to the next level.
-                    
+                    <div className='python-header python-bg stats-bg' style={{ height: "60vh" }}>
+                        Python for Professionals
                     </div>
                     
                     <div className="aboutContent">
-                    We aim to ensure that our students have fully understood and absorbed the knowledge from our curriculum and therefore the duration of the course is indicative only.
+                        <div>
+                            We have trained professionals for all levels of experience and streams – 
+                            from high school and college students, to professionals working in the IT 
+                            industry for 20+ years. Our course and exercises are designed to gain a deep 
+                            understanding about Python’s programming concepts and develop robust coding 
+                            skills with practical examples. Most of the students that take this course sign 
+                            up for the AI and Machine Learning course to elevate their Pythion skills to the next level.
+                        </div>
+                        We aim to ensure that our students have fully understood and absorbed the knowledge from our curriculum and therefore the duration of the course is indicative only.
                     </div>
                     <div className="aboutContent">
                         <ul>

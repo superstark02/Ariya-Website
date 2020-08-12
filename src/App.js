@@ -15,6 +15,7 @@ import Courses from './Pages/Courses'
 import KidsPython from './Pages/python-kids'
 import ProfessionalsPython from './Pages/python-professionals'
 import StatisticsCourse from './Pages/statistics-course'
+import MathsCourse from "./Pages/maths"
 
 export default function App(){
     return(
@@ -28,6 +29,7 @@ export default function App(){
                 <Route exact path='/coding_contact' component={Contact} />
                 <Route exact path='/coding_testimonials' component={Testimonials} />
                 <Route exact path='/coding_signIn' component={SignIn} />
+                <Route exact path='/maths' component={MathsCourse} />
                 <Route exact path='/coding_questions' component={Faqs} />
                 <Route exact path='/coding_python' component={PyhtonDescription} />
                 <Route exact path='/coding_statistics' component={Stats} />

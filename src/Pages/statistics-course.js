@@ -21,11 +21,11 @@ export default class StatisticsCourse extends React.Component {
                         Statistics
                     </div>
 
-                    <div>
+                    <div className="aboutContent">
                     Statistical knowledge helps usage of the proper methods to collect the data, employ the correct analyses, and make effective decisions. Statistics allow you to evaluate claims based on quantitative evidence and help you differentiate between reasonable and dubious conclusions. Machine learning is designed to make the most accurate predictions possible, without relying on rules-based programming. Statistics is one of the key elements in understanding and developing machine learning and artificial intelligence. Our curriculum provides the basic knowledge necessary to start out in the field of Machine Learning. 
                     </div>
 
-                    <div>
+                    <div className="aboutContent">
                     We aim to ensure that our students have fully understood and absorbed the knowledge from our curriculum and therefore the duration of the course is indicative only.
                     </div>
 
@@ -34,14 +34,16 @@ export default class StatisticsCourse extends React.Component {
                             <h1 style={{fontFamily:"j"}} >
                                 Probabilities
                             </h1>
-                            <ul style={{fontSize:"20px"}} >
-                                <li>Describe and distinguish between continuous and discrete random variables.</li>
-                                <li>Define and distinguish between the probability density function, cumulative distribution function and inverse cumulative distribution function</li>
-                                <li>Calculate the probability of an event.</li>
-                                <li>Distinguish between independent and mutually exclusive events.</li>
-                                <li>Define joint probability, describe a probability matrix and calculate join probabilities.</li>
-                                <li>Define and calculation conditional probability and distinguish between conditional and unconditional probability.</li>
-                            </ul>
+                            <div className="aboutContent">
+                                <ul style={{fontSize:"20px"}} >
+                                    <li>Describe and distinguish between continuous and discrete random variables.</li>
+                                    <li>Define and distinguish between the probability density function, cumulative distribution function and inverse cumulative distribution function</li>
+                                    <li>Calculate the probability of an event.</li>
+                                    <li>Distinguish between independent and mutually exclusive events.</li>
+                                    <li>Define joint probability, describe a probability matrix and calculate join probabilities.</li>
+                                    <li>Define and calculation conditional probability and distinguish between conditional and unconditional probability.</li>
+                                </ul>
+                            </div>    
                         </div>
                     </div>
 
@@ -50,11 +52,13 @@ export default class StatisticsCourse extends React.Component {
                             <h1 style={{fontFamily:"j"}} >
                                 Bayesian Analysis
                             </h1>
-                            <ul style={{fontSize:"20px"}} >
-                                <li>Describe Bayes Theorem.</li>
-                                <li>Bayes theorem Vs Frequentist approach.</li>
-                                <li>Application of Bayes Theorem.</li>
-                            </ul>
+                            <div className="aboutContent">
+                                <ul style={{fontSize:"20px"}} >
+                                    <li>Describe Bayes Theorem.</li>
+                                    <li>Bayes theorem Vs Frequentist approach.</li>
+                                    <li>Application of Bayes Theorem.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
@@ -63,15 +67,17 @@ export default class StatisticsCourse extends React.Component {
                             <h1 style={{fontFamily:"j"}} >
                                 Basic Statistics
                             </h1>
-                            <ul style={{fontSize:"20px"}} >
-                                <li>Calculate, interpret and apply the mean, standard deviation and variance of a random variable.</li>
-                                <li>Interpret and calculated the expected value of a discrete random variable.</li>
-                                <li>Calculate and Interpret the covariance and correlation between two random variables.</li>
-                                <li>Calculate the mean and variance of sums of variables.</li>
-                                <li>Describe the four central moments of a statistical variable or distribution.</li>
-                                <li>Interpret the skewness and kurtosis of a statistical distribution.</li>
-                                <li>Describe and interpret the best linear unbiased estimator</li>
-                            </ul>
+                            <div className="aboutContent">
+                                <ul style={{fontSize:"20px"}} >
+                                    <li>Calculate, interpret and apply the mean, standard deviation and variance of a random variable.</li>
+                                    <li>Interpret and calculated the expected value of a discrete random variable.</li>
+                                    <li>Calculate and Interpret the covariance and correlation between two random variables.</li>
+                                    <li>Calculate the mean and variance of sums of variables.</li>
+                                    <li>Describe the four central moments of a statistical variable or distribution.</li>
+                                    <li>Interpret the skewness and kurtosis of a statistical distribution.</li>
+                                    <li>Describe and interpret the best linear unbiased estimator</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
@@ -80,12 +86,14 @@ export default class StatisticsCourse extends React.Component {
                             <h1 style={{fontFamily:"j"}} >
                                 Distributions
                             </h1>
-                            <ul style={{fontSize:"20px"}} >
-                                <li>Properties of different kinds of key distributions – uniform, Bernoulli, Binomial, Poisson, Normal, lognormal, Chi-squared, T and F distributions.</li>
-                                <li>Understand implications of Central Limit Theorem.</li>
-                                <li>I.I.D random variables and their implications and assumptions.</li>
-                                <li>Mixture distributions.</li>
-                            </ul>
+                            <div className="aboutContent">
+                                <ul style={{fontSize:"20px"}} >
+                                    <li>Properties of different kinds of key distributions – uniform, Bernoulli, Binomial, Poisson, Normal, lognormal, Chi-squared, T and F distributions.</li>
+                                    <li>Understand implications of Central Limit Theorem.</li>
+                                    <li>I.I.D random variables and their implications and assumptions.</li>
+                                    <li>Mixture distributions.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
@@ -94,12 +102,14 @@ export default class StatisticsCourse extends React.Component {
                             <h1 style={{fontFamily:"j"}} >
                                 Hypothesis Testing and Confidence Intervals
                             </h1>
-                            <ul style={{fontSize:"20px"}} >
-                                <li>Sample mean and sample variance.</li>
-                                <li>Construct and interpret confidence interval.</li>
-                                <li>One tailed and Two Tailed Distributions.</li>
-                                <li>Interpret results of hypothesis testing.</li>
-                            </ul>
+                            <div className="aboutContent">
+                                <ul style={{fontSize:"20px"}} >
+                                    <li>Sample mean and sample variance.</li>
+                                    <li>Construct and interpret confidence interval.</li>
+                                    <li>One tailed and Two Tailed Distributions.</li>
+                                    <li>Interpret results of hypothesis testing.</li>
+                                </ul>
+                            </div>        
                         </div>
                     </div>
 
@@ -108,12 +118,14 @@ export default class StatisticsCourse extends React.Component {
                             <h1 style={{fontFamily:"j"}} >
                                 Regression
                             </h1>
-                            <ul style={{fontSize:"20px"}} >
-                                <li>Linear regression with one regressor.</li>
-                                <li>Interpret population regression function, regression coefficient, error term.</li>
-                                <li>OLS regression, assumptions and benefits.</li>
-                                <li>Hypothesis testing with single and multiple regressors.</li>
-                            </ul>
+                            <div className="aboutContent">
+                                <ul style={{fontSize:"20px"}} >
+                                    <li>Linear regression with one regressor.</li>
+                                    <li>Interpret population regression function, regression coefficient, error term.</li>
+                                    <li>OLS regression, assumptions and benefits.</li>
+                                    <li>Hypothesis testing with single and multiple regressors.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 

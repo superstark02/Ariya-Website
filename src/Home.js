@@ -24,12 +24,12 @@ const courses = [
     des: "The CodingZen Explorer program inspires technology savvy primary school students to go beyond mobile and computer gaming, and move to create their own games and apps. With the emphasis of creativity, CodingZen Explorer empowers students through problem solving using technology. Students learn computer science concepts, user centric design, and mobile app development."
   },
   {
-    name: "Python",
+    name: "Students Python Program",
     color: "#F0CA4D",
     des: "The CodingZen Creator program lays a solid foundation of computer science concepts and theories through developing technically challenging apps. With an emphasis on hands-on development and bringing ideas to reality, the program guides students to deepen their understanding on key current topics in technology, including privacy, security and social networking."
   },
   {
-    name: "AI + ML",
+    name: "Python for Professionals",
     color: "#3498DB",
     des: "The CodingZen Creator program lays a solid foundation of computer science concepts and theories through developing technically challenging apps. With an emphasis on hands-on development and bringing ideas to reality, the program guides students to deepen their understanding on key current topics in technology, including privacy, security and social networking."
   }
@@ -88,47 +88,8 @@ export default function Home() {
           <MyAppBar />
           <div class='wallpaper'>
             <div className='para'>
-              <Box style={{ height: 'auto', width: '800px' }} ><div class='bg-text'>{result}</div></Box>
+              <Box style={{ height: 'auto', width: '800px' }} ><div class='bg-text'>Soon, robotics will be replacing humans for jobs in most of the areas. Prepare your kids for the next generation of technology – “Machine Learning/Artificial Intelligence”. Learn Mathematics, Statistics and Python which are fundamentals to Machine Learning from our top teachers at the convenience of your home.</div></Box>
             </div>
-          </div>
-
-          <div style={{ textAlign: 'center' }} >
-            <h1 style={{ fontFamily: "Lato, Helvetica, sans-serif", fontWeight: "700", fontSize: "55px", marginBottom: "5px", textTransform: "uppercase", marginTop: "100px" }} >
-              Where is the future?
-            </h1>
-            <div className="wrap" style={{ fontFamily: "Lato, Helvetica, sans-serif", paddingTop: "0px", fontSize: "16px", paddingBottom: "30px", paddingLeft: "180px", paddingRight: "180px" }}>
-              <br />Right here. And you are welcome to join.
-              <br />Soon, robotics will be replacing humans for jobs in most of the areas. Prepare your kids for the next generation of technology – “Machine Learning/Artificial Intelligence”.  Learn Python and Statistics which are fundamentals to Machine Learning from our top teachers at the convenience of your home.
-            </div>
-            <div className="wrap" >
-              {
-                think.map(item => {
-                  return (
-                    <div className="class-card" style={{ boxShadow: "2px 2px 10px " + item.color, borderRadius: "10px", height: "580px", margin: "0px 20px" }} >
-                      <img src={item.imag} alt="s" height="200px" />
-                      <div style={{ textAlign: "center", textTransform: "uppercase", fontWeight: "300", fontSize: "20px" }} >
-                        {item.name}
-                      </div>
-                      <div style={{ width: "100%", backgroundColor: item.color, height: "2px", margin: '10px 0px' }} />
-                      <div>
-                        {item.des}
-                      </div>
-                    </div>
-                  )
-                })
-              }
-            </div>
-          </div>
-
-          <div className="home-green wrap" >
-            <p style={{ width: "70%", fontWeight: "700" }} >
-              “We have seen AI providing conversation and comfort to the lonely; we have also seen AI engaging in racial discrimination. Yet the biggest harm that AI is likely to do to individuals in the short term is job displacement, as the amount of work we can automate with AI is vastly larger than before. As leaders, it is incumbent on all of us to make sure we are building a world in which every individual has an opportunity to thrive.”
-            <br />
-              <br />
-              <i style={{ fontSize: "18px", fontWeight: "200" }} >
-                Andrew Ng, Co-founder and lead of Google Brain.
-            </i>
-            </p>
           </div>
 
           <div className="wrap" >
@@ -155,6 +116,19 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          <div className="home-green wrap" >
+            <p style={{ width: "70%", fontWeight: "700" }} >
+              “We have seen AI providing conversation and comfort to the lonely; we have also seen AI engaging in racial discrimination. Yet the biggest harm that AI is likely to do to individuals in the short term is job displacement, as the amount of work we can automate with AI is vastly larger than before. As leaders, it is incumbent on all of us to make sure we are building a world in which every individual has an opportunity to thrive.”
+            <br />
+              <br />
+              <i style={{ fontSize: "18px", fontWeight: "200" }} >
+                Andrew Ng, Co-founder and lead of Google Brain.
+            </i>
+            </p>
+          </div>
+
+          
 
 
           <div style={{ backgroundColor: "black", textAlign: "center", color: "white" }} >

@@ -118,44 +118,39 @@ export default function MyAppBar(props) {
                             </AccordionSummary>
                             <AccordionDetails >
                                 <List >
-                                    <a href="/python_kids" className='Link' ><ListItem button >
+                                    <a href="/maths" className='Link' ><ListItem button >
                                         <ListItemIcon></ListItemIcon>
-                                        <ListItemText primary='Kid’s Python Program' />
-                                    </ListItem></a>
-                                    <a href="/python_professionals" className='Link' ><ListItem button >
-                                        <ListItemIcon></ListItemIcon>
-                                        <ListItemText primary='Python for Professionals' />
+                                        <ListItemText primary='Maths' />
                                     </ListItem></a>
                                     <a href="/statistics_course" className='Link' ><ListItem button >
                                         <ListItemIcon></ListItemIcon>
                                         <ListItemText primary='Statistics' />
                                     </ListItem></a>
+                                    <a href="/python_kids" className='Link' ><ListItem button >
+                                        <ListItemIcon></ListItemIcon>
+                                        <ListItemText primary="Student's Python Program" />
+                                    </ListItem></a>
+                                    <a href="/python_professionals" className='Link' ><ListItem button >
+                                        <ListItemIcon></ListItemIcon>
+                                        <ListItemText primary='Python for Professionals' />
+                                    </ListItem></a>
+                                    
                                 </List>
                             </AccordionDetails>
                         </Accordion>
                     </ListItem>
 
-                    <ListItem style={{ padding: "0px" }} >
-                        <Accordion elevation={0} >
-                            <AccordionSummary
-                                expandIcon={<ExpandMoreIcon />}
-                                aria-controls="panel1a-content"
-                                id="panel1a-header"
-                            >
-                                <ListItemIcon><ListAltOutlinedIcon /></ListItemIcon>
-                                <ListItemText primary='About Us' />
-                            </AccordionSummary>
-                            <AccordionDetails >
-                                <List >
-                                    <a href='/about_us' className='Link' ><ListItem button >
+                    
+                    <a href='/about_us' className='Link' ><ListItem button >
                                         <ListItemIcon><PeopleOutlineOutlinedIcon /></ListItemIcon>
                                         <ListItemText primary='Our Philosophy' />
-                                    </ListItem></a>                
-                                </List>
-                            </AccordionDetails>
-                        </Accordion>
-                    </ListItem>
+                                    </ListItem></a>
 
+                    
+
+                </List>
+                <Divider />
+                <List>
 
                     <a href='/trial_classes' className='Link' ><ListItem button >
                         <ListItemIcon><ClassOutlinedIcon /></ListItemIcon>
@@ -166,16 +161,6 @@ export default function MyAppBar(props) {
                         <ListItemIcon><QuestionAnswerOutlinedIcon /></ListItemIcon>
                         <ListItemText primary='FAQs' />
                     </ListItem></a>
-
-                </List>
-                <Divider />
-                <List>
-
-                    <a href='/policy_and_privacy' className='Link'><ListItem button >
-                        <ListItemIcon><AssignmentOutlinedIcon /></ListItemIcon>
-                        <ListItemText primary='Privacy And Policy' />
-                    </ListItem></a>
-
 
                     <a href='/coding_contact' className='Link'><ListItem button >
                         <ListItemIcon><LocalPhoneOutlinedIcon /></ListItemIcon>

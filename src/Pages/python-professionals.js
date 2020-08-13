@@ -1,8 +1,9 @@
 import React from 'react'
-import './Courses.css'
+import './python-professionals.css'
 import MyAppBar from '../Components/AppBar'
 import MyAppBaMobile from '../Components/mAppBar'
 import MyFooter from '../Components/Footer'
+import prof from '../Images/for-professionals.png'
 
 export default class ProfessionalsPython extends React.Component {
 
@@ -17,8 +18,12 @@ export default class ProfessionalsPython extends React.Component {
                         <MyAppBaMobile />
                     </div>
                     
+                    <div className='python-header prof-bg' style={{height:"60vh"}}>
+                        Python for Professionals
+                    </div>
+
                     <div>
-                        <h1>Python for Professionals</h1>
+                        <h1 style={{fontFamily:"a"}}>Python for Professionals</h1>
                     </div> 
 
                     <div>
@@ -26,10 +31,10 @@ export default class ProfessionalsPython extends React.Component {
                     
                     </div>
                     
-                    <div className="aboutContent">
+                    <div className="contentt">
                     We aim to ensure that our students have fully understood and absorbed the knowledge from our curriculum and therefore the duration of the course is indicative only.
                     </div>
-                    <div className="aboutContent">
+                    <div className="contentt">
                         <ul>
                             <li>Being with fundamental coding concepts that are relevant for any programming language. </li>
                             <li>Develop ability to write simple interactive programs on python to perform repetitive functions. </li>
@@ -40,9 +45,9 @@ export default class ProfessionalsPython extends React.Component {
                             <li>Use built in modules to created layered programs (i.e. programs within programs) – the building blocks of advanced programming.</li>
                             <li>Start with basic modules that perform independent tasks and thereafter build their own advanced modules that can perform independent tasks without user interaction.</li>
                         </ul>
-                        <div>
-                        Classes usually run for about 8 weeks, 5 days each week for 1.5 hours each day. 
-                        </div>
+                    </div>
+                    <div className="lastpara">
+                        <strong>Classes usually run for about 8 weeks, 5 days each week for 1.5 hours each day. </strong>
                     </div>
 
                     <MyFooter />

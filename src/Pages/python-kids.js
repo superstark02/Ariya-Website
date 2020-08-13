@@ -23,7 +23,7 @@ export default class KidsPython extends React.Component {
                     </div>
                     
                     <div>
-                        <h1>Kid’s Python Program</h1>
+                        <h1 style={{fontFamily:"a"}}>Kid’s Python Program</h1>
                     </div> 
                     <table>
                             <tr>

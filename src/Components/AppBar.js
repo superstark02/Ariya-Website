@@ -95,7 +95,7 @@ export default function MyAppBar(props) {
                         <div>
                             <img src={logo} style={{width:"50px",height:"50px"}} alt="s" />
                         </div>
-                        <div style={{fontFamily: 'j'}} >
+                        <div style={{fontFamily: 'b', fontSize: "25px"}} >
                             Ariya
                         </div>
                     </div>
@@ -183,7 +183,7 @@ export default function MyAppBar(props) {
                                     <div>
                                         <img src={logo} style={{width:"60px", height:"60px",margin:"0px 30px"}} />
                                     </div>
-                                    <div>
+                                    <div style={{fontFamily:"b", fontSize:"40px"}}>
                                         Ariya
                                     </div>
                                 </div>

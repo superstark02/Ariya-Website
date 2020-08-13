@@ -88,7 +88,7 @@ export default function Home() {
           <MyAppBar />
           <div class='wallpaper'>
             <div className='para'>
-              <Box style={{ height: 'auto', width: '800px' }} ><div class='bg-text'>Soon, robotics will be replacing humans for jobs in most of the areas. Prepare your kids for the next generation of technology – “Machine Learning/Artificial Intelligence”. Learn Mathematics, Statistics and Python which are fundamentals to Machine Learning from our top teachers at the convenience of your home.</div></Box>
+              <Box style={{ height: 'auto', width: '800px' }} ><div class='bg-text' style={{fontFamily: "a"}}>Soon, robotics will be replacing humans for jobs in most of the areas. Prepare your kids for the next generation of technology – “Machine Learning/Artificial Intelligence”. Learn Mathematics, Statistics and Python which are fundamentals to Machine Learning from our top teachers at the convenience of your home.</div></Box>
             </div>
           </div>
 
@@ -131,13 +131,7 @@ export default function Home() {
           
 
 
-          <div style={{ backgroundColor: "black", textAlign: "center", color: "white" }} >
-            <div className="sub-footer wrap" >
-              "Before coming to this workshop, programming seemed very difficult and complicated to me. After this <br /> workshop, I think programming is quite simple and easy to learn!"<br />
-              <br /><br />
-              Vanshika, St. Paul's Secondary School
-            </div>
-          </div>
+    
 
           <div>
           </div>

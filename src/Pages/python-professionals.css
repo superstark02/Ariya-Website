@@ -1,0 +1,23 @@
+.contentt{
+    padding: 10px 10px;
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    flex: 200px;
+    color: darkslategrey;
+    font-family: Helvetica, sans-serif;
+    padding-left: 80px;
+    }
+    
+.lastpara{
+    padding: 10px 10px;
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    flex: 200px;
+    color: red;
+    font-family: Helvetica, sans-serif;
+    padding-left: 80px;
+    }

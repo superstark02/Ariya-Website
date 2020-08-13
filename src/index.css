@@ -18,6 +18,16 @@ code {
 }
 
 @font-face {
+  font-family: 'a';
+  src: local('a'), url(./Fonts/PTSans/PTSans-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'b';
+  src: local('b'), url(./Fonts/PTSans/PTSans-Bold.ttf) format('truetype');
+}
+
+@font-face {
   font-family: 'j';
   src: local('j'), url(./Fonts/jetbrains-mono/JetBrainsMono-1.0.2/ttf/JetBrainsMono-Bold.ttf) format('truetype');
 }

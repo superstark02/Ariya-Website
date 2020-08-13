@@ -1,0 +1,14 @@
+.content{
+padding: 10px 10px;
+text-align: justify;
+font-size: 15px;
+font-weight: 500;
+display: flex;
+flex: 200px;
+color: darkslategrey;
+font-family: Helvetica, sans-serif;
+}
+
+#level-1{
+    margin-top: -10vh;
+}

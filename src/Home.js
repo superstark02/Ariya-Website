@@ -7,7 +7,8 @@ import MyAppBar from './Components/AppBar';
 import MyAppBaMobile from './Components/mAppBar';
 import MyFooter from './Components/Footer';
 import { Carousel } from './Components/Carousel';
-import { Link } from 'react-router-dom';
+import image1 from './Images/future.jpg';
+import image2 from './Images/ai.jpg';
 
 const values = ["Welcome to the Real World!", "Keep Calm And Code...", "Coding is Awesome!"];
 
@@ -23,12 +24,12 @@ const courses = [
     des: "The CodingZen Explorer program inspires technology savvy primary school students to go beyond mobile and computer gaming, and move to create their own games and apps. With the emphasis of creativity, CodingZen Explorer empowers students through problem solving using technology. Students learn computer science concepts, user centric design, and mobile app development."
   },
   {
-    name: "Python",
+    name: "Students Python Program",
     color: "#F0CA4D",
     des: "The CodingZen Creator program lays a solid foundation of computer science concepts and theories through developing technically challenging apps. With an emphasis on hands-on development and bringing ideas to reality, the program guides students to deepen their understanding on key current topics in technology, including privacy, security and social networking."
   },
   {
-    name: "AI + ML",
+    name: "Python for Professionals",
     color: "#3498DB",
     des: "The CodingZen Creator program lays a solid foundation of computer science concepts and theories through developing technically challenging apps. With an emphasis on hands-on development and bringing ideas to reality, the program guides students to deepen their understanding on key current topics in technology, including privacy, security and social networking."
   }
@@ -37,22 +38,25 @@ const courses = [
 
 const think = [
   {
-    name: "DIGITAL LITERACY",
+    name: "KNOW YOUR WORLD",
     class: "one",
     color: "#dd5b49",
-    des: "From self-driving cars to robot-assisted surgery to social media, computer science is revolutionizing every aspect of our lives. Coding is a fundamental skill that children need to learn so they can lead this movement."
+    des: "It’s a jungle out there.  We are surrounded by electronic devices that are shaping our lives. The internet was a privilege not a long time ago and it is now a utility that we can access simply with our voice or a wave of the palm. We will help you recognize its power and its risks.",
+    imag: image1
   },
   {
-    name: "BEST LEARNED EARLY",
+    name: "THE EARLY BIRD GETS THE WORM",
     class: "two",
-    color: "#46B39D",
-    des: "Learning to code is similar to learning a second language. The earlier that children are exposed to fundamental topics like sequencing, loops, and conditionals, the more deeply they absorb these concepts."
+    color: "#3498DB",
+    des: "Most professions already require some kind of coding knowledge. Hone this skill before you have to. We will help with the crawl, the walk, the run and the flight.",
+    imag: image2
   },
   {
-    name: "LOGICAL THINKING",
+    name: "BUILD YOUR WORLD",
     class: "three",
     color: "#F0CA4D",
-    des: "Coding is all about implementing logic to solve interesting problem.Learning to program supports learning in other areas, like math, reading, and science as it enhances logical thinking in kids."
+    des: "Get the skillsets to build that technologies to create the future you want. Harness the power of your imagination to be the change you want. We will help you bring out the creator and the entrepreneur in you.",
+    imag: image2
   }
 ]
 
@@ -84,52 +88,7 @@ export default function Home() {
           <MyAppBar />
           <div class='wallpaper'>
             <div className='para'>
-              <Box style={{ height: 'auto', width: '800px' }} ><div class='bg-text'>{result}</div></Box>
-            </div>
-          </div>
-
-          <div style={{ textAlign: 'center' }} >
-            <h1 style={{ fontWeight: "700", fontSize: "55px", marginBottom: "5px", textTransform: "uppercase" }} >
-              Where is the future?
-            </h1>
-            <div className="wrap" >
-              Its not about learning to CODE - its about learning to THINK!
-            </div>
-            <div className="wrap" >
-              {
-                think.map(item => {
-                  return (
-                    <div className="class-card" >
-                      <div className={"home-avatar " + item.class} >
-
-                      </div>
-                      <div style={{ textAlign: "center", textTransform: "uppercase", fontWeight: "300", fontSize: "20px" }} >
-                        {item.name}
-                      </div>
-                      <div style={{ width: "250px", backgroundColor: item.color, height: "2px", margin: '10px 0px' }} />
-                      <div>
-                        {item.des}
-                      </div>
-                    </div>
-                  )
-                })
-              }
-            </div>
-          </div>
-
-          <div className="wrap" style={{ backgroundColor: "#6CD9BA" }} >
-            <div className="home-green" >
-              <h5>
-                Sign Up For Coding Zen Classes in your area!
-              </h5>
-              <h5>
-                New Batches start every Saturday in Delhi NCR
-              </h5>
-            </div>
-            <div className="wrap" >
-              <button className="try-now-button" >
-                APPLY NOW!
-              </button>
+              <Box style={{ height: 'auto', width: '800px' }} ><div class='bg-text'>Soon, robotics will be replacing humans for jobs in most of the areas. Prepare your kids for the next generation of technology – “Machine Learning/Artificial Intelligence”. Learn Mathematics, Statistics and Python which are fundamentals to Machine Learning from our top teachers at the convenience of your home.</div></Box>
             </div>
           </div>
 
@@ -142,7 +101,7 @@ export default function Home() {
                 {
                   courses.map(item => {
                     return (
-                      <div className="class-card" >
+                      <div className="class-card"  >
                         <div style={{ textAlign: "center", textTransform: "uppercase", fontWeight: "300", fontSize: "20px" }} >
                           {item.name}
                         </div>
@@ -158,6 +117,19 @@ export default function Home() {
             </div>
           </div>
 
+          <div className="home-green wrap" >
+            <p style={{ width: "70%", fontWeight: "700" }} >
+              “We have seen AI providing conversation and comfort to the lonely; we have also seen AI engaging in racial discrimination. Yet the biggest harm that AI is likely to do to individuals in the short term is job displacement, as the amount of work we can automate with AI is vastly larger than before. As leaders, it is incumbent on all of us to make sure we are building a world in which every individual has an opportunity to thrive.”
+            <br />
+              <br />
+              <i style={{ fontSize: "18px", fontWeight: "200" }} >
+                Andrew Ng, Co-founder and lead of Google Brain.
+            </i>
+            </p>
+          </div>
+
+          
+
 
           <div style={{ backgroundColor: "black", textAlign: "center", color: "white" }} >
             <div className="sub-footer wrap" >
@@ -167,11 +139,6 @@ export default function Home() {
             </div>
           </div>
 
-          <div style={{ width: '100%', backgroundColor: 'white', paddingTop: '20px', textAlign: 'center' }}>
-            <h1 style={{ fontFamily: 'j' }} >Testimonials;</h1>
-            <Carousel />
-          </div>
-
           <div>
           </div>
           <MyFooter />
@@ -179,7 +146,7 @@ export default function Home() {
 
         <div className='mobile' >
           <MyAppBaMobile />
-          <div style={{ position: 'absolute', top: '0', width: '100%' }} >
+          <div style={{ position: 'absolute', top: '0', width: '100%'}} >
             <div className='para'>
               <Box style={{ height: 'auto', marginTop: '10%' }} ><div class='bg-text'>{result}</div></Box>
             </div>
@@ -195,8 +162,8 @@ export default function Home() {
                 {
                   think.map(item => {
                     return (
-                      <div className="class-card" style={{margin:"10px 0px"}} >
-                        <div className={"home-avatar " + item.class} >
+                      <div className="class-card" style={{ margin: "10px 0px", padding: "10px", boxShadow:"0px 0px 5px "+item.color }} >
+                        <div className={"home-avatar " + item.class} style={{ backgroundImage: "url(" + item.imag + ")", backgroundSize: "cover" }} >
 
                         </div>
                         <div style={{ textAlign: "center", textTransform: "uppercase", fontWeight: "300", fontSize: "20px" }} >
@@ -213,20 +180,15 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="wrap" style={{ backgroundColor: "#6CD9BA" }} >
-              <div className="home-green" >
-                <h5>
-                  Sign Up For Coding Zen Classes in your area!
-              </h5>
-                <h5>
-                  New Batches start every Saturday in Delhi NCR
-              </h5>
-              </div>
-              <div className="wrap" >
-                <button className="try-now-button" >
-                  APPLY NOW!
-              </button>
-              </div>
+            <div className="home-green wrap" >
+              <p style={{ width: "90%" }} >
+                “We have seen AI providing conversation and comfort to the lonely; we have also seen AI engaging in racial discrimination. Yet the biggest harm that AI is likely to do to individuals in the short term is job displacement, as the amount of work we can automate with AI is vastly larger than before. As leaders, it is incumbent on all of us to make sure we are building a world in which every individual has an opportunity to thrive.”
+                <br />
+                <br />
+                <i style={{ fontSize: "10px", fontWeight: "200" }} >
+                  Andrew Ng, Co-founder and lead of Google Brain.
+            </i>
+              </p>
             </div>
 
             <div className="wrap" >
@@ -238,11 +200,11 @@ export default function Home() {
                   {
                     courses.map(item => {
                       return (
-                        <div className="class-card" style={{margin:"20px"}} >
+                        <div className="class-card" style={{ border: "solid 1px " + item.color }} >
                           <div style={{ textAlign: "center", textTransform: "uppercase", fontWeight: "300", fontSize: "20px" }} >
                             {item.name}
                           </div>
-                          <div style={{ width: "250px", backgroundColor: item.color, height: "2px", margin: '10px 0px' }} />
+                          <div style={{ width: "250px", backgroundColor: item.color, height: "1px", margin: '10px 0px' }} />
                           <div>
                             {item.des}
                           </div>

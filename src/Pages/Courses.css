@@ -1,6 +1,9 @@
 
 h1{
     margin: 20px;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: 700;
 }
 .course-wrap{
     display: flex;
@@ -8,8 +11,8 @@ h1{
     justify-content: center;
 }
 .course-card{
-    width: 600px;
-    padding: 20px 0px;
+    width: 500px;
+    padding: 20px 20px;
     text-align: center;
 }
 .courses-link-button{
@@ -25,6 +28,22 @@ h1{
 h2{
     text-align: center;
 }
+
+.paras{
+    text-align: justify;
+}
+
+img{
+    display: block;
+    object-fit: contain;
+    
+    width: 100%;
+    height: 230px;
+    border-radius: 8px;
+}
+
+
+
 @media only screen and (max-width:650px) {
     
 }

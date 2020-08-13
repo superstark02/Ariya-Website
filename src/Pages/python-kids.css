@@ -1,0 +1,30 @@
+.tdmain{
+    height: auto;
+    padding: 0px;
+}
+
+.tds{    
+    font-size: 15px;
+    font-weight: 500;
+    color: darkslategrey;
+    font-family: Helvetica, sans-serif;
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+    align-items: center;
+}
+
+.imgs{
+    /*background-image: url(../Images/yellow.png);*/
+    margin-right: 30%;
+    padding: 20px 20px;
+}
+
+img{
+    display: block;
+    object-fit: contain;
+    width: 100%;
+}
+

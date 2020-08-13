@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Drawer from '@material-ui/core/Drawer';
-import { IconButton, Divider} from '@material-ui/core';
+import { IconButton, Divider } from '@material-ui/core';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -22,6 +22,11 @@ import LocalPhoneOutlinedIcon from '@material-ui/icons/LocalPhoneOutlined';
 import QuestionAnswerOutlinedIcon from '@material-ui/icons/QuestionAnswerOutlined';
 import ClassOutlinedIcon from '@material-ui/icons/ClassOutlined';
 import AssignmentOutlinedIcon from '@material-ui/icons/AssignmentOutlined';
+import logo from '../Images/logo.png'
+import Accordion from '@material-ui/core/Accordion';
+import AccordionSummary from '@material-ui/core/AccordionSummary';
+import AccordionDetails from '@material-ui/core/AccordionDetails';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 function ElevationScroll(props) {
     const { children, window } = props;
@@ -82,23 +87,50 @@ export default function MyAppBaMobile(props) {
                 [classes.fullList]: anchor === 'top' || anchor === 'bottom',
             })}
             role="presentation"
-            onClick={toggleDrawer(anchor, false)}
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <div style={{ padding: '0px 15px' }} >
-                <div style={{width:'100%',height:'50px'}} >
-                    LOGO IMAGE
+                <div style={{ width: '100%' }} className="wrap" >
+                    <div>
+                        <div>
+                            <img src={logo} style={{ width: "50px", height: "50px" }} alt="s" />
+                        </div>
+                        <div style={{ fontFamily: 'j' }} >
+                            Ariya
+                        </div>
+                    </div>
                 </div>
                 <List>
                     <a href='/' className='Link' ><ListItem button >
-                        <ListItemIcon><HomeOutlinedIcon/></ListItemIcon>
+                        <ListItemIcon><HomeOutlinedIcon /></ListItemIcon>
                         <ListItemText primary='Home' />
                     </ListItem></a>
 
-                    <a href='/coding_courses' className='Link' ><ListItem button >
-                        <ListItemIcon><ListAltOutlinedIcon/></ListItemIcon>
-                        <ListItemText primary='Courses' />
-                    </ListItem></a>
+                    <ListItem button style={{ margin: '0px', padding: "0px" }} >
+                        <Accordion elevation={0} >
+                            <AccordionSummary
+                                expandIcon={<ExpandMoreIcon />}
+                                aria-controls="panel1a-content"
+                                id="panel1a-header"
+                            >
+                                <ListItemIcon><ListAltOutlinedIcon /></ListItemIcon>
+                                <ListItemText primary='Courses' />
+                            </AccordionSummary>
+                            <AccordionDetails >
+                                <List >
+                                    <a href="/python_kids" className='Link' ><ListItem button >
+                                        <ListItemText primary='Kids Python Program' />
+                                    </ListItem></a>
+                                    <a href="/python_professionals" className='Link' ><ListItem button >
+                                        <ListItemText primary='Python for Professionals' />
+                                    </ListItem></a>
+                                    <a href="/statistics_course" className='Link' ><ListItem button >
+                                        <ListItemText primary='Statistics' />
+                                    </ListItem></a>
+                                </List>
+                            </AccordionDetails>
+                        </Accordion>
+                    </ListItem>
 
                     <a href='/trial_classes' className='Link' ><ListItem button >
                         <ListItemIcon><ClassOutlinedIcon /></ListItemIcon>
@@ -106,25 +138,25 @@ export default function MyAppBaMobile(props) {
                     </ListItem></a>
 
                     <a href='/coding_questions' className='Link' ><ListItem button >
-                        <ListItemIcon><QuestionAnswerOutlinedIcon/></ListItemIcon>
+                        <ListItemIcon><QuestionAnswerOutlinedIcon /></ListItemIcon>
                         <ListItemText primary='FAQs' />
                     </ListItem></a>
 
                 </List>
-                <Divider/>
+                <Divider />
                 <List>
-                <a href='/policy_and_privacy' className='Link'><ListItem button >
+                    <a href='/policy_and_privacy' className='Link'><ListItem button >
                         <ListItemIcon><AssignmentOutlinedIcon /></ListItemIcon>
                         <ListItemText primary='Policy And Privacy' />
                     </ListItem></a>
 
                     <a href='/about_us' className='Link'><ListItem button >
-                        <ListItemIcon><PeopleOutlineOutlinedIcon/></ListItemIcon>
+                        <ListItemIcon><PeopleOutlineOutlinedIcon /></ListItemIcon>
                         <ListItemText primary='About Us' />
                     </ListItem></a>
 
                     <a href='/coding_contact' className='Link'><ListItem button >
-                        <ListItemIcon><LocalPhoneOutlinedIcon/></ListItemIcon>
+                        <ListItemIcon><LocalPhoneOutlinedIcon /></ListItemIcon>
                         <ListItemText primary='Contact Us' />
                     </ListItem></a>
                 </List>
@@ -137,11 +169,20 @@ export default function MyAppBaMobile(props) {
             <CssBaseline />
             <ElevationScroll {...props}>
                 <AppBar style={{ backgroundColor: 'rgba(255,255,255,0.3)' }} >
-                    <Toolbar style={{ backgroundColor: 'rgba(4, 191, 191,0.5)', display: 'flex', justifyContent: 'space-between' }} >
-                        <Typography style={{ fontFamily: 'j', margin: '10px', fontSize: '20px', color: 'white' }} >
-                            <Link to='/' className="Link" >{"<Coding Classes/>"}</Link>
+                    <Toolbar style={{ backgroundColor: 'rgba(255,255,255,0.5)', display: 'flex', justifyContent: 'space-between' }} >
+                        <Typography style={{ fontFamily: 'j', margin: '10px', fontSize: '20px' }} >
+                            <Link to='/' className="Link" >
+                                <div style={{ margin: "0px", display: "flex", alignItems: "center" }} >
+                                    <div>
+                                        <img src={logo} style={{ width: "40px", height: "40px", margin: "0px 10px" }} />
+                                    </div>
+                                    <div>
+                                        Ariya
+                                    </div>
+                                </div>
+                            </Link>
                         </Typography>
-                        <IconButton onClick={toggleDrawer('right', true)} color="inherit"><FaBars color='white' /></IconButton>
+                        <IconButton onClick={toggleDrawer('right', true)} color="inherit"><FaBars /></IconButton>
                         <Drawer anchor={'right'} open={state['right']} onClose={toggleDrawer('right', false)}>
                             {list('right')}
                         </Drawer>

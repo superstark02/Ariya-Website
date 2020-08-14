@@ -28,9 +28,6 @@
 h1{
     font-weight: 600;
 }
-li{
-    margin: 10px 0px;
-}
 .stats-bg{
     background-image: url(../Images/stats-bg.png);
 }
@@ -54,25 +51,21 @@ li{
     outline: none;
 }
 
-@media only screen and (max-width:650px) {
+@media only screen and (max-width:1024px) {
     .python-container{
         width: 90%;
         padding: 10px;
         min-height: 30vh;
         margin-top: 10px;
     }
-    li{
-        font-size: 10px;
-    }
     h1{
         font-size: 20px;
-    }
-    ul{
-        padding: 0px;
-        margin-left: 10px;
     }
     .enroll-button{
         width: 50vw;
         font-size: 15px;
+    }
+    .python-header{
+        font-size: 30px;
     }
 }

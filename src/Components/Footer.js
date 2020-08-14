@@ -1,5 +1,6 @@
 import React from 'react'
-import {FaPhone, FaMapMarkerAlt, FaEnvelope, FaWhatsapp, FaFacebookF, FaTwitter, FaInstagramSquare, FaInstagram } from 'react-icons/fa';
+import '../CSS/Components/Footer/Footer.css'
+import {FaPhone, FaEnvelope, FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 export default class MyFooter extends React.Component {
     render() {

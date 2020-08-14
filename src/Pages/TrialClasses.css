@@ -22,3 +22,13 @@
     width: 50%;
     padding: 0px 20px;
 }
+
+@media only screen and (max-width:1024px){
+    .trial-form-container{
+        flex-direction: column;
+    }
+    .trial-form{
+        width: 100%;
+        margin: 20px 0px;
+    }
+}

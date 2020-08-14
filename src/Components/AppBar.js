@@ -18,7 +18,6 @@ import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
 import ListAltOutlinedIcon from '@material-ui/icons/ListAltOutlined';
 import LocalPhoneOutlinedIcon from '@material-ui/icons/LocalPhoneOutlined';
 import QuestionAnswerOutlinedIcon from '@material-ui/icons/QuestionAnswerOutlined';
-import AssignmentOutlinedIcon from '@material-ui/icons/AssignmentOutlined';
 import ClassOutlinedIcon from '@material-ui/icons/ClassOutlined';
 import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
@@ -26,6 +25,7 @@ import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import PeopleOutlineOutlinedIcon from '@material-ui/icons/PeopleOutlineOutlined';
 import logo from '../Images/logo.png'
+import '../CSS/Components/AppBar/AppBar.css'
 
 function ElevationScroll(props) {
     const { children, window } = props;
@@ -95,7 +95,7 @@ export default function MyAppBar(props) {
                         <div>
                             <img src={logo} style={{width:"50px",height:"50px"}} alt="s" />
                         </div>
-                        <div style={{fontFamily: 'b', fontSize: "25px"}} >
+                        <div className="appbar-heading" >
                             Ariya
                         </div>
                     </div>
@@ -181,9 +181,9 @@ export default function MyAppBar(props) {
                             <Link to='/' className="Link" >
                                 <div style={{ margin: "0px", display: "flex", alignItems:"center" }} >
                                     <div>
-                                        <img src={logo} style={{width:"60px", height:"60px",margin:"0px 30px"}} />
+                                        <img src={logo} className="appbar-image" />
                                     </div>
-                                    <div style={{fontFamily:"b", fontSize:"40px"}}>
+                                    <div className="appbar-heading" >
                                         Ariya
                                     </div>
                                 </div>

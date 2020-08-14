@@ -9,6 +9,36 @@ color: darkslategrey;
 font-family: Helvetica, sans-serif;
 }
 
-#level-1{
-    margin-top: -10vh;
+.stats-content{
+    width: 70%;
+    font-size: 16px;
+    margin: 10px 0px;
+}
+
+.stats-ul{
+    font-size: 16px;
+    width: 60%;
+}
+
+.stats-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+@media only screen and (max-width:1024px){
+    .content{
+        width: 100%;
+        flex-direction: column;
+        font-size: 16px;
+        margin: 0px;
+    }
+    .stats-content{
+        width: 100%;
+    }
+    .stats-ul{
+        width: 100%;
+        font-size: 15px;
+    }
 }

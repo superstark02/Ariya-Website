@@ -1,0 +1,20 @@
+.appbar-heading{
+    font-family: b;
+    font-size: 40px;
+}
+.appbar-image{
+    width: 60px;
+    height: 60px;
+    margin: 0px 20px;
+}
+
+@media only screen and (max-width:1024px){
+    .appbar-heading{
+        font-size: 20px;
+    }
+    .appbar-image{
+        width: 30px;
+        height: 30px;
+        margin: 0px;
+    }
+}

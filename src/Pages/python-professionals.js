@@ -1,9 +1,8 @@
 import React from 'react'
 import './python-professionals.css'
+import '../CSS/Pages/python-proffesionals.css'
 import MyAppBar from '../Components/AppBar'
-import MyAppBaMobile from '../Components/mAppBar'
 import MyFooter from '../Components/Footer'
-import prof from '../Images/for-professionals.png'
 
 export default class ProfessionalsPython extends React.Component {
 
@@ -11,14 +10,9 @@ export default class ProfessionalsPython extends React.Component {
         return (
             <React.Fragment>
                 <div>
-                    <div className="responsive" >
-                        <MyAppBar />
-                    </div>
-                    <div className="mobile" >
-                        <MyAppBaMobile />
-                    </div>
-                    
-                    <div className='python-header prof-bg' style={{height:"60vh"}}>
+                    <MyAppBar />  
+
+                    <div className='python-header prof-bg  wrap' style={{height:"60vh"}}>
                         Python for Professionals
                     </div>
 
@@ -26,14 +20,21 @@ export default class ProfessionalsPython extends React.Component {
                         <h1 style={{fontFamily:"a"}}>Python for Professionals</h1>
                     </div> 
 
-                    <div>
-                    We have trained professionals for all levels of experience and streams – from high school and college students, to professionals working in the IT industry for 20+ years. Our course and exercises are designed to gain a deep understanding about Python’s programming concepts and develop robust coding skills with practical examples. Most of the students that take this course sign up for the AI and Machine Learning course to elevate their Pythion skills to the next level.
-                    
+                    <div className="wrap" style={{flexDirection:"column"}} >
+                        <div className="stats-content" >
+                            We have trained professionals for all levels of experience and streams – 
+                            from high school and college students, to professionals working in the IT industry for 20+ 
+                            years. Our course and exercises are designed to gain a deep understanding about Python’s 
+                            programming concepts and develop robust coding skills with practical examples. Most of the 
+                            students that take this course sign up for the AI and Machine Learning course to elevate their 
+                            Pythion skills to the next level.
+                        </div>
+                        <div className="stats-content" >
+                            We aim to ensure that our students have fully understood and absorbed the knowledge 
+                            from our curriculum and therefore the duration of the course is indicative only.
+                        </div>
                     </div>
-                    
-                    <div className="contentt">
-                    We aim to ensure that our students have fully understood and absorbed the knowledge from our curriculum and therefore the duration of the course is indicative only.
-                    </div>
+
                     <div className="contentt">
                         <ul>
                             <li>Being with fundamental coding concepts that are relevant for any programming language. </li>

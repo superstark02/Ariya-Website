@@ -176,7 +176,7 @@ export default function MyAppBar(props) {
             <CssBaseline />
             <ElevationScroll {...props}>
                 <AppBar style={{ backgroundColor: 'rgba(255,255,255,0.3)' }} >
-                    <Toolbar style={{ backgroundColor: 'rgba(255,255,255,0.5)', display: 'flex', justifyContent: 'space-between', padding: "10px 50px" }} >
+                    <Toolbar style={{ backgroundColor: 'rgba(255,255,255,1)', display: 'flex', justifyContent: 'space-between', padding: "10px 10%" }} >
                         <div style={{ width: "100%", display: "flex", justifyContent: "space-between", fontSize: '30px', fontFamily: 'j' }} >
                             <Link to='/' className="Link" >
                                 <div style={{ margin: "0px", display: "flex", alignItems:"center" }} >

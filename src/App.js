@@ -7,7 +7,6 @@ import Contact from './Pages/Contact'
 import { SignIn } from './Pages/SignIn'
 import Faqs from './Pages/faq'
 import PyhtonDescription from './Pages/python'
-import Stats from './Pages/stats'
 import PolicyAndPrivacy from './Pages/PolicyAndPrivacy'
 import CoursesForProfessionals from './Pages/CoursesForProfessionals'
 import TrialClasses from './Pages/TrialClasses'
@@ -32,7 +31,6 @@ export default function App(){
                 <Route exact path='/maths' component={MathsCourse} />
                 <Route exact path='/coding_questions' component={Faqs} />
                 <Route exact path='/coding_python' component={PyhtonDescription} />
-                <Route exact path='/coding_statistics' component={Stats} />
                 <Route exact path='/policy_and_privacy' component={PolicyAndPrivacy} />
                 <Route exact path='/courses_for_professionals' component={CoursesForProfessionals} />
                 <Route exact path='/trial_classes' component={TrialClasses} />

@@ -1,6 +1,5 @@
 import React from 'react'
-import './python-professionals.css'
-import '../CSS/Pages/python-proffesionals.css'
+import '../CSS/Pages/python-professionals.css'
 import MyAppBar from '../Components/AppBar'
 import MyFooter from '../Components/Footer'
 

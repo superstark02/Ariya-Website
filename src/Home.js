@@ -14,48 +14,24 @@ const courses = [
   {
     name: 'MATHEMATICS',
     color: "#dd5b49",
-    des: "The CodingZen Greenhorn program instills the concept that technology is a creator's tool to the young curious minds. By using fun and educational technology kits, including Scratch, Hopscotch, LittleBits and Dash. CodingZen Greenhorn moves students beyond mobile and computer gaming, and gets them hands-on experience in programming and hardwares"
+    des: <div>Build a robust foundation through grade school curriculum.<br /><br /> Customized learning sessions for kids of all ages</div>
   },
   {
     name: "Statistics",
     color: "#46B39D",
-    des: "The CodingZen Explorer program inspires technology savvy primary school students to go beyond mobile and computer gaming, and move to create their own games and apps. With the emphasis of creativity, CodingZen Explorer empowers students through problem solving using technology. Students learn computer science concepts, user centric design, and mobile app development."
+    des: <div>Learn the key concepts that are building blocks for AI and ML.<br /><br />Train using real life examples from the industry.</div>
   },
   {
-    name: "Students Python Program",
+    name: "Python For Kids",
     color: "#F0CA4D",
-    des: "The CodingZen Creator program lays a solid foundation of computer science concepts and theories through developing technically challenging apps. With an emphasis on hands-on development and bringing ideas to reality, the program guides students to deepen their understanding on key current topics in technology, including privacy, security and social networking."
+    des: <div>Introduce the world of programming early with actual coding tools and methods. <br /><br />Training plans that use school-based curriculum </div>
   },
   {
     name: "Python for Professionals",
     color: "#3498DB",
-    des: "The CodingZen Creator program lays a solid foundation of computer science concepts and theories through developing technically challenging apps. With an emphasis on hands-on development and bringing ideas to reality, the program guides students to deepen their understanding on key current topics in technology, including privacy, security and social networking."
+    des: <div>Intensive and immersive course content to develop solid skillset in Python coding. <br /><br />Coaching style that works for all skill levels.</div>
   }
 
-]
-
-const think = [
-  {
-    name: "KNOW YOUR WORLD",
-    class: "one",
-    color: "#dd5b49",
-    des: "It’s a jungle out there.  We are surrounded by electronic devices that are shaping our lives. The internet was a privilege not a long time ago and it is now a utility that we can access simply with our voice or a wave of the palm. We will help you recognize its power and its risks.",
-    imag: image1
-  },
-  {
-    name: "THE EARLY BIRD GETS THE WORM",
-    class: "two",
-    color: "#3498DB",
-    des: "Most professions already require some kind of coding knowledge. Hone this skill before you have to. We will help with the crawl, the walk, the run and the flight.",
-    imag: image2
-  },
-  {
-    name: "BUILD YOUR WORLD",
-    class: "three",
-    color: "#F0CA4D",
-    des: "Get the skillsets to build that technologies to create the future you want. Harness the power of your imagination to be the change you want. We will help you bring out the creator and the entrepreneur in you.",
-    imag: image2
-  }
 ]
 
 export default function Home() {
@@ -84,21 +60,23 @@ export default function Home() {
       <React.Fragment>
         <div>
           <MyAppBar />
-          <div className="home-wallpaper-head" style={{margin:"50px 0px"}} >
-            <div className="home-wallpaper-text wrap" >
-              <p>
-                Robotics already replacing humans for jobs, accelerated by recent pandemic!!!!
-              </p>
-              <p>
-                Prepare for next generation of technology- Machine Learning (ML)/ Artificial Intelligence (AI)!!!!
-              </p>
-              <p>
-                Learn <b style={{color:"#f0ca4e"}} >Mathematics</b>, <b style={{color:"#5bb3a9"}} >Python</b> and <b style={{color:"#e37b3e"}} >Statistics</b> -fundamentals to ML from our top teachers at the convenience 
+          <div className="home-wallpaper-head" style={{ margin: "50px 0px" }} >
+            <div className="home-wallpaper-text wrap" style={{ textAlign: "left" }} >
+              <div>
+                <p>
+                  Robotics already replacing humans for jobs, accelerated by recent pandemic!!!!
+                </p>
+                <p>
+                  Prepare for next generation of technology- Machine Learning (ML)/ Artificial Intelligence (AI)!!!!
+                </p>
+                <p>
+                  Learn <b style={{ color: "#f0ca4e" }} >Mathematics</b>, <b style={{ color: "#5bb3a9" }} >Python</b> and <b style={{ color: "#e37b3e" }} >Statistics</b> -fundamentals to ML from our top teachers at the convenience
                 of your home!!!!!!
+                </p>
+                <p>
+                  Offering online one-to-one or group sessions for age group 9 and above!!!!!
               </p>
-              <p>
-                Offering online one-to-one or group sessions for age group 9 and above!!!!!
-              </p>
+              </div>
             </div>
             <div>
               <img src={wallpaper} className="home-image" />
@@ -108,7 +86,7 @@ export default function Home() {
           <div className="wrap" >
             <div>
               <div style={{ fontSize: "50px", fontWeight: "700", margin: "40px 0px" }} >
-                OUR PATHWAY TO MACHINE LEARNING
+                <i>OUR PATHWAY TO MACHINE LEARNING</i>
               </div>
               <div className="wrap" style={{ alignItems: "inherit" }} >
                 {
@@ -119,7 +97,7 @@ export default function Home() {
                           {item.name}
                         </div>
                         <div style={{ width: "250px", backgroundColor: item.color, height: "2px", margin: '10px 0px' }} />
-                        <div>
+                        <div style={{ textAlign: "left" }} >
                           {item.des}
                         </div>
                       </div>
@@ -132,7 +110,7 @@ export default function Home() {
 
           <div className="home-green wrap" >
             <p style={{ width: "70%", fontWeight: "700" }} >
-              “We have seen AI providing conversation and comfort to the lonely; we have also seen AI engaging in racial discrimination. Yet the biggest harm that AI is likely to do to individuals in the short term is job displacement, as the amount of work we can automate with AI is vastly larger than before. As leaders, it is incumbent on all of us to make sure we are building a world in which every individual has an opportunity to thrive.”
+              "Artificial Intelligence is the new electricity"
               <br />
               <br />
               <i style={{ fontSize: "18px", fontWeight: "200" }} >

@@ -19,33 +19,13 @@ export class TrialClasses extends Component {
                     <div className="trial-form-container" >
                         <div className="trial-form" >
                             <form>
-                                <input placeholder="Full Name" className="trial-input" ></input>
-                                <input placeholder="School Name" className="trial-input" ></input>
-                                <input placeholder="Subject" className="trial-input" ></input>
-                                <input placeholder="Parents Name" className="trial-input" ></input>    
+                                <input placeholder="Your Name*" className="trial-input" ></input>
+                                <input placeholder="Topic" className="trial-input" ></input>  
                                 <input placeholder="Mobile Number" className="trial-input" ></input>
-                                <input type='email' placeholder="Email" className="trial-input" ></input>
-                                <input placeholder="Message" className="trial-input" style={{height:"100px"}} ></input>
+                                <input type='email' placeholder="Email*" className="trial-input" ></input>
+                                <input placeholder="Message*" className="trial-input" style={{height:"100px"}} ></input>
                                 <button className="trial-submit-button" >SUBMIT</button>
                             </form>
-                        </div>
-                        <div style={{width:"50%"}} >
-                            <div>
-                                Connect with us
-                            </div>
-                            <div>
-                                Email us at hello@codingzen.in
-                            </div>
-                            <div>
-                                <b>Call</b> us at (+91) 9958405905
-                            </div>
-                            <div>
-                                Find us on social media:
-                            </div>
-                            <div>
-                                <FaFacebook color="#5472d2" size="40px" style={{margin:"10px"}} />
-                                <FaTwitter color="#5aa1e3" size="40px" style={{margin:"10px"}} />
-                            </div>
                         </div>
                     </div>
                 </div>

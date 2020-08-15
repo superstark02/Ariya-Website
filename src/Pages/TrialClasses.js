@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import MyAppBaMobile from '../Components/mAppBar'
 import MyAppBar from '../Components/AppBar'
 import MyFooter from '../Components/Footer'
-import { FaFacebook, FaTwitter } from 'react-icons/fa'
 import Checkbox from '@material-ui/core/Checkbox';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -62,24 +61,6 @@ export class TrialClasses extends Component {
                             <input placeholder="Mobile Number" className="trial-input" ></input>
                             <input type='email' placeholder="Email" className="trial-input" ></input>
                             <button className="trial-submit-button" >SUBMIT</button>
-                        </div>
-                        <div style={{ width: "50%" }} >
-                            <div>
-                                Connect with us
-                            </div>
-                            <div>
-                                Email us at hello@codingzen.in
-                            </div>
-                            <div>
-                                <b>Call</b> us at (+91) 9958405905
-                            </div>
-                            <div>
-                                Find us on social media:
-                            </div>
-                            <div>
-                                <FaFacebook color="#5472d2" size="40px" style={{ margin: "10px" }} />
-                                <FaTwitter color="#5aa1e3" size="40px" style={{ margin: "10px" }} />
-                            </div>
                         </div>
                     </div>
                 </div>

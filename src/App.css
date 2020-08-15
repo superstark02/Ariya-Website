@@ -219,7 +219,7 @@ td{
     color: white;
     text-align: center;
     background-color: #30b07e;
-    height: 300px;
+    height: auto;
     font-size: 20px;
     max-width: 100%;
 }

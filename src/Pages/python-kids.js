@@ -11,7 +11,7 @@ import image4 from '../Images/light-blue.png'
 const data = [
     {
         name: "Alpha (Level 1)",
-        duration: "Duration – 10-12 weeks (2 sessions a week for 1.5 hour each)",
+        duration: "Duration – 10-12 weeks (2 sessions a week for 1 hour each)",
         imamge: image1,
         content: <div>
             <ul>
@@ -22,7 +22,7 @@ const data = [
     },
     {
         name: "Beta (Level 2)",
-        duration: "Duration – 14-16 weeks (2 sessions a week for 1.5 hour each)",
+        duration: "Duration – 14-16 weeks (2 sessions a week for 1 hour each)",
         imamge: image2,
         content: <div>
             <ul>
@@ -33,7 +33,7 @@ const data = [
     },
     {
         name: "Gamma (Level 3)",
-        duration: "Duration – 14-16 weeks (2 sessions a week for 1.5 hour each)",
+        duration: "Duration – 14-16 weeks (2 sessions a week for 1.5 hours each)",
         imamge: image3,
         content: <div>
             <ul>
@@ -44,7 +44,7 @@ const data = [
     },
     {
         name: "Delta (Level 4)",
-        duration: "Duration – 16-18 (2 sessions a week for 1.5 hour each)",
+        duration: "Duration – 16-18 weeks (2 sessions a week for 1.5 hours each)",
         imamge: image4,
         content: <div>
             <ul>
@@ -69,7 +69,7 @@ export default class KidsPython extends React.Component {
                     </div>
 
                     <div className="wrap" >
-                        <div style={{ width: "80%", textAlign:"left", margin:"70px 0px" }} className="kids-courses" >
+                        <div style={{ width: "76%", textAlign:"left", margin:"20px 0px" }} className="kids-courses" >
                             <p className="kids-title" >Why &ldquo;Python&rdquo; for Kids??</p>
                             <ul className="kids-content" >
                                 <li>Python was created originally for kids to learn coding!!!!</li>
@@ -95,7 +95,7 @@ export default class KidsPython extends React.Component {
                                                 </div>
                                             </div>
                                             <div>
-                                                <div className="kids-duration" >
+                                                <div className="kids-duration" style={{textAlign:"left"}} >
                                                     {item.duration}
                                                 </div>
                                                 <div className="kids-content" >

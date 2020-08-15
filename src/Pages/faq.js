@@ -57,11 +57,11 @@ export default function Faqs() {
                                         aria-controls="panel1a-content"
                                         id="panel1a-header"
                                     >
-                                        <Typography >{item.q}</Typography>
+                                        <Typography ><strong>{item.q}</strong></Typography>
                                     </ExpansionPanelSummary>
                                     <ExpansionPanelDetails>
                                         <Typography>
-                                            Ans. {item.a}
+                                            {item.a}
                                         </Typography>
                                     </ExpansionPanelDetails>
                                 </ExpansionPanel>
@@ -71,7 +71,7 @@ export default function Faqs() {
 
                     <div style={{ width: "100%", backgroundColor: "#f7f7f7", padding: "20px", borderRadius: "10px" }} >
                         <div style={{ margin: "20px 0px" }} >
-                            Still have Questions, Do reach out to us and we will be glad to help.
+                            Still have Questions? Do reach out to us and we will be glad to help.
                         </div>
                         <Link to='/coding_contact' ><button className="trial-submit-button" >CONTACT US</button></Link>
                     </div>

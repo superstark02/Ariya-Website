@@ -69,10 +69,22 @@ export default class KidsPython extends React.Component {
                     </div>
 
                     <div className="wrap" >
+                        <div style={{ width: "80%", textAlign:"left", margin:"70px 0px" }} className="kids-courses" >
+                            <p className="kids-title" >Why &ldquo;Python&rdquo; for Kids??</p>
+                            <ul className="kids-content" >
+                                <li>Python was created originally for kids to learn coding!!!!</li>
+                                <li>Kids operate at genius level very early in the life!!! Starting early will help obtain the skills for future!!!</li>
+                                <li>Easy, simple to learn and with wide range of available libraries and excellent platform for complex Machine Learning projects.</li>
+                                <li>It is most sought-after language skill in the tech world!!!</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="wrap" >
                         <div className="kids-courses" >
                             {
-                                data.map(item=>{
-                                    return(
+                                data.map(item => {
+                                    return (
                                         <div className="kids-card" >
                                             <div>
                                                 <div className="kids-title" >

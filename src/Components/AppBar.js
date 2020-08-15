@@ -93,7 +93,7 @@ export default function MyAppBar(props) {
                 <div style={{ width: '100%' }} className="wrap" >
                     <div>
                         <div>
-                            <img src={logo} style={{width:"50px",height:"50px"}} alt="s" />
+                            <img src={logo} style={{ width: "50px", height: "50px" }} alt="s" />
                         </div>
                         <div className="appbar-heading" >
                             Ariya
@@ -120,7 +120,7 @@ export default function MyAppBar(props) {
                                 <List >
                                     <a href="/maths" className='Link' ><ListItem button >
                                         <ListItemIcon></ListItemIcon>
-                                        <ListItemText primary='Maths' />
+                                        <ListItemText primary='Mathematics' />
                                     </ListItem></a>
                                     <a href="/statistics_course" className='Link' ><ListItem button >
                                         <ListItemIcon></ListItemIcon>
@@ -134,19 +134,19 @@ export default function MyAppBar(props) {
                                         <ListItemIcon></ListItemIcon>
                                         <ListItemText primary='Python for Professionals' />
                                     </ListItem></a>
-                                    
+
                                 </List>
                             </AccordionDetails>
                         </Accordion>
                     </ListItem>
 
-                    
-                    <a href='/about_us' className='Link' ><ListItem button >
-                                        <ListItemIcon><PeopleOutlineOutlinedIcon /></ListItemIcon>
-                                        <ListItemText primary='Our Philosophy' />
-                                    </ListItem></a>
 
-                    
+                    <a href='/about_us' className='Link' ><ListItem button >
+                        <ListItemIcon><PeopleOutlineOutlinedIcon /></ListItemIcon>
+                        <ListItemText primary='Our Philosophy' />
+                    </ListItem></a>
+
+
 
                 </List>
                 <Divider />
@@ -179,7 +179,7 @@ export default function MyAppBar(props) {
                     <Toolbar style={{ backgroundColor: 'rgba(255,255,255,1)', display: 'flex', justifyContent: 'space-between', padding: "10px 10%" }} >
                         <div style={{ width: "100%", display: "flex", justifyContent: "space-between", fontSize: '30px', fontFamily: 'j' }} >
                             <Link to='/' className="Link" >
-                                <div style={{ margin: "0px", display: "flex", alignItems:"center" }} >
+                                <div style={{ margin: "0px", display: "flex", alignItems: "center" }} >
                                     <div>
                                         <img src={logo} className="appbar-image" />
                                     </div>

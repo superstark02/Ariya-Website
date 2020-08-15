@@ -10,27 +10,27 @@ import image5 from '../Images/Stats/REGRESSION.jpg'
 
 const courses = [
     {
-        name:"PROBABILITIES",
+        name: "PROBABILITIES",
         image: image1
     },
     {
-        name:"BAYESIAN ANALYSIS",
+        name: "BAYESIAN ANALYSIS",
         image: image2
     },
     {
-        name:"BASIC STATISTICS",
+        name: "BASIC STATISTICS",
         image: image3
     },
     {
-        name:"DISTRIBUTIONS",
+        name: "DISTRIBUTIONS",
         image: image4
     },
     {
-        name:"HYPOTHESIS TESTING",
+        name: "HYPOTHESIS TESTING",
         image: image4
     },
     {
-        name:"REGRESSION ANLYSIS",
+        name: "REGRESSION ANLYSIS",
         image: image1
     },
 ]
@@ -47,15 +47,12 @@ export default class StatisticsCourse extends React.Component {
                     </div>
 
                     <div className="wrap" >
-                        <div className="stats-content">
-                            Statistical knowledge helps usage of the proper methods to collect the data,
-                            employ the correct analyses, and make effective decisions. Statistics allow you to
-                            evaluate claims based on quantitative evidence and help you differentiate between
-                            reasonable and dubious conclusions. Machine learning is designed to make the most
-                            accurate predictions possible, without relying on rules-based programming. Statistics
-                            is one of the key elements in understanding and developing machine learning and artificial
-                            intelligence. Our curriculum provides the basic knowledge necessary to start out in the field
-                            of Machine Learning.
+                        <div className="stats-content" style={{textAlign:"left"}} >
+                            <ul>
+                                <li>Machine learning is designed to make the most accurate predictions possible, without relying on rules-based programming.</li>
+                                <li>Statistics is one of the key elements in understanding and developing machine learning and artificial intelligence.</li>
+                                <li>Our curriculum provides the basic knowledge necessary to start out in the field of Machine Learning.</li>
+                            </ul>
                         </div>
                         <div className="stats-content">
                             We aim to ensure that our students have fully understood and absorbed the knowledge
@@ -66,8 +63,8 @@ export default class StatisticsCourse extends React.Component {
                     <div className="wrap" >
                         <div className="stats-courses" >
                             {
-                                courses.map(item=>{
-                                    return(
+                                courses.map(item => {
+                                    return (
                                         <div className="stats-card" >
                                             <div className="stats-title" >
                                                 {item.name}

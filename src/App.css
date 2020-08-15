@@ -1,28 +1,28 @@
 body{
     color: #2A404D;
 }
-.wallpaper{
+.home-wallpaper-head{
+    display: flex;
     width: 100%;
-    background-color: #091626;
-    background-image: url(./Images/back.png);
-    background-position: right;
-    background-size: 58%;
-    background-repeat: no-repeat;
-    height: 90vh;
-    padding-left: 45px;
-    padding-top: 70px;
-    align-items: flex-start;
-    z-index: -1;
-    margin-top: 20px;
+    margin:0px;
+    padding: 0px 5vw;
+    font-size: 25px;
+    height: 50vh;
 }
-
+.home-image{
+    height: 50vh;
+}
+.home-wallpaper-text{
+    width: 50%;
+    font-size: 20px;
+}
 .images{
     height: 16px;
     width: 16px;
 }
 
 .bg-text {
-    color: white;
+    color: #091626;
     font-weight: bold;
     width: 100%;
     padding-top: 20px;
@@ -281,13 +281,27 @@ td{
     .mobile{
       display: contents;
     }
+    .home-wallpaper-text{
+        width: 100%;
+    }
+    .home-wallpaper-head{
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+        flex-direction: column;
+        height: auto;
+    }
+    .wallpaper{
+        flex-direction: column;
+    }
     .para{
         height: 50vh;
-        background-color: black;
     }
     .bg-text{
         font-size: 18px;
         padding: 20px;
+        width: 100%;
+        height: auto;
     }
     .long-text{
         font-size: 18px;
@@ -356,6 +370,7 @@ td{
     .home-green{
         font-size: 15px;
         padding: 0px;
+        height: auto;
     }
   }
 

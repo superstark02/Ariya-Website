@@ -19,12 +19,13 @@ export class TrialClasses extends Component {
                     <div className="trial-form-container" >
                         <div className="trial-form" >
                             <form>
-                                <input placeholder="Student Name" className="trial-input" ></input>
+                                <input placeholder="Full Name" className="trial-input" ></input>
                                 <input placeholder="School Name" className="trial-input" ></input>
-                                <input placeholder="Student Age" className="trial-input" ></input>
+                                <input placeholder="Subject" className="trial-input" ></input>
                                 <input placeholder="Parents Name" className="trial-input" ></input>    
                                 <input placeholder="Mobile Number" className="trial-input" ></input>
                                 <input type='email' placeholder="Email" className="trial-input" ></input>
+                                <input placeholder="Message" className="trial-input" style={{height:"100px"}} ></input>
                                 <button className="trial-submit-button" >SUBMIT</button>
                             </form>
                         </div>

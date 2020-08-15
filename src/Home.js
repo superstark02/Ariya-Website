@@ -1,14 +1,12 @@
 import React from 'react';
 import './App.css'
 import { useDencrypt } from "use-dencrypt-effect";
-import { Box } from '@material-ui/core';
 import SplashScreen from './Components/SplashScreen';
 import MyAppBar from './Components/AppBar';
-import MyAppBaMobile from './Components/mAppBar';
 import MyFooter from './Components/Footer';
-import { Carousel } from './Components/Carousel';
 import image1 from './Images/future.jpg';
 import image2 from './Images/ai.jpg';
+import wallpaper from './Images/Home/home-head.png'
 
 const values = ["Welcome to the Real World!", "Keep Calm And Code...", "Coding is Awesome!"];
 
@@ -84,11 +82,26 @@ export default function Home() {
   else {
     return (
       <React.Fragment>
-        <div className='responsive' >
+        <div>
           <MyAppBar />
-          <div class='wallpaper'>
-            <div className='para'>
-              <Box style={{ height: 'auto', width: '800px' }} ><div class='bg-text' style={{fontFamily: "a"}}>Soon, robotics will be replacing humans for jobs in most of the areas. Prepare your kids for the next generation of technology – “Machine Learning/Artificial Intelligence”. Learn Mathematics, Statistics and Python which are fundamentals to Machine Learning from our top teachers at the convenience of your home.</div></Box>
+          <div className="home-wallpaper-head" style={{margin:"50px 0px"}} >
+            <div className="home-wallpaper-text wrap" >
+              <p>
+                Robotics already replacing humans for jobs, accelerated by recent pandemic!!!!
+              </p>
+              <p>
+                Prepare for next generation of technology- Machine Learning (ML)/ Artificial Intelligence (AI)!!!!
+              </p>
+              <p>
+                Learn <b style={{color:"#f0ca4e"}} >Mathematics</b>, <b style={{color:"#5bb3a9"}} >Python</b> and <b style={{color:"#e37b3e"}} >Statistics</b> -fundamentals to ML from our top teachers at the convenience 
+                of your home!!!!!!
+              </p>
+              <p>
+                Offering online one-to-one or group sessions for age group 9 and above!!!!!
+              </p>
+            </div>
+            <div>
+              <img src={wallpaper} className="home-image" />
             </div>
           </div>
 
@@ -120,111 +133,18 @@ export default function Home() {
           <div className="home-green wrap" >
             <p style={{ width: "70%", fontWeight: "700" }} >
               “We have seen AI providing conversation and comfort to the lonely; we have also seen AI engaging in racial discrimination. Yet the biggest harm that AI is likely to do to individuals in the short term is job displacement, as the amount of work we can automate with AI is vastly larger than before. As leaders, it is incumbent on all of us to make sure we are building a world in which every individual has an opportunity to thrive.”
-            <br />
+              <br />
               <br />
               <i style={{ fontSize: "18px", fontWeight: "200" }} >
                 Andrew Ng, Co-founder and lead of Google Brain.
-            </i>
+              </i>
             </p>
           </div>
 
-          
-
-
-    
-
-          <div>
-          </div>
           <MyFooter />
-        </div>
-
-        <div className='mobile' >
-          <MyAppBaMobile />
-          <div style={{ position: 'absolute', top: '0', width: '100%'}} >
-            <div className='para'>
-              <Box style={{ height: 'auto', marginTop: '10%' }} ><div class='bg-text'>{result}</div></Box>
-            </div>
-
-            <div className="wrap" >
-              <h1 style={{ fontWeight: "700", fontSize: "30px", marginBottom: "5px" }} >
-                WHY KIDS SHOULD LEARN CODING?
-              </h1>
-              <div className="wrap" >
-                Its not about learning to CODE - its about learning to THINK!
-              </div>
-              <div className="wrap" >
-                {
-                  think.map(item => {
-                    return (
-                      <div className="class-card" style={{ margin: "10px 0px", padding: "10px", boxShadow:"0px 0px 5px "+item.color }} >
-                        <div className={"home-avatar " + item.class} style={{ backgroundImage: "url(" + item.imag + ")", backgroundSize: "cover" }} >
-
-                        </div>
-                        <div style={{ textAlign: "center", textTransform: "uppercase", fontWeight: "300", fontSize: "20px" }} >
-                          {item.name}
-                        </div>
-                        <div style={{ width: "250px", backgroundColor: item.color, height: "2px", margin: '10px 0px' }} />
-                        <div>
-                          {item.des}
-                        </div>
-                      </div>
-                    )
-                  })
-                }
-              </div>
-            </div>
-
-            <div className="home-green wrap" >
-              <p style={{ width: "90%" }} >
-                “We have seen AI providing conversation and comfort to the lonely; we have also seen AI engaging in racial discrimination. Yet the biggest harm that AI is likely to do to individuals in the short term is job displacement, as the amount of work we can automate with AI is vastly larger than before. As leaders, it is incumbent on all of us to make sure we are building a world in which every individual has an opportunity to thrive.”
-                <br />
-                <br />
-                <i style={{ fontSize: "10px", fontWeight: "200" }} >
-                  Andrew Ng, Co-founder and lead of Google Brain.
-            </i>
-              </p>
-            </div>
-
-            <div className="wrap" >
-              <div>
-                <div style={{ fontSize: "30px", fontWeight: "700", margin: "40px 0px" }} >
-                  OUR PATHWAY TO MACHINE LEARNING
-              </div>
-                <div className="wrap" style={{ alignItems: "inherit" }} >
-                  {
-                    courses.map(item => {
-                      return (
-                        <div className="class-card" style={{ border: "solid 1px " + item.color }} >
-                          <div style={{ textAlign: "center", textTransform: "uppercase", fontWeight: "300", fontSize: "20px" }} >
-                            {item.name}
-                          </div>
-                          <div style={{ width: "250px", backgroundColor: item.color, height: "1px", margin: '10px 0px' }} />
-                          <div>
-                            {item.des}
-                          </div>
-                        </div>
-                      )
-                    })
-                  }
-                </div>
-              </div>
-            </div>
-
-            <div style={{ backgroundColor: "black", textAlign: "center", color: "white" }} >
-              <div className="sub-footer wrap" >
-                "Before coming to this workshop, programming seemed very difficult and complicated to me. After this <br /> workshop, I think programming is quite simple and easy to learn!"<br />
-                <br /><br />
-              Vanshika, St. Paul's Secondary School
-            </div>
-            </div>
-
-            <div style={{ textAlign: 'center', marginTop: "20px" }} ><h2 style={{ fontFamily: 'j' }} >Testimonials;</h2></div>
-            <Carousel />
-
-            <MyFooter />
-          </div>
         </div>
       </React.Fragment>
     );
   }
 }
+//Soon, robotics will be replacing humans for jobs in most of the areas. Prepare your kids for the next generation of technology – “Machine Learning/Artificial Intelligence”. Learn Mathematics, Statistics and Python which are fundamentals to Machine Learning from our top teachers at the convenience of your home.

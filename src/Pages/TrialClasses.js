@@ -3,6 +3,11 @@ import MyAppBaMobile from '../Components/mAppBar'
 import MyAppBar from '../Components/AppBar'
 import MyFooter from '../Components/Footer'
 import { FaFacebook, FaTwitter } from 'react-icons/fa'
+import Checkbox from '@material-ui/core/Checkbox';
+import FormGroup from '@material-ui/core/FormGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import FormControl from '@material-ui/core/FormControl';
+import FormLabel from '@material-ui/core/FormLabel';
 import './TrialClasses.css'
 
 export class TrialClasses extends Component {
@@ -10,12 +15,12 @@ export class TrialClasses extends Component {
         return (
             <div>
                 <div className="mobile" >
-                    <MyAppBaMobile/>
+                    <MyAppBaMobile />
                 </div>
                 <div className="responsive" >
                     <MyAppBar/>
                 </div>
-                <div style={{marginTop:"4vh",padding:"0 10%"}} >
+                <div style={{ marginTop: "4vh", padding: "0 10%" }} >
                     <h1>
                         Request A Trial Class
                     </h1>
@@ -24,17 +29,41 @@ export class TrialClasses extends Component {
                     </div>
                     <div className="trial-form-container" >
                         <div className="trial-form" >
-                            <form>
-                                <input placeholder="Student Name" className="trial-input" ></input>
-                                <input placeholder="School Name" className="trial-input" ></input>
-                                <input placeholder="Student Age" className="trial-input" ></input>
-                                <input placeholder="Parents Name" className="trial-input" ></input>    
-                                <input placeholder="Mobile Number" className="trial-input" ></input>
-                                <input type='email' placeholder="Email" className="trial-input" ></input>
-                                <button className="trial-submit-button" >SUBMIT</button>
-                            </form>
+                            <input placeholder="Student Name" className="trial-input" ></input>
+                            <FormControl component="fieldset">
+                                <FormLabel component="legend">Choose Subjects</FormLabel>
+                                <FormGroup aria-label="position" row>
+                                <FormControlLabel
+                                        value="end"
+                                        control={<Checkbox color="primary" />}
+                                        label="Mathematics"
+                                        labelPlacement="end"
+                                    />
+                                    <FormControlLabel
+                                        value="end"
+                                        control={<Checkbox color="primary" />}
+                                        label="Python Jr"
+                                        labelPlacement="end"
+                                    />
+                                    <FormControlLabel
+                                        value="end"
+                                        control={<Checkbox color="primary" />}
+                                        label="Python for Professionals"
+                                        labelPlacement="end"
+                                    />
+                                    <FormControlLabel
+                                        value="end"
+                                        control={<Checkbox color="primary" />}
+                                        label="Statistics"
+                                        labelPlacement="end"
+                                    />
+                                </FormGroup>
+                            </FormControl>
+                            <input placeholder="Mobile Number" className="trial-input" ></input>
+                            <input type='email' placeholder="Email" className="trial-input" ></input>
+                            <button className="trial-submit-button" >SUBMIT</button>
                         </div>
-                        <div style={{width:"50%"}} >
+                        <div style={{ width: "50%" }} >
                             <div>
                                 Connect with us
                             </div>
@@ -48,13 +77,13 @@ export class TrialClasses extends Component {
                                 Find us on social media:
                             </div>
                             <div>
-                                <FaFacebook color="#5472d2" size="40px" style={{margin:"10px"}} />
-                                <FaTwitter color="#5aa1e3" size="40px" style={{margin:"10px"}} />
+                                <FaFacebook color="#5472d2" size="40px" style={{ margin: "10px" }} />
+                                <FaTwitter color="#5aa1e3" size="40px" style={{ margin: "10px" }} />
                             </div>
                         </div>
                     </div>
                 </div>
-                <MyFooter/>
+                <MyFooter />
             </div>
         )
     }

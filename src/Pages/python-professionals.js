@@ -21,12 +21,7 @@ export default class ProfessionalsPython extends React.Component {
 
                     <div className="wrap" style={{flexDirection:"column"}} >
                         <div className="stats-content" >
-                            We have trained professionals for all levels of experience and streams – 
-                            from high school and college students, to professionals working in the IT industry for 20+ 
-                            years. Our course and exercises are designed to gain a deep understanding about Python’s 
-                            programming concepts and develop robust coding skills with practical examples. Most of the 
-                            students that take this course sign up for the AI and Machine Learning course to elevate their 
-                            Pythion skills to the next level.
+                            Offering course for professionals to help them gain a deep understanding about Python’s programming concepts and develop robust coding skills with practical examples. The next step after this course is to sign-up for AI and Machine Learning course to help elevate Python skills to the next level.
                         </div>
                         <div className="stats-content" >
                             We aim to ensure that our students have fully understood and absorbed the knowledge 

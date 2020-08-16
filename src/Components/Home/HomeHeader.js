@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import image from '../../Images/Home/big-logo.png'
 import '../../CSS/Home/HomeHeader.css'
+import { Link } from 'react-router-dom';
 
 export class HomeHeader extends Component {
     render() {
@@ -12,7 +13,9 @@ export class HomeHeader extends Component {
                             <h1>
                                 Online one-to-one or group sessions for ages 9+
                             </h1>
-                            <button className="standard-button" >BOOK A FREE TRIAL</button>
+                            <Link to='/trial_classes' >
+                                <button className="standard-button" >BOOK A FREE TRIAL</button>
+                            </Link>
                         </div>
                         <div>
                             <img alt="s" src={image} className="home-wallpaper" />

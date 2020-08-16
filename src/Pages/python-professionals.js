@@ -37,7 +37,7 @@ export default class ProfessionalsPython extends React.Component {
                             </ul>
 
                             <div className="lastpara" style={{color:"#f0ca4e"}} >
-                                <strong>Classes usually run for about 8 weeks, 5 days each week for 1.5 hours each day. </strong>
+                                <strong>Duration - Classes usually run for about 8 weeks, 5 days each week for 1.5 hours each day. </strong>
                             </div>
                         </div>
                     </div>

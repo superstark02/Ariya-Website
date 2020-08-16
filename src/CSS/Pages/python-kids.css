@@ -33,4 +33,7 @@
     .kids-card{
         flex-direction: column;
     }
+    .kids-courses{
+        width: 95%;
+    }
 }

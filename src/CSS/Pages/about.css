@@ -1,0 +1,9 @@
+.about-wrap{
+    width: 70%;
+}
+
+@media only screen and (max-width:1024px){
+    .about-wrap{
+        width: 90%;
+    }
+}

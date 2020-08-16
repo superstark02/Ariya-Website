@@ -10,6 +10,7 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "animate.css": "^4.1.0",
+    "emailjs-com": "^2.6.3",
     "framer": "^1.2.3",
     "framer-motion": "^1.11.0",
     "lodash": "^4.17.15",

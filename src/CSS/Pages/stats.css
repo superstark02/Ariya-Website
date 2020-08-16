@@ -37,6 +37,7 @@
 @media only screen and (max-width:1024px){
     .stats-content{
         width: 100%;
+        padding: 1vw 4vw;
     }
     .stats-ul{
         width: 100%;

@@ -7,7 +7,7 @@
 }
 
 .smallh{
-    padding: 10px 140px;
+    padding: 10px;
     text-align: justify;
     font-size: 20px;
     font-weight: 500;
@@ -43,5 +43,8 @@
     .aboutTile{
         width: 300px;
         margin: 10px 0px;
+    }
+    .smallh{
+        width: 100%;
     }
 }

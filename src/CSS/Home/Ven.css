@@ -1,0 +1,45 @@
+.home-courses{
+    display: flex;
+}
+.home-course-cards{
+    font-weight: 700;
+    padding: 20px;
+    margin: 30px;
+    box-shadow:0px 15px 30px rgba(0, 0, 0, 0.1);
+}
+.maths{
+    background-color: #46b39d27;
+    color: #46b39d;
+}
+.stats{
+    background-color: #f0ca4d21;
+    color: #f0ca4d;
+}
+.kids{
+    background-color: #e37c4017;
+    color: #e37b40;
+}
+.sr{
+    background-color: #72b5ca17;
+    color: #72b5ca;
+}
+
+.course-details-top{
+    margin-top: -100px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.course-details-bottom{
+    margin-bottom: -100px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+}

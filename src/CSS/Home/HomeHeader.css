@@ -1,0 +1,82 @@
+.shape-1, .shape-2, .shape-3, .shape-4{
+    width: 20vw;
+    cursor: pointer;
+}
+.shape-1{
+    margin-right: -8vw;
+}
+.shape-3{
+    margin-left: -8vw;
+}
+.shape-4{
+    margin-top: 1vw;
+}
+
+.shape-4:hover , .shape-1:hover, .shape-3:hover{
+    animation: roll-1 0.5s forwards;
+    transform: translate(10px,10px,10px);
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+    animation-fill-mode: forwards;
+}
+
+.shape-4:hover{
+    animation: roll-4 0.5s forwards;
+}
+
+.shape-3:hover{
+    animation: roll-3 0.5s forwards;
+}
+
+@keyframes roll-1 {
+    0% {
+      transform: translate(0px,0px);
+    }
+    100% {
+      transform: translate(-20px ,-20px);
+    }
+  }
+
+@keyframes roll-4 {
+    0% {
+        transform: translate(0px,0px);
+    }
+    100% {
+        transform: translate(0px ,20px);
+    }
+}
+
+@keyframes roll-3 {
+    0% {
+        transform: translate(0px,0px);
+    }
+    100% {
+        transform: translate(20px ,-20px);
+    }
+}
+
+/* content CSS */
+
+
+@keyframes exp-1 {
+    0% {
+        transform: translate(0px,0px);
+    }
+    100% {
+        transform: translate(20px ,-20px);
+    }
+}
+
+
+
+/*image*/
+.home-header-image-box{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.home-header-image{
+    width: 30vw;
+    filter: drop-shadow(0px 0px 30px rgba(0,0,0,0.2));
+}

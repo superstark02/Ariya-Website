@@ -7,7 +7,6 @@ export default class MyFooter extends React.Component {
         return (
             <div>
                 <div className="footer">
-                   
                     <div>
                         <FaEnvelope/> Email:
                     </div>

@@ -1,0 +1,26 @@
+.paying-chart{
+    width: 50%;
+    margin: 100px 0px;
+}
+
+.home-features{
+    width: 80%;
+    margin: 150px 0px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: #72b5ca;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+    padding:30px
+}
+
+.home-feature-icon{
+    border-radius: 50%;
+    background-color: rgba(114,181,202,0.3);
+    padding: 40px;
+    color: #72b5ca;
+    font-size: 80px;
+}

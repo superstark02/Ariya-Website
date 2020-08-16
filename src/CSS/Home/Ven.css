@@ -1,6 +1,9 @@
 .home-courses{
     display: flex;
 }
+.ven{
+    margin: 200px 0px;
+}
 .home-course-cards{
     font-weight: 700;
     padding: 20px;
@@ -42,4 +45,17 @@
     padding: 20px;
     color: white;
     cursor: pointer;
+}
+
+@media only screen and (max-width:1024px){
+    .home-courses{
+        flex-direction: column;
+        margin: 40px 0px;
+    }
+    .course-details-bottom, .course-details-top{
+        margin: 10px;
+    }
+    .ven{
+        margin: 50px 0px;
+    }
 }

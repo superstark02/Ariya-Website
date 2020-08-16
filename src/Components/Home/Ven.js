@@ -4,10 +4,10 @@ import '../../CSS/Home/Ven.css'
 export class Ven extends Component {
     render() {
         return (
-            <div style={{ margin: "200px 0px" }} >
-                <div className="home-courses" >
+            <div className="ven" >
+                <div className="home-courses desktop" >
                     <div>
-                        <div className="course-details-top" style={{backgroundColor:'#46b39d'}} >
+                        <div className="course-details-top" style={{ backgroundColor: '#46b39d' }} >
                             Build a robust foundation through grade school curriculum.
                             Customized learning sessions for kids of all ages
                         </div>
@@ -22,13 +22,13 @@ export class Ven extends Component {
                             STATISTICS
                         </div>
 
-                        <div className="course-details-bottom" style={{backgroundColor:'#f0ca4d'}} >
+                        <div className="course-details-bottom" style={{ backgroundColor: '#f0ca4d' }} >
                             Learn the key concepts that are building blocks for AI and ML.
                             Train using real life examples from the industry.
                         </div>
                     </div>
                     <div>
-                        <div className="course-details-top" style={{backgroundColor:'#e37b40'}} >
+                        <div className="course-details-top" style={{ backgroundColor: '#e37b40' }} >
                             Introduce the world of programming early with actual coding tools and methods.
                             Training plans that use school-based curriculum
                         </div>
@@ -42,9 +42,56 @@ export class Ven extends Component {
                             PYTHON FOR PROFESSIONALS
                         </div>
 
-                        <div className="course-details-bottom" style={{backgroundColor:'#78b8cc'}} >
+                        <div className="course-details-bottom" style={{ backgroundColor: '#78b8cc' }} >
                             Intensive and immersive course content to develop solid skillset in Python coding.
                             Coaching style that works for all skill levels.
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div className="mobile" >
+                    <div className="home-courses" >
+
+                        <div>
+                            <div className="home-course-cards maths" >
+                                MATHEMATICS
+                            </div>
+                            <div className="course-details-top" style={{ backgroundColor: '#46b39d' }} >
+                                Build a robust foundation through grade school curriculum.
+                                Customized learning sessions for kids of all ages
+                             </div>
+                        </div>
+
+                        <div>
+                            <div className="home-course-cards stats" >
+                                STATISTICS
+                            </div>
+                            <div className="course-details-bottom" style={{ backgroundColor: '#f0ca4d' }} >
+                                Learn the key concepts that are building blocks for AI and ML.
+                                Train using real life examples from the industry.
+                            </div>
+                        </div>
+
+                        <div>
+                            <div className="home-course-cards kids" >
+                                PYTHON FOR KIDS
+                            </div>
+                            <div className="course-details-top" style={{ backgroundColor: '#e37b40' }} >
+                                Introduce the world of programming early with actual coding tools and methods.
+                                Training plans that use school-based curriculum
+                            </div>
+                        </div>
+
+                        <div>
+                            <div className="home-course-cards sr" >
+                                PYTHON FOR PROFESSIONALS
+                            </div>
+                            <div className="course-details-bottom" style={{ backgroundColor: '#78b8cc' }} >
+                                Intensive and immersive course content to develop solid skillset in Python coding.
+                                Coaching style that works for all skill levels.
+                            </div>
                         </div>
                     </div>
                 </div>

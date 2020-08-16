@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import HomeHeader from './Components/Home/HomeHeader'
-import TrialClassButton from './Components/Home/TrialClassButton'
 import PayingChart from './Components/Home/PayingChart'
 import './CSS/Home/Home.css'
 import Ven from './Components/Home/Ven'
-import { FaMedal, FaLightbulb, FaDollarSign } from 'react-icons/fa'
+import { FaMedal,FaLightbulb,FaDollarSign } from 'react-icons/fa'
+import MyFooter from './Components/Footer'
 
 export class Home extends Component {
     render() {
@@ -12,25 +12,24 @@ export class Home extends Component {
             <div>
                 <div>
                     <HomeHeader />
-                    <TrialClassButton />
                 </div>
 
                 <div className="wrap" >
                     <div className="home-features" >
-                        <div>
-                            <FaMedal className="home-feature-icon"/>
+                        <div style={{margin:"20px 0px"}} >
+                            <FaMedal className="home-feature-icon" />
                             <div>
                               High Quality <br/> Teaching
                             </div>
                         </div>
-                        <div>
+                        <div style={{margin:"20px 0px"}} >
                             <FaLightbulb className="home-feature-icon" />
                             <div>
                                 Future Oriented <br/>
                                 Learning
                             </div>
                         </div>
-                        <div>
+                        <div style={{margin:"20px 0px"}} >
                             <FaDollarSign className="home-feature-icon" />
                             <div>
                                 Low Rates
@@ -46,7 +45,7 @@ export class Home extends Component {
                     <button className="secondary-button" >Book A Trial Class</button>
                 </div>
 
-                <div className="wrap">
+                <div className="home-chart-wrap">
                     <div className="paying-chart" >
                         <h2>Languages To Learn</h2>
                         <ul>
@@ -61,12 +60,12 @@ export class Home extends Component {
                     <PayingChart />
                 </div>
 
-                <div className="wraps" >
+                <div className="wrap" >
                     <div className="home-blogs" >
                         
                     </div>
                 </div>
-
+                <MyFooter/>
             </div>
         )
     }

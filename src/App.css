@@ -40,5 +40,19 @@ a, a:active, a:link, a:any-link{
     font-size: 17px;
   }
   
-  .ul-1{
+
+  .mobile{
+    display: none;
   }
+
+@media only screen and (max-width:1024px){
+  .desktop{
+    visibility: hidden;
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }.standard-input{
+    width: 70vw;
+  }
+}

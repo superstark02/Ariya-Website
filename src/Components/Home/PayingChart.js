@@ -38,7 +38,7 @@ export class PayingChart extends Component {
 
     render() {
         return (
-            <div>
+            <div className="desktop" >
                 <Chart
                     options={this.state.options}
                     series={this.state.series}

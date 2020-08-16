@@ -1,6 +1,6 @@
 import React from 'react'
 import '../CSS/Components/Footer/Footer.css'
-import {FaPhone, FaEnvelope, FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import {FaPhone, FaEnvelope, FaFacebookF, FaTwitter, FaInstagram, FaFacebookMessenger } from 'react-icons/fa';
 
 export default class MyFooter extends React.Component {
     render() {
@@ -14,8 +14,12 @@ export default class MyFooter extends React.Component {
                         <FaPhone/> Call: +1 
                     </div>
                     <div>
-                        <FaFacebookF style={{fontSize:"30px",margin:"0px 10px"}} /> 
-                        <FaTwitter style={{fontSize:"30px",margin:"0px 10px"}} /> 
+                        <a href="https://www.instagram.com/ariyaonline/" >
+                            <FaFacebookF style={{fontSize:"30px",margin:"0px 10px"}} />
+                        </a>
+                        <a href="https://m.facebook.com/ariyaonlinelearning/?__tn__=%2Cg" >
+                            <FaFacebookMessenger style={{fontSize:"30px",margin:"0px 10px"}} />
+                        </a>
                         <FaInstagram style={{fontSize:"30px",margin:"0px 10px"}} />
                     </div>
                 </div>  

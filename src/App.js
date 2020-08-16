@@ -41,7 +41,6 @@ export default function App(){
                 <Route exact path='/' component={Home} />
                 <Route exact path='*' component={Home} />
             </Switch>
-            <MyFooter/>
         </Router>
     )
 }

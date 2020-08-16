@@ -12,6 +12,17 @@
     margin-top: 1vw;
 }
 
+.home-header-box{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-wallpaper{
+    height: 50vw;
+}
+
 /*.shape-4:hover , .shape-1:hover, .shape-3:hover{
     animation: roll-1 0.5s forwards;
     transform: translate(10px,10px,10px);
@@ -79,4 +90,13 @@
 .home-header-image{
     width: 30vw;
     filter: drop-shadow(0px 0px 30px rgba(0,0,0,0.2));
+}
+
+@media only screen and (max-width:1024px){
+    .home-header-box{
+        width: 95%;
+    }
+    .home-header-box{
+        flex-direction: column;
+    }
 }

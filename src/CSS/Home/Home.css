@@ -22,7 +22,31 @@
 .home-feature-icon{
     border-radius: 50%;
     background-color: rgba(114,181,202,0.3);
-    padding: 40px;
+    padding: 20px;
     color: #72b5ca;
     font-size: 80px;
+}
+
+.home-chart-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width:1024px){
+    .home-features{
+        flex-direction: column;
+    }
+    .paying-chart{
+        margin: 20px 0px;
+        width: 90%;
+    }
+    .home-chart-wrap{
+        flex-direction: column;
+        width: 100%;
+    }
+    .home-feature-icon{
+        padding: 10px;
+        font-size: 60px;
+    }
 }

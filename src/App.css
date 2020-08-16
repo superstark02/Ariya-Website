@@ -1,385 +1,44 @@
-body{
-    color: #2A404D;
-}
-.home-wallpaper-head{
-    display: flex;
-    width: 100%;
-    margin:0px;
-    padding: 0px 5vw;
-    font-size: 25px;
-    height: 50vh;
-}
-.home-image{
-    height: 50vh;
-}
-.home-wallpaper-text{
-    width: 50%;
-    font-size: 20px;
-}
-.images{
-    height: 16px;
-    width: 16px;
-}
-
-.bg-text {
-    color: #091626;
-    font-weight: bold;
-    width: 100%;
-    padding-top: 20px;
-    padding-left: 0px;
-    padding-right: 290px;
-    font-size: 29px;
+html{
+    font-size: 17px;
+    background-color: white;
   }
 
-.long-text {
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-    color:#14bc16;
-    font-weight: bold;
-    width: 100%;
-    padding: 5px 100px;
-    font-family: 'c';
-    font-size: 25px;
-    margin-top: 10px;
+a, a:active, a:link, a:any-link{
+    text-transform: none;
+    text-decoration: none;
 }
-.para{
-    width: 100%;
-    height: 85vh;
-    background-color: transparent;
-    padding: 20px 0px;
-    z-index: 2;
-}
-.sub{
-    text-align: center;
-    font-family: 'j';
-    font-size: 25px;
-}
-.heading{
-    font-family: 'j';
-    font-size: 30px;
-    font-weight: 300;
-    padding: 20px 40px;
-    background-color: white;
-    border-radius: 10px;
-}
-.shadow{
-    box-shadow: 40px 10px 50px rgba(0,0,0, 0.4);
-    width: 70%;
-    border-radius: 30%;
-    margin-top: 20px;
-}
-.wallpaper2{
-    background-image: url('./Images/ai.jpg');
-    width: 100%;
-    height: 100px;
-    position: sticky;
-    background-size: cover;
-    bottom: 0;
-    z-index: -1;
-}
-.long{
-    padding: 0px 40px;
-    font-family: 'j';
-    font-size: 20px;
-    background-color: white;
-    border-radius: 10px;
-}
-.glow{
-    background-image: linear-gradient(to bottom right, #04BFBF, #04D9B2);
-    border: none;
-    box-shadow: none;
-    padding: 20px 30px;
-    font-size: 15px;
-    color: white;
-    border-radius: 10px;
-    font-weight: 800;
-    box-shadow: 5px 5px 20px #04BFBF;
-    outline: none;
-    cursor: pointer;
-}
-.image{
-    transition: transform .2s;
-    cursor: pointer;
-    background-color: white;
-    margin-bottom: 20px;
-}
-.image:hover{
-    transform: scale(1.1);
-}
-.grid{
-    background-image: url('./Images/Heading.png');
-    background-repeat: no-repeat;
-    background-size: contain;
+  .wrap{
     display: flex;
-    width: 100%;
-    max-width: 100%;
-    flex-wrap: wrap;
-    box-shadow: 2px 5px 20px #6CD9BA;
-    border-radius: 20px;
-    justify-content: space-evenly;
-    margin-top: 80px;
-    padding-bottom: 60px;
-}
-.features{
-    width: 100%;
-    text-align: center;
-    padding: 30px;
-    color: white;
-    font-size: 40px;
-    font-family: 'j';
-}
-.card{
-    border-radius: 20px;
-    margin: 20px 0px;
-    width: 400px;
-    margin: 40px;
-    margin-bottom: 0px;
-}
-.cardTitle{
-    font-size: 20px;
-    font-weight: 700;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-.cardSubTitle{
-    font-size: 15px;
-    margin-left: 20px;
-    margin-top: 5px;
-    margin-bottom: 0px;
-}
-.offers{
-    border-radius: 20px;
-    width: 100%;
-    padding: 20px;
-    margin: 20px;
-    background-image: linear-gradient(to bottom right, #F29F05, #F2B705);
-    box-shadow: 2px 5px 20px #F2B705;
-    margin-bottom: 40px;
-    margin-top: 60px;
-}
-
-td{
-    font-weight: 200;
-    text-align: center;
-    margin: 20px;
-    font-size: 15px;
-}
-.signUp{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-.glow1{
-    background-image: linear-gradient(to bottom right, #04BF7B, #05F283);
-    border: none;
-    box-shadow: none;
-    padding: 20px 30px;
-    font-size: 15px;
-    color: white;
-    border-radius: 10px;
-    font-weight: 800;
-    box-shadow: 5px 5px 20px #05F283;
-    outline: none;
-    cursor: pointer;
-}
-.topButton{
-    margin: 0px 20px;
-    border-bottom: 5px solid transparent;
-    cursor: pointer;
-    font-size: 14px;
-    padding: 10px;
-}
-.topButton:hover{
-    border-color: white;
-}
-.mobile{
-    display: none;
-}
-
-.courseTile{
-    width: 150px;
-    background-color: white;
-    border-radius: 20px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 20px;
-}
-
-.wrap{
-    display: flex;
-    width: 100%;
     justify-content: center;
     align-items: center;
-}
-
-.home-green{
-    color: white;
-    text-align: center;
-    background-color: #30b07e;
-    height: auto;
-    font-size: 20px;
-    max-width: 100%;
-}
-
-.try-now-button{
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: white;
-    background-image: linear-gradient(to right, #00ACDC , #0BDFD5);
-    box-shadow: 0px 0px 10px #0BDFD5;
-    cursor: pointer;
-    outline: none;
-}
-
-.sub-footer{
-    color: white;
-    background-color: #DE5B49;
-    height: 300px;
-    width: 100%;
-    font-size: 25px;
-    padding: 0px 10vw;
-}
-
-.class-card{
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 17px;
-    padding: 30px;
-}
-
-.home-avatar{
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    border: solid 10px lightgrey;
-    margin-bottom: 20px;
-}
-
-.one:hover{
-    border-color: #dd5b49;
-}
-.two:hover{
-    border-color: #46B39D;
-}
-.three:hover{
-    border-color: #F0CA4D;
-}
-.four:hover{
-    border-color: #3498DB;
-}
-
-@media only screen and (max-width:650px) {
-    .responsive{
-      display: none;
-    }
-    .mobile{
-      display: contents;
-    }
-    .home-wallpaper-text{
-        width: 100%;
-    }
-    .home-wallpaper-head{
-        width: 100%;
-        font-size: 18px;
-        text-align: center;
-        flex-direction: column;
-        height: auto;
-    }
-    .wallpaper{
-        flex-direction: column;
-    }
-    .para{
-        height: 50vh;
-    }
-    .bg-text{
-        font-size: 18px;
-        padding: 20px;
-        width: 100%;
-        height: auto;
-    }
-    .long-text{
-        font-size: 18px;
-        padding: 2px 20px;
-    }
-    .heading{
-        font-size: 16px;
-        padding: 0px;
-    }
-    .long{
-        padding: 0px;
-    }
-    .footer{
-        padding: 10px;
-        font-size: 10px;
-        flex-direction: column;
-    }
-    td{
-        font-size: 10px;
-        margin: 0;
-    }
-    .features{
-        font-size: 20px;
-    }
-    .glow1{
-        font-size: 13px;
-        padding: 10px 20px;
-    }
-    .features{
-        padding: 0px;
-        margin-bottom: 20px;
-    }
-    .courseTile{
-        width: 100px;
-        background-color: white;
-        border-radius: 10px;
-        height: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        margin: 10px;
-    }
-    .offers{
-        height: auto;
-        margin: 0;
-    }
-    .features{
-        margin-top: 10px;
-    }
-    .grid{
-        width: 90%;
-        margin-bottom: 30px;
-        background-size: 400px;
-    }
-    .sub-footer{
-        font-size: 20px;
-    }
-    .class-card{
-        height: auto;
-        padding: 20px;
-        width: 100%;
-        margin: 30px 0px;
-        font-size: 13px;
-    }
-    .home-green{
-        font-size: 15px;
-        padding: 0px;
-        height: auto;
-    }
-  }
-
-  a a:active a:visited{
-      text-decoration: none;
-      text-emphasis: none;
-  }
-.Link{
-      text-decoration: none;
-      text-emphasis: none;
   }
   
+  .standard-input{
+    padding: 10px;
+    font-size: 17px;
+  }
+  
+  .standard-button{
+    padding: 20px;
+    border: none;
+    margin: 10px 0px;
+    background-color: #e37b40;
+    color: white;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .secondary-button{
+    padding: 20px;
+    border: none;
+    margin: 10px 0px;
+    color: #e37b40;
+    cursor: pointer;
+    background-color: white;
+    outline: none;
+    border: #e37b40 solid 2px;
+    font-size: 17px;
+  }
+  
+  .ul-1{
+  }

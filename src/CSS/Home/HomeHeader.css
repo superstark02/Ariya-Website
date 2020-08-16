@@ -3,16 +3,16 @@
     cursor: pointer;
 }
 .shape-1{
-    margin-right: -8vw;
+    margin-right: -9vw;
 }
 .shape-3{
-    margin-left: -8vw;
+    margin-left: -9vw;
 }
 .shape-4{
     margin-top: 1vw;
 }
 
-.shape-4:hover , .shape-1:hover, .shape-3:hover{
+/*.shape-4:hover , .shape-1:hover, .shape-3:hover{
     animation: roll-1 0.5s forwards;
     transform: translate(10px,10px,10px);
     filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
@@ -25,7 +25,7 @@
 
 .shape-3:hover{
     animation: roll-3 0.5s forwards;
-}
+}*/
 
 @keyframes roll-1 {
     0% {

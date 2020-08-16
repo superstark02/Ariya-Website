@@ -4,7 +4,6 @@ import TrialClassButton from './Components/Home/TrialClassButton'
 import PayingChart from './Components/Home/PayingChart'
 import './CSS/Home/Home.css'
 import Ven from './Components/Home/Ven'
-import image from './Images/HomeHeader/home-image.png'
 import { FaMedal, FaLightbulb, FaDollarSign } from 'react-icons/fa'
 
 export class Home extends Component {
@@ -14,9 +13,6 @@ export class Home extends Component {
                 <div>
                     <HomeHeader />
                     <TrialClassButton />
-                    <div className="home-header-image-box" >
-                        <img src={image} alt="s" className="home-header-image" />
-                    </div>
                 </div>
 
                 <div className="wrap" >
@@ -24,14 +20,14 @@ export class Home extends Component {
                         <div>
                             <FaMedal className="home-feature-icon"/>
                             <div>
-                                Quality Teaching
+                              High Quality <br/> Teaching
                             </div>
                         </div>
                         <div>
                             <FaLightbulb className="home-feature-icon" />
                             <div>
                                 Future Oriented <br/>
-                                Teaching
+                                Learning
                             </div>
                         </div>
                         <div>

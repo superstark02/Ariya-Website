@@ -8,10 +8,10 @@ export default class MyFooter extends React.Component {
             <div>
                 <div className="footer">
                     <div>
-                        <FaEnvelope/> Email:
+                        <FaEnvelope/> Email: mail@ariyaonline.com
                     </div>
                     <div>
-                        <FaPhone/> Call:
+                        <FaPhone/> Call: +1 
                     </div>
                     <div>
                         <FaFacebookF style={{fontSize:"30px",margin:"0px 10px"}} /> 

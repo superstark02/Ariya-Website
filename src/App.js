@@ -15,10 +15,14 @@ import KidsPython from './Pages/python-kids'
 import ProfessionalsPython from './Pages/python-professionals'
 import StatisticsCourse from './Pages/statistics-course'
 import MathsCourse from "./Pages/maths"
+import MyAppBar from './Components/AppBar'
+import './App.css'
+import MyFooter from './Components/Footer'
 
 export default function App(){
     return(
         <Router>
+            <MyAppBar/>
             <Switch>
                 <Route exact path='/about_us' component={AboutUs} />
                 <Route exact path='/coding_courses' component={Courses} />
@@ -37,6 +41,7 @@ export default function App(){
                 <Route exact path='/' component={Home} />
                 <Route exact path='*' component={Home} />
             </Switch>
+            <MyFooter/>
         </Router>
     )
 }

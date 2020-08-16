@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import HomeHeader from '../Components/Home/HomeHeader'
-import TrialClassButton from '../Components/Home/TrialClassButton'
-import PayingChart from '../Components/Home/PayingChart'
-import '../CSS/Home/Home.css'
-import Ven from '../Components/Home/Ven'
-import image from '../Images/Home/HomeHeader/home-image.png'
+import HomeHeader from './Components/Home/HomeHeader'
+import TrialClassButton from './Components/Home/TrialClassButton'
+import PayingChart from './Components/Home/PayingChart'
+import './CSS/Home/Home.css'
+import Ven from './Components/Home/Ven'
+import image from './Images/HomeHeader/home-image.png'
 import { FaMedal, FaLightbulb, FaDollarSign } from 'react-icons/fa'
 
 export class Home extends Component {

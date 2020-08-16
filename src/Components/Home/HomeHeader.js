@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import image1 from '../../Images/Home/HomeHeader/Shape 1.png'
-import image3 from '../../Images/Home/HomeHeader/Shape 2.png'
-import image2 from '../../Images/Home/HomeHeader/Shape 5.png'
-import image4 from '../../Images/Home/HomeHeader/Shape 3.png'
+import image1 from '../../Images/HomeHeader/Shape 1.png'
+import image3 from '../../Images/HomeHeader/Shape 2.png'
+import image2 from '../../Images/HomeHeader/Shape 5.png'
+import image4 from '../../Images/HomeHeader/Shape 3.png'
 import '../../CSS/Home/HomeHeader.css'
 
 export class HomeHeader extends Component {

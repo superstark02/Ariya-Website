@@ -11,7 +11,7 @@ export default class MyFooter extends React.Component {
                         <FaEnvelope/> Email: mail@ariyaonline.com
                     </div>
                     <div>
-                        <FaPhone/> Call: +1 
+                        <FaPhone/> Call: +1 (201) 208-5403
                     </div>
                     <div>
                         <a href="https://www.instagram.com/ariyaonline/" >

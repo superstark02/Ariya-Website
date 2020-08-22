@@ -32,13 +32,13 @@ export class Ven extends Component {
                         </div>
                     </div>
                     <div>
-                        <div className="course-details-top" style={{ backgroundColor: '#e37b40' }} >
+                        <div className="course-details-top" style={{ backgroundColor: '#e37b40',marginTop:"-122px" }}  >
                             Introduce the world of programming early with actual coding tools and methods.
                             Training plans that use school-based curriculum
                         </div>
 
-                        <a href="/python_kids" >
-                            <div className="home-course-cards kids" >
+                        <a href="/python_kids"  >
+                            <div className="home-course-cards kids"  >
                                 PYTHON FOR KIDS
                             </div>
                         </a>

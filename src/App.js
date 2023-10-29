@@ -6,7 +6,7 @@ import Testimonials from './Pages/Testimonials'
 import Contact from './Pages/Contact'
 import { SignIn } from './Pages/SignIn'
 import FullPage from './Pages/course-pagination'
-import Faqs from './Pages/faq'
+import Faqs from './Pages/faq' // ammend this one
 import PyhtonDescription from './Pages/python'
 import Stats from './Pages/stats'
 import PolicyAndPrivacy from './Pages/PolicyAndPrivacy'

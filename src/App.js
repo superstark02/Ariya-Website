@@ -7,7 +7,7 @@ import Contact from './Pages/Contact'
 import { SignIn } from './Pages/SignIn'
 import FullPage from './Pages/course-pagination'
 import Faqs from './Pages/faq' // ammend this one
-import PyhtonDescription from './Pages/python'
+import PyhtonDescription from './Pages/python' //commit in terminal
 import Stats from './Pages/stats'
 import PolicyAndPrivacy from './Pages/PolicyAndPrivacy'
 import CoursesForProfessionals from './Pages/CoursesForProfessionals'

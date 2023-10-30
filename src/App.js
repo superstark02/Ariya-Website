@@ -11,7 +11,7 @@ import PyhtonDescription from './Pages/python' //commit in terminal
 import Stats from './Pages/stats'
 import PolicyAndPrivacy from './Pages/PolicyAndPrivacy'
 import CoursesForProfessionals from './Pages/CoursesForProfessionals' //tired of adding comments
-import TrialClasses from './Pages/TrialClasses' // added new comment
+import TrialClasses from './Pages/TrialClasses' // added new comments
 
 export default function App(){
     return(

@@ -10,7 +10,7 @@ import Faqs from './Pages/faq' // ammend this one
 import PyhtonDescription from './Pages/python' //commit in terminal
 import Stats from './Pages/stats'
 import PolicyAndPrivacy from './Pages/PolicyAndPrivacy'
-import CoursesForProfessionals from './Pages/CoursesForProfessionals'
+import CoursesForProfessionals from './Pages/CoursesForProfessionals' //tired of adding comments
 import TrialClasses from './Pages/TrialClasses' // added new comment
 
 export default function App(){

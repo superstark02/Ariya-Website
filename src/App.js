@@ -11,11 +11,11 @@ import PyhtonDescription from './Pages/python'
 import Stats from './Pages/stats'
 import PolicyAndPrivacy from './Pages/PolicyAndPrivacy'
 import CoursesForProfessionals from './Pages/CoursesForProfessionals'
-import TrialClasses from './Pages/TrialClasses' // added new comment
+import TrialClasses from './Pages/TrialClasses' // added new comment // more comments
 
-export default function App(){
-    return(
-        <Router>
+export default function App() { //some changes mopq
+    return (
+        <Router>    
             <Switch>
                 <Route exact path='/about_us' component={AboutUs} />
                 <Route exact path='/coding_courses' component={FullPage} />
